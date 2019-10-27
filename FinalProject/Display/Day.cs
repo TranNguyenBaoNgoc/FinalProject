@@ -19,7 +19,7 @@ namespace Display
 
         private void Panel2_Paint(object sender, PaintEventArgs e)
         {
-
+            
         }
 
         private void Panel1_Paint(object sender, PaintEventArgs e)

@@ -10,14 +10,14 @@ using System.Windows.Forms;
 
 namespace Display
 {
-    public partial class Task : UserControl
+    public partial class Listtask : UserControl
     {
-        public Task()
+        public Listtask()
         {
             InitializeComponent();
         }
 
-        private void Task_Load(object sender, EventArgs e)
+        private void Panel1_Paint(object sender, PaintEventArgs e)
         {
 
         }

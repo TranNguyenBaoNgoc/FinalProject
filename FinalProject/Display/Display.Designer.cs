@@ -384,16 +384,17 @@
             this.Funtion.Controls.Add(this.Day);
             this.Funtion.Controls.Add(this.MonthYear);
             this.Funtion.Controls.Add(this.panel4);
-            this.Funtion.Location = new System.Drawing.Point(-8, 63);
+            this.Funtion.Location = new System.Drawing.Point(0, 63);
             this.Funtion.Name = "Funtion";
-            this.Funtion.Size = new System.Drawing.Size(1070, 487);
+            this.Funtion.Size = new System.Drawing.Size(1062, 487);
             this.Funtion.TabIndex = 49;
+            this.Funtion.Paint += new System.Windows.Forms.PaintEventHandler(this.Funtion_Paint);
             // 
             // pictureBox1
             // 
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(180)))), ((int)(((byte)(43)))));
-            this.pictureBox1.Location = new System.Drawing.Point(1, 321);
+            this.pictureBox1.Location = new System.Drawing.Point(-7, 321);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(352, 10);
@@ -404,7 +405,7 @@
             // 
             this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(180)))), ((int)(((byte)(43)))));
-            this.pictureBox2.Location = new System.Drawing.Point(726, 321);
+            this.pictureBox2.Location = new System.Drawing.Point(718, 321);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(345, 10);
@@ -416,7 +417,7 @@
             this.Hour.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Hour.Font = new System.Drawing.Font("Century Gothic", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Hour.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(180)))), ((int)(((byte)(43)))));
-            this.Hour.Location = new System.Drawing.Point(358, 171);
+            this.Hour.Location = new System.Drawing.Point(354, 171);
             this.Hour.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Hour.Name = "Hour";
             this.Hour.Size = new System.Drawing.Size(151, 111);
@@ -428,7 +429,7 @@
             // 
             this.pictureBox6.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(180)))), ((int)(((byte)(43)))));
-            this.pictureBox6.Location = new System.Drawing.Point(517, 187);
+            this.pictureBox6.Location = new System.Drawing.Point(513, 187);
             this.pictureBox6.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(9, 94);
@@ -440,7 +441,7 @@
             this.Minute.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Minute.Font = new System.Drawing.Font("Century Gothic", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Minute.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(180)))), ((int)(((byte)(43)))));
-            this.Minute.Location = new System.Drawing.Point(552, 171);
+            this.Minute.Location = new System.Drawing.Point(548, 171);
             this.Minute.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Minute.Name = "Minute";
             this.Minute.Size = new System.Drawing.Size(151, 111);
@@ -453,7 +454,7 @@
             this.Day.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Day.Font = new System.Drawing.Font("Century Gothic", 58F);
             this.Day.ForeColor = System.Drawing.Color.White;
-            this.Day.Location = new System.Drawing.Point(316, 29);
+            this.Day.Location = new System.Drawing.Point(312, 29);
             this.Day.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Day.Name = "Day";
             this.Day.Size = new System.Drawing.Size(173, 111);
@@ -466,7 +467,7 @@
             this.MonthYear.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.MonthYear.Font = new System.Drawing.Font("Century Gothic", 24.75F);
             this.MonthYear.ForeColor = System.Drawing.Color.White;
-            this.MonthYear.Location = new System.Drawing.Point(497, 23);
+            this.MonthYear.Location = new System.Drawing.Point(493, 23);
             this.MonthYear.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.MonthYear.Name = "MonthYear";
             this.MonthYear.Size = new System.Drawing.Size(268, 122);
@@ -482,7 +483,7 @@
             this.panel4.Controls.Add(this.Panel6);
             this.panel4.Controls.Add(this.panel7);
             this.panel4.Controls.Add(this.panel8);
-            this.panel4.Location = new System.Drawing.Point(20, 376);
+            this.panel4.Location = new System.Drawing.Point(16, 376);
             this.panel4.Margin = new System.Windows.Forms.Padding(4);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(1018, 60);

@@ -26,5 +26,10 @@ namespace Display
         {
 
         }
+
+        private void PictureBox7_Click(object sender, EventArgs e)
+        {
+            Image.Visible = true;
+        }
     }
 }

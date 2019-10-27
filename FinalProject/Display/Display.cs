@@ -75,7 +75,7 @@ namespace Display
         private void SpecialBtn_Click_1(object sender, EventArgs e)
         {
             Funtion.Controls.Clear();
-            Funtion.Controls.Add(new SpecialEvent());
+            Funtion.Controls.Add(new Listtask());
         }
 
         private void DayBtn_Click_1(object sender, EventArgs e)
@@ -87,13 +87,18 @@ namespace Display
         private void HabitBtn_Click_1(object sender, EventArgs e)
         {
             Funtion.Controls.Clear();
-            Funtion.Controls.Add(new SpecialEvent());
+            Funtion.Controls.Add(new Listtask());
         }
 
         private void AddBtn_Click_1(object sender, EventArgs e)
         {
             MainF.Controls.Clear();
             MainF.Controls.Add(new Add());
+        }
+
+        private void Funtion_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

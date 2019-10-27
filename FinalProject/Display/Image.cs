@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Display
 {
-    public partial class SpecialEvent : UserControl
+    public partial class Image : UserControl
     {
-        public SpecialEvent()
+        public Image()
         {
             InitializeComponent();
         }
