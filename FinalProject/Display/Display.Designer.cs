@@ -194,6 +194,7 @@
             this.MonthBtn.TabIndex = 1;
             this.MonthBtn.TabStop = false;
             this.ToolTip1.SetToolTip(this.MonthBtn, "Month View");
+            this.MonthBtn.Click += new System.EventHandler(this.MonthBtn_Click);
             // 
             // DayBtn
             // 

@@ -21,5 +21,11 @@ namespace Display
         {
 
         }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            MainList.Controls.Clear();
+            MainList.Controls.Add(new Edit());
+        }
     }
 }

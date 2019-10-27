@@ -100,5 +100,9 @@ namespace Display
         {
 
         }
+
+        private void MonthBtn_Click(object sender, EventArgs e)
+        {
+        }
     }
 }
