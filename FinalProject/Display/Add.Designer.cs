@@ -30,654 +30,466 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Add));
-            this.Timer1 = new System.Windows.Forms.Timer(this.components);
-            this.ToolTip1 = new System.Windows.Forms.ToolTip(this.components);
-            this.PictureBox1 = new System.Windows.Forms.PictureBox();
-            this.PictureBox3 = new System.Windows.Forms.PictureBox();
-            this.AddBtn = new System.Windows.Forms.PictureBox();
-            this.PictureBox7 = new System.Windows.Forms.PictureBox();
-            this.Label4 = new System.Windows.Forms.Label();
-            this.Panel1 = new System.Windows.Forms.Panel();
-            this.Panel2 = new System.Windows.Forms.Panel();
-            this.Label24 = new System.Windows.Forms.Label();
-            this.PictureBox10 = new System.Windows.Forms.PictureBox();
-            this.Panel4 = new System.Windows.Forms.Panel();
-            this.Image = new System.Windows.Forms.Panel();
-            this.PictureBox16 = new System.Windows.Forms.PictureBox();
-            this.PictureBox12 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.PictureBox15 = new System.Windows.Forms.PictureBox();
-            this.PictureBox14 = new System.Windows.Forms.PictureBox();
-            this.PictureBox8 = new System.Windows.Forms.PictureBox();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
-            this.pictureBox17 = new System.Windows.Forms.PictureBox();
-            this.pictureBox18 = new System.Windows.Forms.PictureBox();
-            this.pictureBox19 = new System.Windows.Forms.PictureBox();
-            this.Label10 = new System.Windows.Forms.Label();
-            this.Label21 = new System.Windows.Forms.Label();
-            this.PictureBox13 = new System.Windows.Forms.PictureBox();
-            this.Label19 = new System.Windows.Forms.Label();
-            this.PictureBox11 = new System.Windows.Forms.PictureBox();
-            this.Label18 = new System.Windows.Forms.Label();
-            this.Label17 = new System.Windows.Forms.Label();
-            this.Label16 = new System.Windows.Forms.Label();
-            this.PictureBox6 = new System.Windows.Forms.PictureBox();
-            this.Label14 = new System.Windows.Forms.Label();
-            this.Label8 = new System.Windows.Forms.Label();
-            this.Label13 = new System.Windows.Forms.Label();
-            this.Label9 = new System.Windows.Forms.Label();
-            this.toolTip2 = new System.Windows.Forms.ToolTip(this.components);
-            ((System.ComponentModel.ISupportInitialize)(this.PictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.AddBtn)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PictureBox7)).BeginInit();
-            this.Panel1.SuspendLayout();
-            this.Panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.PictureBox10)).BeginInit();
-            this.Panel4.SuspendLayout();
-            this.Image.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.PictureBox16)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PictureBox12)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PictureBox15)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PictureBox14)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PictureBox8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PictureBox13)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PictureBox11)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PictureBox6)).BeginInit();
+            this.ToolTipAdd = new System.Windows.Forms.ToolTip(this.components);
+            this.BtnOut = new System.Windows.Forms.PictureBox();
+            this.BtnClear = new System.Windows.Forms.PictureBox();
+            this.BtnAdd = new System.Windows.Forms.PictureBox();
+            this.PnlControl = new System.Windows.Forms.Panel();
+            this.UncheckSpec = new System.Windows.Forms.PictureBox();
+            this.PnlMain = new System.Windows.Forms.Panel();
+            this.txtEnd = new System.Windows.Forms.TextBox();
+            this.txtStart = new System.Windows.Forms.TextBox();
+            this.TxtDetails = new System.Windows.Forms.TextBox();
+            this.TxtLocation = new System.Windows.Forms.TextBox();
+            this.TxtTitle = new System.Windows.Forms.TextBox();
+            this.UncheckPrio = new System.Windows.Forms.PictureBox();
+            this.LblPrio = new System.Windows.Forms.Label();
+            this.LblHabit = new System.Windows.Forms.Label();
+            this.UncheckHabit = new System.Windows.Forms.PictureBox();
+            this.LblWork = new System.Windows.Forms.Label();
+            this.UncheckWork = new System.Windows.Forms.PictureBox();
+            this.LblSpec = new System.Windows.Forms.Label();
+            this.LblCate = new System.Windows.Forms.Label();
+            this.LocationIcon = new System.Windows.Forms.PictureBox();
+            this.LblEnd = new System.Windows.Forms.Label();
+            this.LblStart = new System.Windows.Forms.Label();
+            this.LblTilte = new System.Windows.Forms.Label();
+            this.CheckedPrio = new System.Windows.Forms.PictureBox();
+            this.CheckedSpec = new System.Windows.Forms.PictureBox();
+            this.CheckedWork = new System.Windows.Forms.PictureBox();
+            this.CheckedHabit = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.BtnOut)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BtnClear)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BtnAdd)).BeginInit();
+            this.PnlControl.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.UncheckSpec)).BeginInit();
+            this.PnlMain.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.UncheckPrio)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.UncheckHabit)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.UncheckWork)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LocationIcon)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CheckedPrio)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CheckedSpec)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CheckedWork)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CheckedHabit)).BeginInit();
             this.SuspendLayout();
             // 
-            // PictureBox1
-            // 
-            this.PictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.PictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("PictureBox1.Image")));
-            this.PictureBox1.Location = new System.Drawing.Point(4, 5);
-            this.PictureBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.PictureBox1.Name = "PictureBox1";
-            this.PictureBox1.Size = new System.Drawing.Size(40, 37);
-            this.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.PictureBox1.TabIndex = 3;
-            this.PictureBox1.TabStop = false;
-            this.ToolTip1.SetToolTip(this.PictureBox1, "Back");
-            // 
-            // PictureBox3
-            // 
-            this.PictureBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.PictureBox3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.PictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("PictureBox3.Image")));
-            this.PictureBox3.Location = new System.Drawing.Point(1007, 4);
-            this.PictureBox3.Margin = new System.Windows.Forms.Padding(4);
-            this.PictureBox3.Name = "PictureBox3";
-            this.PictureBox3.Size = new System.Drawing.Size(45, 42);
-            this.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.PictureBox3.TabIndex = 13;
-            this.PictureBox3.TabStop = false;
-            this.ToolTip1.SetToolTip(this.PictureBox3, "Repeat");
-            // 
-            // AddBtn
-            // 
-            this.AddBtn.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.AddBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.AddBtn.Image = ((System.Drawing.Image)(resources.GetObject("AddBtn.Image")));
-            this.AddBtn.Location = new System.Drawing.Point(951, 5);
-            this.AddBtn.Margin = new System.Windows.Forms.Padding(4);
-            this.AddBtn.Name = "AddBtn";
-            this.AddBtn.Size = new System.Drawing.Size(48, 44);
-            this.AddBtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.AddBtn.TabIndex = 47;
-            this.AddBtn.TabStop = false;
-            this.ToolTip1.SetToolTip(this.AddBtn, "Add Event");
-            // 
-            // PictureBox7
-            // 
-            this.PictureBox7.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.PictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("PictureBox7.Image")));
-            this.PictureBox7.Location = new System.Drawing.Point(19, 106);
-            this.PictureBox7.Margin = new System.Windows.Forms.Padding(4);
-            this.PictureBox7.Name = "PictureBox7";
-            this.PictureBox7.Size = new System.Drawing.Size(48, 44);
-            this.PictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.PictureBox7.TabIndex = 40;
-            this.PictureBox7.TabStop = false;
-            this.ToolTip1.SetToolTip(this.PictureBox7, "Add/Change Image");
-            this.PictureBox7.Click += new System.EventHandler(this.PictureBox7_Click);
-            // 
-            // Label4
-            // 
-            this.Label4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.Label4.Font = new System.Drawing.Font("Century Gothic", 12.75F);
-            this.Label4.ForeColor = System.Drawing.Color.White;
-            this.Label4.Location = new System.Drawing.Point(57, 6);
-            this.Label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.Label4.Name = "Label4";
-            this.Label4.Size = new System.Drawing.Size(999, 37);
-            this.Label4.TabIndex = 4;
-            this.Label4.Text = "06 May 2017, Saturday";
-            this.Label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // Panel1
-            // 
-            this.Panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.Panel1.Controls.Add(this.Label4);
-            this.Panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.Panel1.Location = new System.Drawing.Point(0, 49);
-            this.Panel1.Margin = new System.Windows.Forms.Padding(4);
-            this.Panel1.Name = "Panel1";
-            this.Panel1.Size = new System.Drawing.Size(1060, 49);
-            this.Panel1.TabIndex = 7;
-            // 
-            // Panel2
-            // 
-            this.Panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.Panel2.Controls.Add(this.AddBtn);
-            this.Panel2.Controls.Add(this.PictureBox1);
-            this.Panel2.Controls.Add(this.PictureBox3);
-            this.Panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.Panel2.Location = new System.Drawing.Point(0, 0);
-            this.Panel2.Margin = new System.Windows.Forms.Padding(4);
-            this.Panel2.Name = "Panel2";
-            this.Panel2.Size = new System.Drawing.Size(1060, 49);
-            this.Panel2.TabIndex = 8;
-            // 
-            // Label24
-            // 
-            this.Label24.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.Label24.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.Label24.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.Label24.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label24.ForeColor = System.Drawing.Color.White;
-            this.Label24.Location = new System.Drawing.Point(23, 387);
-            this.Label24.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.Label24.Name = "Label24";
-            this.Label24.Size = new System.Drawing.Size(1011, 140);
-            this.Label24.TabIndex = 38;
-            this.Label24.Text = "Details";
-            this.Label24.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // PictureBox10
-            // 
-            this.PictureBox10.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.PictureBox10.Image = ((System.Drawing.Image)(resources.GetObject("PictureBox10.Image")));
-            this.PictureBox10.Location = new System.Drawing.Point(160, 315);
-            this.PictureBox10.Margin = new System.Windows.Forms.Padding(4);
-            this.PictureBox10.Name = "PictureBox10";
-            this.PictureBox10.Size = new System.Drawing.Size(51, 47);
-            this.PictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.PictureBox10.TabIndex = 25;
-            this.PictureBox10.TabStop = false;
-            // 
-            // Panel4
-            // 
-            this.Panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(95)))), ((int)(((byte)(95)))));
-            this.Panel4.Controls.Add(this.Image);
-            this.Panel4.Controls.Add(this.PictureBox7);
-            this.Panel4.Controls.Add(this.Label10);
-            this.Panel4.Controls.Add(this.Label24);
-            this.Panel4.Controls.Add(this.Label21);
-            this.Panel4.Controls.Add(this.PictureBox13);
-            this.Panel4.Controls.Add(this.Label19);
-            this.Panel4.Controls.Add(this.PictureBox11);
-            this.Panel4.Controls.Add(this.Label18);
-            this.Panel4.Controls.Add(this.PictureBox10);
-            this.Panel4.Controls.Add(this.Label17);
-            this.Panel4.Controls.Add(this.Label16);
-            this.Panel4.Controls.Add(this.PictureBox6);
-            this.Panel4.Controls.Add(this.Label14);
-            this.Panel4.Controls.Add(this.Label8);
-            this.Panel4.Controls.Add(this.Label13);
-            this.Panel4.Controls.Add(this.Label9);
-            this.Panel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Panel4.Location = new System.Drawing.Point(0, 0);
-            this.Panel4.Margin = new System.Windows.Forms.Padding(4);
-            this.Panel4.Name = "Panel4";
-            this.Panel4.Size = new System.Drawing.Size(1060, 545);
-            this.Panel4.TabIndex = 9;
-            // 
-            // Image
-            // 
-            this.Image.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.Image.Controls.Add(this.PictureBox16);
-            this.Image.Controls.Add(this.PictureBox12);
-            this.Image.Controls.Add(this.pictureBox2);
-            this.Image.Controls.Add(this.pictureBox4);
-            this.Image.Controls.Add(this.pictureBox5);
-            this.Image.Controls.Add(this.PictureBox15);
-            this.Image.Controls.Add(this.PictureBox14);
-            this.Image.Controls.Add(this.PictureBox8);
-            this.Image.Controls.Add(this.pictureBox9);
-            this.Image.Controls.Add(this.pictureBox17);
-            this.Image.Controls.Add(this.pictureBox18);
-            this.Image.Controls.Add(this.pictureBox19);
-            this.Image.Location = new System.Drawing.Point(23, 158);
-            this.Image.Name = "Image";
-            this.Image.Size = new System.Drawing.Size(300, 180);
-            this.Image.TabIndex = 41;
-            this.Image.Visible = false;
-            // 
-            // PictureBox16
-            // 
-            this.PictureBox16.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.PictureBox16.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.PictureBox16.Image = ((System.Drawing.Image)(resources.GetObject("PictureBox16.Image")));
-            this.PictureBox16.Location = new System.Drawing.Point(238, 17);
-            this.PictureBox16.Margin = new System.Windows.Forms.Padding(4);
-            this.PictureBox16.Name = "PictureBox16";
-            this.PictureBox16.Size = new System.Drawing.Size(48, 44);
-            this.PictureBox16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.PictureBox16.TabIndex = 19;
-            this.PictureBox16.TabStop = false;
-            this.toolTip2.SetToolTip(this.PictureBox16, "Mail/Message");
-            // 
-            // PictureBox12
-            // 
-            this.PictureBox12.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.PictureBox12.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.PictureBox12.Image = ((System.Drawing.Image)(resources.GetObject("PictureBox12.Image")));
-            this.PictureBox12.Location = new System.Drawing.Point(70, 120);
-            this.PictureBox12.Margin = new System.Windows.Forms.Padding(4);
-            this.PictureBox12.Name = "PictureBox12";
-            this.PictureBox12.Size = new System.Drawing.Size(48, 44);
-            this.PictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.PictureBox12.TabIndex = 28;
-            this.PictureBox12.TabStop = false;
-            this.toolTip2.SetToolTip(this.PictureBox12, "Call");
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(126, 120);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(48, 44);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 27;
-            this.pictureBox2.TabStop = false;
-            this.toolTip2.SetToolTip(this.pictureBox2, "Music Event");
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pictureBox4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(182, 68);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(48, 44);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox4.TabIndex = 26;
-            this.pictureBox4.TabStop = false;
-            this.toolTip2.SetToolTip(this.pictureBox4, "Movie");
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pictureBox5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(182, 17);
-            this.pictureBox5.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(48, 44);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox5.TabIndex = 25;
-            this.pictureBox5.TabStop = false;
-            this.toolTip2.SetToolTip(this.pictureBox5, "Birthday/Cake");
-            // 
-            // PictureBox15
-            // 
-            this.PictureBox15.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.PictureBox15.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.PictureBox15.Image = ((System.Drawing.Image)(resources.GetObject("PictureBox15.Image")));
-            this.PictureBox15.Location = new System.Drawing.Point(126, 17);
-            this.PictureBox15.Margin = new System.Windows.Forms.Padding(4);
-            this.PictureBox15.Name = "PictureBox15";
-            this.PictureBox15.Size = new System.Drawing.Size(48, 44);
-            this.PictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.PictureBox15.TabIndex = 29;
-            this.PictureBox15.TabStop = false;
-            this.toolTip2.SetToolTip(this.PictureBox15, "Games");
-            // 
-            // PictureBox14
-            // 
-            this.PictureBox14.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.PictureBox14.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.PictureBox14.Image = ((System.Drawing.Image)(resources.GetObject("PictureBox14.Image")));
-            this.PictureBox14.Location = new System.Drawing.Point(126, 69);
-            this.PictureBox14.Margin = new System.Windows.Forms.Padding(4);
-            this.PictureBox14.Name = "PictureBox14";
-            this.PictureBox14.Size = new System.Drawing.Size(48, 44);
-            this.PictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.PictureBox14.TabIndex = 24;
-            this.PictureBox14.TabStop = false;
-            this.toolTip2.SetToolTip(this.PictureBox14, "Lunch/Dinner");
-            // 
-            // PictureBox8
-            // 
-            this.PictureBox8.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.PictureBox8.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.PictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("PictureBox8.Image")));
-            this.PictureBox8.Location = new System.Drawing.Point(70, 68);
-            this.PictureBox8.Margin = new System.Windows.Forms.Padding(4);
-            this.PictureBox8.Name = "PictureBox8";
-            this.PictureBox8.Size = new System.Drawing.Size(48, 44);
-            this.PictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.PictureBox8.TabIndex = 23;
-            this.PictureBox8.TabStop = false;
-            this.toolTip2.SetToolTip(this.PictureBox8, "Graduation");
-            // 
-            // pictureBox9
-            // 
-            this.pictureBox9.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pictureBox9.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox9.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox9.Image")));
-            this.pictureBox9.Location = new System.Drawing.Point(70, 17);
-            this.pictureBox9.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(48, 44);
-            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox9.TabIndex = 22;
-            this.pictureBox9.TabStop = false;
-            this.toolTip2.SetToolTip(this.pictureBox9, "Bank");
-            // 
-            // pictureBox17
-            // 
-            this.pictureBox17.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pictureBox17.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox17.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox17.Image")));
-            this.pictureBox17.Location = new System.Drawing.Point(14, 120);
-            this.pictureBox17.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox17.Name = "pictureBox17";
-            this.pictureBox17.Size = new System.Drawing.Size(48, 44);
-            this.pictureBox17.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox17.TabIndex = 21;
-            this.pictureBox17.TabStop = false;
-            this.toolTip2.SetToolTip(this.pictureBox17, "Study");
-            // 
-            // pictureBox18
-            // 
-            this.pictureBox18.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pictureBox18.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox18.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox18.Image")));
-            this.pictureBox18.Location = new System.Drawing.Point(14, 68);
-            this.pictureBox18.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox18.Name = "pictureBox18";
-            this.pictureBox18.Size = new System.Drawing.Size(48, 44);
-            this.pictureBox18.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox18.TabIndex = 20;
-            this.pictureBox18.TabStop = false;
-            this.toolTip2.SetToolTip(this.pictureBox18, "Date");
-            // 
-            // pictureBox19
-            // 
-            this.pictureBox19.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pictureBox19.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox19.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox19.Image")));
-            this.pictureBox19.Location = new System.Drawing.Point(14, 17);
-            this.pictureBox19.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox19.Name = "pictureBox19";
-            this.pictureBox19.Size = new System.Drawing.Size(48, 44);
-            this.pictureBox19.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox19.TabIndex = 30;
-            this.pictureBox19.TabStop = false;
-            this.toolTip2.SetToolTip(this.pictureBox19, "Trip");
-            // 
-            // Label10
-            // 
-            this.Label10.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.Label10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.Label10.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.Label10.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label10.ForeColor = System.Drawing.Color.White;
-            this.Label10.Location = new System.Drawing.Point(79, 111);
-            this.Label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.Label10.Name = "Label10";
-            this.Label10.Size = new System.Drawing.Size(955, 37);
-            this.Label10.TabIndex = 39;
-            this.Label10.Text = "Title";
-            this.Label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // Label21
-            // 
-            this.Label21.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.Label21.ForeColor = System.Drawing.Color.White;
-            this.Label21.Location = new System.Drawing.Point(524, 315);
-            this.Label21.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.Label21.Name = "Label21";
-            this.Label21.Size = new System.Drawing.Size(111, 47);
-            this.Label21.TabIndex = 32;
-            this.Label21.Text = "Habit";
-            this.Label21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // PictureBox13
-            // 
-            this.PictureBox13.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.PictureBox13.Image = ((System.Drawing.Image)(resources.GetObject("PictureBox13.Image")));
-            this.PictureBox13.Location = new System.Drawing.Point(472, 315);
-            this.PictureBox13.Margin = new System.Windows.Forms.Padding(4);
-            this.PictureBox13.Name = "PictureBox13";
-            this.PictureBox13.Size = new System.Drawing.Size(51, 47);
-            this.PictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.PictureBox13.TabIndex = 31;
-            this.PictureBox13.TabStop = false;
-            // 
-            // Label19
-            // 
-            this.Label19.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.Label19.ForeColor = System.Drawing.Color.White;
-            this.Label19.Location = new System.Drawing.Point(353, 315);
-            this.Label19.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.Label19.Name = "Label19";
-            this.Label19.Size = new System.Drawing.Size(111, 47);
-            this.Label19.TabIndex = 28;
-            this.Label19.Text = "Work to-do";
-            this.Label19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // PictureBox11
-            // 
-            this.PictureBox11.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.PictureBox11.Image = ((System.Drawing.Image)(resources.GetObject("PictureBox11.Image")));
-            this.PictureBox11.Location = new System.Drawing.Point(301, 315);
-            this.PictureBox11.Margin = new System.Windows.Forms.Padding(4);
-            this.PictureBox11.Name = "PictureBox11";
-            this.PictureBox11.Size = new System.Drawing.Size(51, 47);
-            this.PictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.PictureBox11.TabIndex = 27;
-            this.PictureBox11.TabStop = false;
-            // 
-            // Label18
-            // 
-            this.Label18.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.Label18.ForeColor = System.Drawing.Color.White;
-            this.Label18.Location = new System.Drawing.Point(212, 315);
-            this.Label18.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.Label18.Name = "Label18";
-            this.Label18.Size = new System.Drawing.Size(81, 47);
-            this.Label18.TabIndex = 26;
-            this.Label18.Text = "Special Event";
-            this.Label18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.Label18.Click += new System.EventHandler(this.Label18_Click);
-            // 
-            // Label17
-            // 
-            this.Label17.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.Label17.ForeColor = System.Drawing.Color.White;
-            this.Label17.Location = new System.Drawing.Point(19, 315);
-            this.Label17.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.Label17.Name = "Label17";
-            this.Label17.Size = new System.Drawing.Size(133, 47);
-            this.Label17.TabIndex = 24;
-            this.Label17.Text = "Category:";
-            this.Label17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.Label17.Click += new System.EventHandler(this.Label17_Click);
-            // 
-            // Label16
-            // 
-            this.Label16.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.Label16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.Label16.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.Label16.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label16.ForeColor = System.Drawing.Color.White;
-            this.Label16.Location = new System.Drawing.Point(79, 256);
-            this.Label16.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.Label16.Name = "Label16";
-            this.Label16.Size = new System.Drawing.Size(955, 37);
-            this.Label16.TabIndex = 21;
-            this.Label16.Text = "Location";
-            this.Label16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // PictureBox6
-            // 
-            this.PictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("PictureBox6.Image")));
-            this.PictureBox6.Location = new System.Drawing.Point(23, 252);
-            this.PictureBox6.Margin = new System.Windows.Forms.Padding(4);
-            this.PictureBox6.Name = "PictureBox6";
-            this.PictureBox6.Size = new System.Drawing.Size(48, 44);
-            this.PictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.PictureBox6.TabIndex = 20;
-            this.PictureBox6.TabStop = false;
-            // 
-            // Label14
-            // 
-            this.Label14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.Label14.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Label14.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.Label14.ForeColor = System.Drawing.Color.White;
-            this.Label14.Location = new System.Drawing.Point(79, 208);
-            this.Label14.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.Label14.Name = "Label14";
-            this.Label14.Size = new System.Drawing.Size(312, 37);
-            this.Label14.TabIndex = 14;
-            this.Label14.Text = "09:00 PM";
-            this.Label14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // Label8
-            // 
-            this.Label8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.Label8.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Label8.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.Label8.ForeColor = System.Drawing.Color.White;
-            this.Label8.Location = new System.Drawing.Point(79, 158);
-            this.Label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.Label8.Name = "Label8";
-            this.Label8.Size = new System.Drawing.Size(312, 37);
-            this.Label8.TabIndex = 14;
-            this.Label8.Text = "09:00 AM";
-            this.Label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // Label13
-            // 
-            this.Label13.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.Label13.ForeColor = System.Drawing.Color.White;
-            this.Label13.Location = new System.Drawing.Point(20, 208);
-            this.Label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.Label13.Name = "Label13";
-            this.Label13.Size = new System.Drawing.Size(103, 37);
-            this.Label13.TabIndex = 13;
-            this.Label13.Text = "End:";
-            this.Label13.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // Label9
-            // 
-            this.Label9.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.Label9.ForeColor = System.Drawing.Color.White;
-            this.Label9.Location = new System.Drawing.Point(20, 158);
-            this.Label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.Label9.Name = "Label9";
-            this.Label9.Size = new System.Drawing.Size(103, 37);
-            this.Label9.TabIndex = 13;
-            this.Label9.Text = "Start:";
-            this.Label9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // BtnOut
+            // 
+            this.BtnOut.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnOut.Image = ((System.Drawing.Image)(resources.GetObject("BtnOut.Image")));
+            this.BtnOut.Location = new System.Drawing.Point(4, 5);
+            this.BtnOut.Margin = new System.Windows.Forms.Padding(4);
+            this.BtnOut.Name = "BtnOut";
+            this.BtnOut.Size = new System.Drawing.Size(40, 37);
+            this.BtnOut.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.BtnOut.TabIndex = 3;
+            this.BtnOut.TabStop = false;
+            this.ToolTipAdd.SetToolTip(this.BtnOut, "Back");
+            // 
+            // BtnClear
+            // 
+            this.BtnClear.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.BtnClear.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnClear.Image = ((System.Drawing.Image)(resources.GetObject("BtnClear.Image")));
+            this.BtnClear.Location = new System.Drawing.Point(1007, 4);
+            this.BtnClear.Margin = new System.Windows.Forms.Padding(4);
+            this.BtnClear.Name = "BtnClear";
+            this.BtnClear.Size = new System.Drawing.Size(45, 42);
+            this.BtnClear.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.BtnClear.TabIndex = 13;
+            this.BtnClear.TabStop = false;
+            this.ToolTipAdd.SetToolTip(this.BtnClear, "Repeat");
+            // 
+            // BtnAdd
+            // 
+            this.BtnAdd.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.BtnAdd.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnAdd.Image = ((System.Drawing.Image)(resources.GetObject("BtnAdd.Image")));
+            this.BtnAdd.Location = new System.Drawing.Point(951, 5);
+            this.BtnAdd.Margin = new System.Windows.Forms.Padding(4);
+            this.BtnAdd.Name = "BtnAdd";
+            this.BtnAdd.Size = new System.Drawing.Size(48, 44);
+            this.BtnAdd.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.BtnAdd.TabIndex = 47;
+            this.BtnAdd.TabStop = false;
+            this.ToolTipAdd.SetToolTip(this.BtnAdd, "Add Event");
+            // 
+            // PnlControl
+            // 
+            this.PnlControl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.PnlControl.Controls.Add(this.BtnAdd);
+            this.PnlControl.Controls.Add(this.BtnOut);
+            this.PnlControl.Controls.Add(this.BtnClear);
+            this.PnlControl.Dock = System.Windows.Forms.DockStyle.Top;
+            this.PnlControl.Location = new System.Drawing.Point(0, 0);
+            this.PnlControl.Margin = new System.Windows.Forms.Padding(4);
+            this.PnlControl.Name = "PnlControl";
+            this.PnlControl.Size = new System.Drawing.Size(1060, 49);
+            this.PnlControl.TabIndex = 8;
+            // 
+            // UncheckSpec
+            // 
+            this.UncheckSpec.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.UncheckSpec.Image = ((System.Drawing.Image)(resources.GetObject("UncheckSpec.Image")));
+            this.UncheckSpec.Location = new System.Drawing.Point(144, 258);
+            this.UncheckSpec.Margin = new System.Windows.Forms.Padding(4);
+            this.UncheckSpec.Name = "UncheckSpec";
+            this.UncheckSpec.Size = new System.Drawing.Size(51, 47);
+            this.UncheckSpec.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.UncheckSpec.TabIndex = 25;
+            this.UncheckSpec.TabStop = false;
+            // 
+            // PnlMain
+            // 
+            this.PnlMain.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(95)))), ((int)(((byte)(95)))));
+            this.PnlMain.Controls.Add(this.txtEnd);
+            this.PnlMain.Controls.Add(this.txtStart);
+            this.PnlMain.Controls.Add(this.TxtDetails);
+            this.PnlMain.Controls.Add(this.TxtLocation);
+            this.PnlMain.Controls.Add(this.TxtTitle);
+            this.PnlMain.Controls.Add(this.UncheckPrio);
+            this.PnlMain.Controls.Add(this.LblPrio);
+            this.PnlMain.Controls.Add(this.LblHabit);
+            this.PnlMain.Controls.Add(this.UncheckHabit);
+            this.PnlMain.Controls.Add(this.LblWork);
+            this.PnlMain.Controls.Add(this.UncheckWork);
+            this.PnlMain.Controls.Add(this.LblSpec);
+            this.PnlMain.Controls.Add(this.UncheckSpec);
+            this.PnlMain.Controls.Add(this.LblCate);
+            this.PnlMain.Controls.Add(this.LocationIcon);
+            this.PnlMain.Controls.Add(this.LblEnd);
+            this.PnlMain.Controls.Add(this.LblStart);
+            this.PnlMain.Controls.Add(this.LblTilte);
+            this.PnlMain.Controls.Add(this.CheckedPrio);
+            this.PnlMain.Controls.Add(this.CheckedSpec);
+            this.PnlMain.Controls.Add(this.CheckedWork);
+            this.PnlMain.Controls.Add(this.CheckedHabit);
+            this.PnlMain.Location = new System.Drawing.Point(0, 0);
+            this.PnlMain.Margin = new System.Windows.Forms.Padding(4);
+            this.PnlMain.Name = "PnlMain";
+            this.PnlMain.Size = new System.Drawing.Size(1060, 521);
+            this.PnlMain.TabIndex = 9;
+            // 
+            // txtEnd
+            // 
+            this.txtEnd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.txtEnd.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtEnd.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEnd.ForeColor = System.Drawing.Color.DimGray;
+            this.txtEnd.Location = new System.Drawing.Point(82, 160);
+            this.txtEnd.Multiline = true;
+            this.txtEnd.Name = "txtEnd";
+            this.txtEnd.Size = new System.Drawing.Size(312, 37);
+            this.txtEnd.TabIndex = 63;
+            this.txtEnd.Text = "09:00 PM";
+            this.txtEnd.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // txtStart
+            // 
+            this.txtStart.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.txtStart.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtStart.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtStart.ForeColor = System.Drawing.Color.DimGray;
+            this.txtStart.Location = new System.Drawing.Point(82, 110);
+            this.txtStart.Multiline = true;
+            this.txtStart.Name = "txtStart";
+            this.txtStart.Size = new System.Drawing.Size(312, 37);
+            this.txtStart.TabIndex = 62;
+            this.txtStart.Text = "09:00 AM";
+            this.txtStart.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // TxtDetails
+            // 
+            this.TxtDetails.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.TxtDetails.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.TxtDetails.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtDetails.ForeColor = System.Drawing.SystemColors.Window;
+            this.TxtDetails.Location = new System.Drawing.Point(26, 318);
+            this.TxtDetails.Multiline = true;
+            this.TxtDetails.Name = "TxtDetails";
+            this.TxtDetails.Size = new System.Drawing.Size(1011, 179);
+            this.TxtDetails.TabIndex = 61;
+            this.TxtDetails.Text = "Details";
+            this.TxtDetails.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // TxtLocation
+            // 
+            this.TxtLocation.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.TxtLocation.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.TxtLocation.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtLocation.ForeColor = System.Drawing.Color.DimGray;
+            this.TxtLocation.Location = new System.Drawing.Point(82, 208);
+            this.TxtLocation.Multiline = true;
+            this.TxtLocation.Name = "TxtLocation";
+            this.TxtLocation.Size = new System.Drawing.Size(955, 37);
+            this.TxtLocation.TabIndex = 60;
+            this.TxtLocation.Text = "Location";
+            this.TxtLocation.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // TxtTitle
+            // 
+            this.TxtTitle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.TxtTitle.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.TxtTitle.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtTitle.ForeColor = System.Drawing.SystemColors.Window;
+            this.TxtTitle.Location = new System.Drawing.Point(82, 63);
+            this.TxtTitle.Multiline = true;
+            this.TxtTitle.Name = "TxtTitle";
+            this.TxtTitle.Size = new System.Drawing.Size(955, 37);
+            this.TxtTitle.TabIndex = 59;
+            this.TxtTitle.Text = "Title";
+            this.TxtTitle.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // UncheckPrio
+            // 
+            this.UncheckPrio.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.UncheckPrio.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.UncheckPrio.Image = ((System.Drawing.Image)(resources.GetObject("UncheckPrio.Image")));
+            this.UncheckPrio.Location = new System.Drawing.Point(578, 258);
+            this.UncheckPrio.Margin = new System.Windows.Forms.Padding(4);
+            this.UncheckPrio.Name = "UncheckPrio";
+            this.UncheckPrio.Size = new System.Drawing.Size(48, 47);
+            this.UncheckPrio.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.UncheckPrio.TabIndex = 57;
+            this.UncheckPrio.TabStop = false;
+            // 
+            // LblPrio
+            // 
+            this.LblPrio.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.LblPrio.ForeColor = System.Drawing.Color.White;
+            this.LblPrio.Location = new System.Drawing.Point(634, 258);
+            this.LblPrio.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.LblPrio.Name = "LblPrio";
+            this.LblPrio.Size = new System.Drawing.Size(82, 47);
+            this.LblPrio.TabIndex = 56;
+            this.LblPrio.Text = "Prioritize";
+            this.LblPrio.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // LblHabit
+            // 
+            this.LblHabit.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.LblHabit.ForeColor = System.Drawing.Color.White;
+            this.LblHabit.Location = new System.Drawing.Point(508, 258);
+            this.LblHabit.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.LblHabit.Name = "LblHabit";
+            this.LblHabit.Size = new System.Drawing.Size(70, 47);
+            this.LblHabit.TabIndex = 32;
+            this.LblHabit.Text = "Habit";
+            this.LblHabit.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // UncheckHabit
+            // 
+            this.UncheckHabit.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.UncheckHabit.Image = ((System.Drawing.Image)(resources.GetObject("UncheckHabit.Image")));
+            this.UncheckHabit.Location = new System.Drawing.Point(456, 258);
+            this.UncheckHabit.Margin = new System.Windows.Forms.Padding(4);
+            this.UncheckHabit.Name = "UncheckHabit";
+            this.UncheckHabit.Size = new System.Drawing.Size(51, 47);
+            this.UncheckHabit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.UncheckHabit.TabIndex = 31;
+            this.UncheckHabit.TabStop = false;
+            // 
+            // LblWork
+            // 
+            this.LblWork.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.LblWork.ForeColor = System.Drawing.Color.White;
+            this.LblWork.Location = new System.Drawing.Point(337, 258);
+            this.LblWork.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.LblWork.Name = "LblWork";
+            this.LblWork.Size = new System.Drawing.Size(111, 47);
+            this.LblWork.TabIndex = 28;
+            this.LblWork.Text = "Work to-do";
+            this.LblWork.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // UncheckWork
+            // 
+            this.UncheckWork.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.UncheckWork.Image = ((System.Drawing.Image)(resources.GetObject("UncheckWork.Image")));
+            this.UncheckWork.Location = new System.Drawing.Point(285, 258);
+            this.UncheckWork.Margin = new System.Windows.Forms.Padding(4);
+            this.UncheckWork.Name = "UncheckWork";
+            this.UncheckWork.Size = new System.Drawing.Size(51, 47);
+            this.UncheckWork.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.UncheckWork.TabIndex = 27;
+            this.UncheckWork.TabStop = false;
+            // 
+            // LblSpec
+            // 
+            this.LblSpec.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.LblSpec.ForeColor = System.Drawing.Color.White;
+            this.LblSpec.Location = new System.Drawing.Point(196, 258);
+            this.LblSpec.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.LblSpec.Name = "LblSpec";
+            this.LblSpec.Size = new System.Drawing.Size(81, 47);
+            this.LblSpec.TabIndex = 26;
+            this.LblSpec.Text = "Special Event";
+            this.LblSpec.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // LblCate
+            // 
+            this.LblCate.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.LblCate.ForeColor = System.Drawing.Color.White;
+            this.LblCate.Location = new System.Drawing.Point(23, 258);
+            this.LblCate.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.LblCate.Name = "LblCate";
+            this.LblCate.Size = new System.Drawing.Size(100, 47);
+            this.LblCate.TabIndex = 24;
+            this.LblCate.Text = "Category:";
+            this.LblCate.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // LocationIcon
+            // 
+            this.LocationIcon.Image = ((System.Drawing.Image)(resources.GetObject("LocationIcon.Image")));
+            this.LocationIcon.Location = new System.Drawing.Point(26, 204);
+            this.LocationIcon.Margin = new System.Windows.Forms.Padding(4);
+            this.LocationIcon.Name = "LocationIcon";
+            this.LocationIcon.Size = new System.Drawing.Size(48, 44);
+            this.LocationIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.LocationIcon.TabIndex = 20;
+            this.LocationIcon.TabStop = false;
+            // 
+            // LblEnd
+            // 
+            this.LblEnd.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.LblEnd.ForeColor = System.Drawing.Color.White;
+            this.LblEnd.Location = new System.Drawing.Point(23, 160);
+            this.LblEnd.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.LblEnd.Name = "LblEnd";
+            this.LblEnd.Size = new System.Drawing.Size(103, 37);
+            this.LblEnd.TabIndex = 13;
+            this.LblEnd.Text = "End:";
+            this.LblEnd.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // LblStart
+            // 
+            this.LblStart.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.LblStart.ForeColor = System.Drawing.Color.White;
+            this.LblStart.Location = new System.Drawing.Point(23, 110);
+            this.LblStart.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.LblStart.Name = "LblStart";
+            this.LblStart.Size = new System.Drawing.Size(103, 37);
+            this.LblStart.TabIndex = 13;
+            this.LblStart.Text = "Start:";
+            this.LblStart.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // LblTilte
+            // 
+            this.LblTilte.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.LblTilte.ForeColor = System.Drawing.Color.White;
+            this.LblTilte.Location = new System.Drawing.Point(22, 63);
+            this.LblTilte.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.LblTilte.Name = "LblTilte";
+            this.LblTilte.Size = new System.Drawing.Size(103, 37);
+            this.LblTilte.TabIndex = 41;
+            this.LblTilte.Text = "Tilte:";
+            this.LblTilte.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // CheckedPrio
+            // 
+            this.CheckedPrio.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.CheckedPrio.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.CheckedPrio.Image = ((System.Drawing.Image)(resources.GetObject("CheckedPrio.Image")));
+            this.CheckedPrio.Location = new System.Drawing.Point(578, 258);
+            this.CheckedPrio.Margin = new System.Windows.Forms.Padding(4);
+            this.CheckedPrio.Name = "CheckedPrio";
+            this.CheckedPrio.Size = new System.Drawing.Size(48, 47);
+            this.CheckedPrio.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.CheckedPrio.TabIndex = 58;
+            this.CheckedPrio.TabStop = false;
+            // 
+            // CheckedSpec
+            // 
+            this.CheckedSpec.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.CheckedSpec.Image = ((System.Drawing.Image)(resources.GetObject("CheckedSpec.Image")));
+            this.CheckedSpec.Location = new System.Drawing.Point(144, 258);
+            this.CheckedSpec.Margin = new System.Windows.Forms.Padding(4);
+            this.CheckedSpec.Name = "CheckedSpec";
+            this.CheckedSpec.Size = new System.Drawing.Size(51, 47);
+            this.CheckedSpec.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.CheckedSpec.TabIndex = 64;
+            this.CheckedSpec.TabStop = false;
+            // 
+            // CheckedWork
+            // 
+            this.CheckedWork.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.CheckedWork.Image = ((System.Drawing.Image)(resources.GetObject("CheckedWork.Image")));
+            this.CheckedWork.Location = new System.Drawing.Point(285, 258);
+            this.CheckedWork.Margin = new System.Windows.Forms.Padding(4);
+            this.CheckedWork.Name = "CheckedWork";
+            this.CheckedWork.Size = new System.Drawing.Size(51, 47);
+            this.CheckedWork.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.CheckedWork.TabIndex = 65;
+            this.CheckedWork.TabStop = false;
+            // 
+            // CheckedHabit
+            // 
+            this.CheckedHabit.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.CheckedHabit.Image = ((System.Drawing.Image)(resources.GetObject("CheckedHabit.Image")));
+            this.CheckedHabit.Location = new System.Drawing.Point(456, 258);
+            this.CheckedHabit.Margin = new System.Windows.Forms.Padding(4);
+            this.CheckedHabit.Name = "CheckedHabit";
+            this.CheckedHabit.Size = new System.Drawing.Size(51, 47);
+            this.CheckedHabit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.CheckedHabit.TabIndex = 66;
+            this.CheckedHabit.TabStop = false;
             // 
             // Add
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.Panel1);
-            this.Controls.Add(this.Panel2);
-            this.Controls.Add(this.Panel4);
+            this.Controls.Add(this.PnlControl);
+            this.Controls.Add(this.PnlMain);
             this.Name = "Add";
-            this.Size = new System.Drawing.Size(1060, 545);
-            ((System.ComponentModel.ISupportInitialize)(this.PictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.AddBtn)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PictureBox7)).EndInit();
-            this.Panel1.ResumeLayout(false);
-            this.Panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.PictureBox10)).EndInit();
-            this.Panel4.ResumeLayout(false);
-            this.Image.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.PictureBox16)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PictureBox12)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PictureBox15)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PictureBox14)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PictureBox8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PictureBox13)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PictureBox11)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PictureBox6)).EndInit();
+            this.Size = new System.Drawing.Size(1060, 524);
+            ((System.ComponentModel.ISupportInitialize)(this.BtnOut)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BtnClear)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BtnAdd)).EndInit();
+            this.PnlControl.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.UncheckSpec)).EndInit();
+            this.PnlMain.ResumeLayout(false);
+            this.PnlMain.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.UncheckPrio)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.UncheckHabit)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.UncheckWork)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LocationIcon)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CheckedPrio)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CheckedSpec)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CheckedWork)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CheckedHabit)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        internal System.Windows.Forms.Timer Timer1;
-        internal System.Windows.Forms.ToolTip ToolTip1;
-        internal System.Windows.Forms.PictureBox PictureBox1;
-        internal System.Windows.Forms.PictureBox PictureBox3;
-        internal System.Windows.Forms.Label Label4;
-        internal System.Windows.Forms.Panel Panel1;
-        internal System.Windows.Forms.Panel Panel2;
-        internal System.Windows.Forms.Label Label24;
-        internal System.Windows.Forms.PictureBox PictureBox10;
-        internal System.Windows.Forms.Panel Panel4;
-        internal System.Windows.Forms.Label Label21;
-        internal System.Windows.Forms.PictureBox PictureBox13;
-        internal System.Windows.Forms.Label Label19;
-        internal System.Windows.Forms.PictureBox PictureBox11;
-        internal System.Windows.Forms.Label Label18;
-        internal System.Windows.Forms.Label Label17;
-        internal System.Windows.Forms.Label Label16;
-        internal System.Windows.Forms.PictureBox PictureBox6;
-        internal System.Windows.Forms.Label Label14;
-        internal System.Windows.Forms.Label Label8;
-        internal System.Windows.Forms.Label Label13;
-        internal System.Windows.Forms.Label Label9;
-        internal System.Windows.Forms.PictureBox AddBtn;
-        internal System.Windows.Forms.PictureBox PictureBox7;
-        internal System.Windows.Forms.Label Label10;
-        private System.Windows.Forms.Panel Image;
-        internal System.Windows.Forms.PictureBox PictureBox16;
-        internal System.Windows.Forms.ToolTip toolTip2;
-        internal System.Windows.Forms.PictureBox PictureBox12;
-        internal System.Windows.Forms.PictureBox pictureBox2;
-        internal System.Windows.Forms.PictureBox pictureBox4;
-        internal System.Windows.Forms.PictureBox pictureBox5;
-        internal System.Windows.Forms.PictureBox PictureBox15;
-        internal System.Windows.Forms.PictureBox PictureBox14;
-        internal System.Windows.Forms.PictureBox PictureBox8;
-        internal System.Windows.Forms.PictureBox pictureBox9;
-        internal System.Windows.Forms.PictureBox pictureBox17;
-        internal System.Windows.Forms.PictureBox pictureBox18;
-        internal System.Windows.Forms.PictureBox pictureBox19;
+        internal System.Windows.Forms.ToolTip ToolTipAdd;
+        internal System.Windows.Forms.PictureBox BtnOut;
+        internal System.Windows.Forms.PictureBox BtnClear;
+        internal System.Windows.Forms.Panel PnlControl;
+        internal System.Windows.Forms.PictureBox UncheckSpec;
+        internal System.Windows.Forms.Panel PnlMain;
+        internal System.Windows.Forms.Label LblHabit;
+        internal System.Windows.Forms.PictureBox UncheckHabit;
+        internal System.Windows.Forms.Label LblWork;
+        internal System.Windows.Forms.PictureBox UncheckWork;
+        internal System.Windows.Forms.Label LblSpec;
+        internal System.Windows.Forms.Label LblCate;
+        internal System.Windows.Forms.PictureBox LocationIcon;
+        internal System.Windows.Forms.Label LblEnd;
+        internal System.Windows.Forms.Label LblStart;
+        internal System.Windows.Forms.PictureBox BtnAdd;
+        internal System.Windows.Forms.Label LblTilte;
+        internal System.Windows.Forms.PictureBox UncheckPrio;
+        internal System.Windows.Forms.Label LblPrio;
+        internal System.Windows.Forms.PictureBox CheckedPrio;
+        private System.Windows.Forms.TextBox TxtDetails;
+        private System.Windows.Forms.TextBox TxtLocation;
+        private System.Windows.Forms.TextBox TxtTitle;
+        private System.Windows.Forms.TextBox txtEnd;
+        private System.Windows.Forms.TextBox txtStart;
+        internal System.Windows.Forms.PictureBox CheckedHabit;
+        internal System.Windows.Forms.PictureBox CheckedSpec;
+        internal System.Windows.Forms.PictureBox CheckedWork;
     }
 }

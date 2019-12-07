@@ -30,748 +30,608 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Display));
-            this.LogoSoft = new System.Windows.Forms.PictureBox();
-            this.Minimize = new System.Windows.Forms.PictureBox();
-            this.Exit = new System.Windows.Forms.PictureBox();
-            this.ToolTip1 = new System.Windows.Forms.ToolTip(this.components);
-            this.pictureBox10 = new System.Windows.Forms.PictureBox();
-            this.AddBtn = new System.Windows.Forms.PictureBox();
-            this.MonthBtn = new System.Windows.Forms.PictureBox();
-            this.DayBtn = new System.Windows.Forms.PictureBox();
-            this.HomeBtn = new System.Windows.Forms.PictureBox();
-            this.HabitBtn = new System.Windows.Forms.PictureBox();
-            this.SpecialBtn = new System.Windows.Forms.PictureBox();
-            this.StatisBtn = new System.Windows.Forms.PictureBox();
-            this.NameSoft = new System.Windows.Forms.Label();
-            this.pictureBox13 = new System.Windows.Forms.PictureBox();
-            this.pictureBox22 = new System.Windows.Forms.PictureBox();
-            this.pictureBox23 = new System.Windows.Forms.PictureBox();
-            this.panel11 = new System.Windows.Forms.Panel();
-            this.MainF = new System.Windows.Forms.Panel();
-            this.ToolBar = new System.Windows.Forms.Panel();
-            this.Panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.Funtion = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.Hour = new System.Windows.Forms.Label();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.Minute = new System.Windows.Forms.Label();
-            this.Day = new System.Windows.Forms.Label();
-            this.MonthYear = new System.Windows.Forms.Label();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.Panel9 = new System.Windows.Forms.Panel();
-            this.PictureBox8 = new System.Windows.Forms.PictureBox();
-            this.Label12 = new System.Windows.Forms.Label();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.PictureBox7 = new System.Windows.Forms.PictureBox();
-            this.Label8 = new System.Windows.Forms.Label();
-            this.Panel6 = new System.Windows.Forms.Panel();
-            this.PictureBox9 = new System.Windows.Forms.PictureBox();
-            this.Label7 = new System.Windows.Forms.Label();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.PictureBox11 = new System.Windows.Forms.PictureBox();
-            this.Label9 = new System.Windows.Forms.Label();
-            this.panel8 = new System.Windows.Forms.Panel();
-            this.PictureBox12 = new System.Windows.Forms.PictureBox();
-            this.Label10 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.LogoSoft)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Minimize)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Exit)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.AddBtn)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.MonthBtn)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.DayBtn)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.HomeBtn)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.HabitBtn)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.SpecialBtn)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.StatisBtn)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox22)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox23)).BeginInit();
-            this.panel11.SuspendLayout();
-            this.MainF.SuspendLayout();
-            this.ToolBar.SuspendLayout();
-            this.Panel2.SuspendLayout();
-            this.panel3.SuspendLayout();
-            this.Funtion.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            this.panel4.SuspendLayout();
-            this.Panel9.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.PictureBox8)).BeginInit();
-            this.panel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.PictureBox7)).BeginInit();
-            this.Panel6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.PictureBox9)).BeginInit();
-            this.panel7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.PictureBox11)).BeginInit();
-            this.panel8.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.PictureBox12)).BeginInit();
+            this.LblLogoSoft = new System.Windows.Forms.PictureBox();
+            this.BtnMinimize = new System.Windows.Forms.PictureBox();
+            this.BtnExit = new System.Windows.Forms.PictureBox();
+            this.ToolTipDisplay = new System.Windows.Forms.ToolTip(this.components);
+            this.LblNameSoft = new System.Windows.Forms.Label();
+            this.PnlTilteBar = new System.Windows.Forms.Panel();
+            this.PnlMain = new System.Windows.Forms.Panel();
+            this.BtnMonth = new System.Windows.Forms.PictureBox();
+            this.BtnDay = new System.Windows.Forms.PictureBox();
+            this.BtnHome = new System.Windows.Forms.PictureBox();
+            this.BtnHabit = new System.Windows.Forms.PictureBox();
+            this.BtnSpecial = new System.Windows.Forms.PictureBox();
+            this.BtnStatis = new System.Windows.Forms.PictureBox();
+            this.BtnAdd = new System.Windows.Forms.PictureBox();
+            this.PnlFuntion = new System.Windows.Forms.Panel();
+            this.PnlSpecial = new System.Windows.Forms.Panel();
+            this.SpecIcon = new System.Windows.Forms.PictureBox();
+            this.LblSpec = new System.Windows.Forms.Label();
+            this.PnlStatic = new System.Windows.Forms.Panel();
+            this.StatisIcon = new System.Windows.Forms.PictureBox();
+            this.LblStatis = new System.Windows.Forms.Label();
+            this.PnlHabit = new System.Windows.Forms.Panel();
+            this.HabitIcon = new System.Windows.Forms.PictureBox();
+            this.LblHabit = new System.Windows.Forms.Label();
+            this.PnlDay = new System.Windows.Forms.Panel();
+            this.DayIcon = new System.Windows.Forms.PictureBox();
+            this.LblDay = new System.Windows.Forms.Label();
+            this.PnlMonth = new System.Windows.Forms.Panel();
+            this.MonthIcon = new System.Windows.Forms.PictureBox();
+            this.LblMonth = new System.Windows.Forms.Label();
+            this.BarSec1 = new System.Windows.Forms.PictureBox();
+            this.BarSec2 = new System.Windows.Forms.PictureBox();
+            this.LblHour = new System.Windows.Forms.Label();
+            this.DivideBar = new System.Windows.Forms.PictureBox();
+            this.LblMinute = new System.Windows.Forms.Label();
+            this.LblDate = new System.Windows.Forms.Label();
+            this.LblMonthYear = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.LblLogoSoft)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BtnMinimize)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BtnExit)).BeginInit();
+            this.PnlTilteBar.SuspendLayout();
+            this.PnlMain.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.BtnMonth)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BtnDay)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BtnHome)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BtnHabit)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BtnSpecial)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BtnStatis)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BtnAdd)).BeginInit();
+            this.PnlFuntion.SuspendLayout();
+            this.PnlSpecial.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.SpecIcon)).BeginInit();
+            this.PnlStatic.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.StatisIcon)).BeginInit();
+            this.PnlHabit.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.HabitIcon)).BeginInit();
+            this.PnlDay.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DayIcon)).BeginInit();
+            this.PnlMonth.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.MonthIcon)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BarSec1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BarSec2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DivideBar)).BeginInit();
             this.SuspendLayout();
             // 
-            // LogoSoft
+            // LblLogoSoft
             // 
-            this.LogoSoft.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.LogoSoft.Cursor = System.Windows.Forms.Cursors.Default;
-            this.LogoSoft.Image = ((System.Drawing.Image)(resources.GetObject("LogoSoft.Image")));
-            this.LogoSoft.Location = new System.Drawing.Point(8, 11);
-            this.LogoSoft.Margin = new System.Windows.Forms.Padding(4);
-            this.LogoSoft.Name = "LogoSoft";
-            this.LogoSoft.Size = new System.Drawing.Size(40, 37);
-            this.LogoSoft.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.LogoSoft.TabIndex = 11;
-            this.LogoSoft.TabStop = false;
+            this.LblLogoSoft.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.LblLogoSoft.Cursor = System.Windows.Forms.Cursors.Default;
+            this.LblLogoSoft.Image = ((System.Drawing.Image)(resources.GetObject("LblLogoSoft.Image")));
+            this.LblLogoSoft.Location = new System.Drawing.Point(8, 8);
+            this.LblLogoSoft.Margin = new System.Windows.Forms.Padding(4);
+            this.LblLogoSoft.Name = "LblLogoSoft";
+            this.LblLogoSoft.Size = new System.Drawing.Size(40, 37);
+            this.LblLogoSoft.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.LblLogoSoft.TabIndex = 11;
+            this.LblLogoSoft.TabStop = false;
             // 
-            // Minimize
+            // BtnMinimize
             // 
-            this.Minimize.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.Minimize.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Minimize.Image = ((System.Drawing.Image)(resources.GetObject("Minimize.Image")));
-            this.Minimize.Location = new System.Drawing.Point(950, 11);
-            this.Minimize.Margin = new System.Windows.Forms.Padding(4);
-            this.Minimize.Name = "Minimize";
-            this.Minimize.Size = new System.Drawing.Size(40, 37);
-            this.Minimize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.Minimize.TabIndex = 10;
-            this.Minimize.TabStop = false;
-            this.Minimize.Click += new System.EventHandler(this.Minimize_Click);
+            this.BtnMinimize.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.BtnMinimize.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnMinimize.Image = ((System.Drawing.Image)(resources.GetObject("BtnMinimize.Image")));
+            this.BtnMinimize.Location = new System.Drawing.Point(951, 8);
+            this.BtnMinimize.Margin = new System.Windows.Forms.Padding(4);
+            this.BtnMinimize.Name = "BtnMinimize";
+            this.BtnMinimize.Size = new System.Drawing.Size(40, 37);
+            this.BtnMinimize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.BtnMinimize.TabIndex = 10;
+            this.BtnMinimize.TabStop = false;
             // 
-            // Exit
+            // BtnExit
             // 
-            this.Exit.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.Exit.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Exit.Image = ((System.Drawing.Image)(resources.GetObject("Exit.Image")));
-            this.Exit.Location = new System.Drawing.Point(998, 11);
-            this.Exit.Margin = new System.Windows.Forms.Padding(4);
-            this.Exit.Name = "Exit";
-            this.Exit.Size = new System.Drawing.Size(40, 37);
-            this.Exit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.Exit.TabIndex = 9;
-            this.Exit.TabStop = false;
-            this.Exit.Click += new System.EventHandler(this.PictureBox1_Click);
+            this.BtnExit.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.BtnExit.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnExit.Image = ((System.Drawing.Image)(resources.GetObject("BtnExit.Image")));
+            this.BtnExit.Location = new System.Drawing.Point(999, 8);
+            this.BtnExit.Margin = new System.Windows.Forms.Padding(4);
+            this.BtnExit.Name = "BtnExit";
+            this.BtnExit.Size = new System.Drawing.Size(40, 37);
+            this.BtnExit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.BtnExit.TabIndex = 9;
+            this.BtnExit.TabStop = false;
             // 
-            // pictureBox10
+            // LblNameSoft
             // 
-            this.pictureBox10.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.pictureBox10.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox10.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox10.Image")));
-            this.pictureBox10.Location = new System.Drawing.Point(-161, 83);
-            this.pictureBox10.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(48, 44);
-            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox10.TabIndex = 42;
-            this.pictureBox10.TabStop = false;
-            this.ToolTip1.SetToolTip(this.pictureBox10, "Add Event");
-            // 
-            // AddBtn
-            // 
-            this.AddBtn.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.AddBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.AddBtn.Image = ((System.Drawing.Image)(resources.GetObject("AddBtn.Image")));
-            this.AddBtn.Location = new System.Drawing.Point(10, 3);
-            this.AddBtn.Margin = new System.Windows.Forms.Padding(4);
-            this.AddBtn.Name = "AddBtn";
-            this.AddBtn.Size = new System.Drawing.Size(48, 44);
-            this.AddBtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.AddBtn.TabIndex = 46;
-            this.AddBtn.TabStop = false;
-            this.ToolTip1.SetToolTip(this.AddBtn, "Add Event");
-            this.AddBtn.Click += new System.EventHandler(this.AddBtn_Click_1);
-            // 
-            // MonthBtn
-            // 
-            this.MonthBtn.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.MonthBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.MonthBtn.Image = ((System.Drawing.Image)(resources.GetObject("MonthBtn.Image")));
-            this.MonthBtn.Location = new System.Drawing.Point(64, 3);
-            this.MonthBtn.Margin = new System.Windows.Forms.Padding(4);
-            this.MonthBtn.Name = "MonthBtn";
-            this.MonthBtn.Size = new System.Drawing.Size(48, 44);
-            this.MonthBtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.MonthBtn.TabIndex = 1;
-            this.MonthBtn.TabStop = false;
-            this.ToolTip1.SetToolTip(this.MonthBtn, "Month View");
-            this.MonthBtn.Click += new System.EventHandler(this.MonthBtn_Click);
-            // 
-            // DayBtn
-            // 
-            this.DayBtn.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.DayBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.DayBtn.Image = ((System.Drawing.Image)(resources.GetObject("DayBtn.Image")));
-            this.DayBtn.Location = new System.Drawing.Point(8, 3);
-            this.DayBtn.Margin = new System.Windows.Forms.Padding(4);
-            this.DayBtn.Name = "DayBtn";
-            this.DayBtn.Size = new System.Drawing.Size(48, 44);
-            this.DayBtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.DayBtn.TabIndex = 43;
-            this.DayBtn.TabStop = false;
-            this.ToolTip1.SetToolTip(this.DayBtn, "Today");
-            this.DayBtn.Click += new System.EventHandler(this.DayBtn_Click_1);
-            // 
-            // HomeBtn
-            // 
-            this.HomeBtn.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.HomeBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.HomeBtn.Image = ((System.Drawing.Image)(resources.GetObject("HomeBtn.Image")));
-            this.HomeBtn.Location = new System.Drawing.Point(170, 3);
-            this.HomeBtn.Margin = new System.Windows.Forms.Padding(4);
-            this.HomeBtn.Name = "HomeBtn";
-            this.HomeBtn.Size = new System.Drawing.Size(48, 44);
-            this.HomeBtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.HomeBtn.TabIndex = 7;
-            this.HomeBtn.TabStop = false;
-            this.ToolTip1.SetToolTip(this.HomeBtn, "Home");
-            // 
-            // HabitBtn
-            // 
-            this.HabitBtn.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.HabitBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.HabitBtn.Image = ((System.Drawing.Image)(resources.GetObject("HabitBtn.Image")));
-            this.HabitBtn.Location = new System.Drawing.Point(114, 3);
-            this.HabitBtn.Margin = new System.Windows.Forms.Padding(4);
-            this.HabitBtn.Name = "HabitBtn";
-            this.HabitBtn.Size = new System.Drawing.Size(48, 44);
-            this.HabitBtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.HabitBtn.TabIndex = 1;
-            this.HabitBtn.TabStop = false;
-            this.ToolTip1.SetToolTip(this.HabitBtn, "My Diary");
-            this.HabitBtn.Click += new System.EventHandler(this.HabitBtn_Click_1);
-            // 
-            // SpecialBtn
-            // 
-            this.SpecialBtn.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.SpecialBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.SpecialBtn.Image = ((System.Drawing.Image)(resources.GetObject("SpecialBtn.Image")));
-            this.SpecialBtn.Location = new System.Drawing.Point(2, 3);
-            this.SpecialBtn.Margin = new System.Windows.Forms.Padding(4);
-            this.SpecialBtn.Name = "SpecialBtn";
-            this.SpecialBtn.Size = new System.Drawing.Size(48, 44);
-            this.SpecialBtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.SpecialBtn.TabIndex = 6;
-            this.SpecialBtn.TabStop = false;
-            this.ToolTip1.SetToolTip(this.SpecialBtn, "Special Events");
-            this.SpecialBtn.Click += new System.EventHandler(this.SpecialBtn_Click_1);
-            // 
-            // StatisBtn
-            // 
-            this.StatisBtn.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.StatisBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.StatisBtn.Image = ((System.Drawing.Image)(resources.GetObject("StatisBtn.Image")));
-            this.StatisBtn.Location = new System.Drawing.Point(58, 3);
-            this.StatisBtn.Margin = new System.Windows.Forms.Padding(4);
-            this.StatisBtn.Name = "StatisBtn";
-            this.StatisBtn.Size = new System.Drawing.Size(48, 44);
-            this.StatisBtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.StatisBtn.TabIndex = 1;
-            this.StatisBtn.TabStop = false;
-            this.ToolTip1.SetToolTip(this.StatisBtn, "Weather");
-            // 
-            // NameSoft
-            // 
-            this.NameSoft.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.LblNameSoft.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.NameSoft.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.NameSoft.ForeColor = System.Drawing.Color.White;
-            this.NameSoft.Location = new System.Drawing.Point(56, 11);
-            this.NameSoft.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.NameSoft.Name = "NameSoft";
-            this.NameSoft.Size = new System.Drawing.Size(180, 37);
-            this.NameSoft.TabIndex = 32;
-            this.NameSoft.Text = "Life Tracking";
-            this.NameSoft.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.LblNameSoft.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblNameSoft.ForeColor = System.Drawing.Color.White;
+            this.LblNameSoft.Location = new System.Drawing.Point(56, 8);
+            this.LblNameSoft.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.LblNameSoft.Name = "LblNameSoft";
+            this.LblNameSoft.Size = new System.Drawing.Size(174, 37);
+            this.LblNameSoft.TabIndex = 32;
+            this.LblNameSoft.Text = "Life Tracking";
+            this.LblNameSoft.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // pictureBox13
+            // PnlTilteBar
             // 
-            this.pictureBox13.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.pictureBox13.Cursor = System.Windows.Forms.Cursors.Default;
-            this.pictureBox13.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox13.Image")));
-            this.pictureBox13.Location = new System.Drawing.Point(-153, 26);
-            this.pictureBox13.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox13.Name = "pictureBox13";
-            this.pictureBox13.Size = new System.Drawing.Size(40, 37);
-            this.pictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox13.TabIndex = 31;
-            this.pictureBox13.TabStop = false;
+            this.PnlTilteBar.Controls.Add(this.LblNameSoft);
+            this.PnlTilteBar.Controls.Add(this.LblLogoSoft);
+            this.PnlTilteBar.Controls.Add(this.BtnMinimize);
+            this.PnlTilteBar.Controls.Add(this.BtnExit);
+            this.PnlTilteBar.Location = new System.Drawing.Point(5, 1);
+            this.PnlTilteBar.Name = "PnlTilteBar";
+            this.PnlTilteBar.Size = new System.Drawing.Size(1054, 55);
+            this.PnlTilteBar.TabIndex = 49;
             // 
-            // pictureBox22
+            // PnlMain
             // 
-            this.pictureBox22.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.pictureBox22.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox22.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox22.Image")));
-            this.pictureBox22.Location = new System.Drawing.Point(1126, 26);
-            this.pictureBox22.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox22.Name = "pictureBox22";
-            this.pictureBox22.Size = new System.Drawing.Size(40, 37);
-            this.pictureBox22.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox22.TabIndex = 30;
-            this.pictureBox22.TabStop = false;
+            this.PnlMain.Controls.Add(this.BtnMonth);
+            this.PnlMain.Controls.Add(this.BtnDay);
+            this.PnlMain.Controls.Add(this.BtnHome);
+            this.PnlMain.Controls.Add(this.BtnHabit);
+            this.PnlMain.Controls.Add(this.BtnSpecial);
+            this.PnlMain.Controls.Add(this.BtnStatis);
+            this.PnlMain.Controls.Add(this.BtnAdd);
+            this.PnlMain.Controls.Add(this.PnlFuntion);
+            this.PnlMain.Location = new System.Drawing.Point(-3, 58);
+            this.PnlMain.Name = "PnlMain";
+            this.PnlMain.Size = new System.Drawing.Size(1065, 521);
+            this.PnlMain.TabIndex = 50;
             // 
-            // pictureBox23
+            // BtnMonth
             // 
-            this.pictureBox23.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.pictureBox23.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox23.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox23.Image")));
-            this.pictureBox23.Location = new System.Drawing.Point(1174, 26);
-            this.pictureBox23.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox23.Name = "pictureBox23";
-            this.pictureBox23.Size = new System.Drawing.Size(40, 37);
-            this.pictureBox23.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox23.TabIndex = 29;
-            this.pictureBox23.TabStop = false;
+            this.BtnMonth.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.BtnMonth.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnMonth.Image = ((System.Drawing.Image)(resources.GetObject("BtnMonth.Image")));
+            this.BtnMonth.Location = new System.Drawing.Point(772, 2);
+            this.BtnMonth.Margin = new System.Windows.Forms.Padding(4);
+            this.BtnMonth.Name = "BtnMonth";
+            this.BtnMonth.Size = new System.Drawing.Size(48, 44);
+            this.BtnMonth.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.BtnMonth.TabIndex = 56;
+            this.BtnMonth.TabStop = false;
             // 
-            // panel11
+            // BtnDay
             // 
-            this.panel11.Controls.Add(this.NameSoft);
-            this.panel11.Controls.Add(this.LogoSoft);
-            this.panel11.Controls.Add(this.Minimize);
-            this.panel11.Controls.Add(this.Exit);
-            this.panel11.Location = new System.Drawing.Point(5, 2);
-            this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(1060, 55);
-            this.panel11.TabIndex = 49;
+            this.BtnDay.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.BtnDay.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnDay.Image = ((System.Drawing.Image)(resources.GetObject("BtnDay.Image")));
+            this.BtnDay.Location = new System.Drawing.Point(716, 2);
+            this.BtnDay.Margin = new System.Windows.Forms.Padding(4);
+            this.BtnDay.Name = "BtnDay";
+            this.BtnDay.Size = new System.Drawing.Size(48, 44);
+            this.BtnDay.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.BtnDay.TabIndex = 57;
+            this.BtnDay.TabStop = false;
             // 
-            // MainF
+            // BtnHome
             // 
-            this.MainF.Controls.Add(this.ToolBar);
-            this.MainF.Controls.Add(this.Funtion);
-            this.MainF.Location = new System.Drawing.Point(-3, 58);
-            this.MainF.Name = "MainF";
-            this.MainF.Size = new System.Drawing.Size(1065, 543);
-            this.MainF.TabIndex = 50;
+            this.BtnHome.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.BtnHome.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnHome.Image = ((System.Drawing.Image)(resources.GetObject("BtnHome.Image")));
+            this.BtnHome.Location = new System.Drawing.Point(999, 0);
+            this.BtnHome.Margin = new System.Windows.Forms.Padding(4);
+            this.BtnHome.Name = "BtnHome";
+            this.BtnHome.Size = new System.Drawing.Size(48, 44);
+            this.BtnHome.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.BtnHome.TabIndex = 55;
+            this.BtnHome.TabStop = false;
             // 
-            // ToolBar
+            // BtnHabit
             // 
-            this.ToolBar.Controls.Add(this.AddBtn);
-            this.ToolBar.Controls.Add(this.Panel2);
-            this.ToolBar.Controls.Add(this.panel3);
-            this.ToolBar.Location = new System.Drawing.Point(1, 0);
-            this.ToolBar.Name = "ToolBar";
-            this.ToolBar.Size = new System.Drawing.Size(1060, 57);
-            this.ToolBar.TabIndex = 50;
+            this.BtnHabit.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.BtnHabit.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnHabit.Image = ((System.Drawing.Image)(resources.GetObject("BtnHabit.Image")));
+            this.BtnHabit.Location = new System.Drawing.Point(943, 0);
+            this.BtnHabit.Margin = new System.Windows.Forms.Padding(4);
+            this.BtnHabit.Name = "BtnHabit";
+            this.BtnHabit.Size = new System.Drawing.Size(48, 44);
+            this.BtnHabit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.BtnHabit.TabIndex = 52;
+            this.BtnHabit.TabStop = false;
             // 
-            // Panel2
+            // BtnSpecial
             // 
-            this.Panel2.Controls.Add(this.MonthBtn);
-            this.Panel2.Controls.Add(this.DayBtn);
-            this.Panel2.Location = new System.Drawing.Point(676, 0);
-            this.Panel2.Margin = new System.Windows.Forms.Padding(4);
-            this.Panel2.Name = "Panel2";
-            this.Panel2.Size = new System.Drawing.Size(120, 63);
-            this.Panel2.TabIndex = 45;
+            this.BtnSpecial.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.BtnSpecial.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnSpecial.Image = ((System.Drawing.Image)(resources.GetObject("BtnSpecial.Image")));
+            this.BtnSpecial.Location = new System.Drawing.Point(831, 0);
+            this.BtnSpecial.Margin = new System.Windows.Forms.Padding(4);
+            this.BtnSpecial.Name = "BtnSpecial";
+            this.BtnSpecial.Size = new System.Drawing.Size(48, 44);
+            this.BtnSpecial.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.BtnSpecial.TabIndex = 54;
+            this.BtnSpecial.TabStop = false;
             // 
-            // panel3
+            // BtnStatis
             // 
-            this.panel3.Controls.Add(this.HomeBtn);
-            this.panel3.Controls.Add(this.HabitBtn);
-            this.panel3.Controls.Add(this.SpecialBtn);
-            this.panel3.Controls.Add(this.StatisBtn);
-            this.panel3.Cursor = System.Windows.Forms.Cursors.Default;
-            this.panel3.Location = new System.Drawing.Point(800, 0);
-            this.panel3.Margin = new System.Windows.Forms.Padding(4);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(230, 63);
-            this.panel3.TabIndex = 44;
+            this.BtnStatis.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.BtnStatis.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnStatis.Image = ((System.Drawing.Image)(resources.GetObject("BtnStatis.Image")));
+            this.BtnStatis.Location = new System.Drawing.Point(887, 0);
+            this.BtnStatis.Margin = new System.Windows.Forms.Padding(4);
+            this.BtnStatis.Name = "BtnStatis";
+            this.BtnStatis.Size = new System.Drawing.Size(48, 44);
+            this.BtnStatis.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.BtnStatis.TabIndex = 53;
+            this.BtnStatis.TabStop = false;
             // 
-            // Funtion
+            // BtnAdd
             // 
-            this.Funtion.Controls.Add(this.pictureBox1);
-            this.Funtion.Controls.Add(this.pictureBox2);
-            this.Funtion.Controls.Add(this.Hour);
-            this.Funtion.Controls.Add(this.pictureBox6);
-            this.Funtion.Controls.Add(this.Minute);
-            this.Funtion.Controls.Add(this.Day);
-            this.Funtion.Controls.Add(this.MonthYear);
-            this.Funtion.Controls.Add(this.panel4);
-            this.Funtion.Location = new System.Drawing.Point(0, 63);
-            this.Funtion.Name = "Funtion";
-            this.Funtion.Size = new System.Drawing.Size(1062, 487);
-            this.Funtion.TabIndex = 49;
-            this.Funtion.Paint += new System.Windows.Forms.PaintEventHandler(this.Funtion_Paint);
+            this.BtnAdd.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.BtnAdd.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnAdd.Image = ((System.Drawing.Image)(resources.GetObject("BtnAdd.Image")));
+            this.BtnAdd.Location = new System.Drawing.Point(12, 2);
+            this.BtnAdd.Margin = new System.Windows.Forms.Padding(4);
+            this.BtnAdd.Name = "BtnAdd";
+            this.BtnAdd.Size = new System.Drawing.Size(48, 44);
+            this.BtnAdd.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.BtnAdd.TabIndex = 51;
+            this.BtnAdd.TabStop = false;
             // 
-            // pictureBox1
+            // PnlFuntion
             // 
-            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(180)))), ((int)(((byte)(43)))));
-            this.pictureBox1.Location = new System.Drawing.Point(-7, 321);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(352, 10);
-            this.pictureBox1.TabIndex = 44;
-            this.pictureBox1.TabStop = false;
+            this.PnlFuntion.Controls.Add(this.PnlSpecial);
+            this.PnlFuntion.Controls.Add(this.PnlStatic);
+            this.PnlFuntion.Controls.Add(this.PnlHabit);
+            this.PnlFuntion.Controls.Add(this.PnlDay);
+            this.PnlFuntion.Controls.Add(this.PnlMonth);
+            this.PnlFuntion.Controls.Add(this.BarSec1);
+            this.PnlFuntion.Controls.Add(this.BarSec2);
+            this.PnlFuntion.Controls.Add(this.LblHour);
+            this.PnlFuntion.Controls.Add(this.DivideBar);
+            this.PnlFuntion.Controls.Add(this.LblMinute);
+            this.PnlFuntion.Controls.Add(this.LblDate);
+            this.PnlFuntion.Controls.Add(this.LblMonthYear);
+            this.PnlFuntion.Location = new System.Drawing.Point(0, 51);
+            this.PnlFuntion.Name = "PnlFuntion";
+            this.PnlFuntion.Size = new System.Drawing.Size(1062, 480);
+            this.PnlFuntion.TabIndex = 49;
             // 
-            // pictureBox2
+            // PnlSpecial
             // 
-            this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(180)))), ((int)(((byte)(43)))));
-            this.pictureBox2.Location = new System.Drawing.Point(718, 321);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(345, 10);
-            this.pictureBox2.TabIndex = 43;
-            this.pictureBox2.TabStop = false;
+            this.PnlSpecial.Controls.Add(this.SpecIcon);
+            this.PnlSpecial.Controls.Add(this.LblSpec);
+            this.PnlSpecial.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.PnlSpecial.Location = new System.Drawing.Point(164, 363);
+            this.PnlSpecial.Margin = new System.Windows.Forms.Padding(4);
+            this.PnlSpecial.Name = "PnlSpecial";
+            this.PnlSpecial.Size = new System.Drawing.Size(187, 44);
+            this.PnlSpecial.TabIndex = 48;
             // 
-            // Hour
+            // SpecIcon
             // 
-            this.Hour.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.Hour.Font = new System.Drawing.Font("Century Gothic", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Hour.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(180)))), ((int)(((byte)(43)))));
-            this.Hour.Location = new System.Drawing.Point(354, 171);
-            this.Hour.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.Hour.Name = "Hour";
-            this.Hour.Size = new System.Drawing.Size(151, 111);
-            this.Hour.TabIndex = 35;
-            this.Hour.Text = "06";
-            this.Hour.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.SpecIcon.Image = ((System.Drawing.Image)(resources.GetObject("SpecIcon.Image")));
+            this.SpecIcon.Location = new System.Drawing.Point(1, 0);
+            this.SpecIcon.Margin = new System.Windows.Forms.Padding(4);
+            this.SpecIcon.Name = "SpecIcon";
+            this.SpecIcon.Size = new System.Drawing.Size(48, 44);
+            this.SpecIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.SpecIcon.TabIndex = 1;
+            this.SpecIcon.TabStop = false;
             // 
-            // pictureBox6
+            // LblSpec
             // 
-            this.pictureBox6.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pictureBox6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(180)))), ((int)(((byte)(43)))));
-            this.pictureBox6.Location = new System.Drawing.Point(513, 187);
-            this.pictureBox6.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(9, 94);
-            this.pictureBox6.TabIndex = 37;
-            this.pictureBox6.TabStop = false;
-            // 
-            // Minute
-            // 
-            this.Minute.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.Minute.Font = new System.Drawing.Font("Century Gothic", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Minute.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(180)))), ((int)(((byte)(43)))));
-            this.Minute.Location = new System.Drawing.Point(548, 171);
-            this.Minute.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.Minute.Name = "Minute";
-            this.Minute.Size = new System.Drawing.Size(151, 111);
-            this.Minute.TabIndex = 36;
-            this.Minute.Text = "06";
-            this.Minute.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // Day
-            // 
-            this.Day.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.Day.Font = new System.Drawing.Font("Century Gothic", 58F);
-            this.Day.ForeColor = System.Drawing.Color.White;
-            this.Day.Location = new System.Drawing.Point(312, 29);
-            this.Day.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.Day.Name = "Day";
-            this.Day.Size = new System.Drawing.Size(173, 111);
-            this.Day.TabIndex = 33;
-            this.Day.Text = "06";
-            this.Day.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // MonthYear
-            // 
-            this.MonthYear.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.MonthYear.Font = new System.Drawing.Font("Century Gothic", 24.75F);
-            this.MonthYear.ForeColor = System.Drawing.Color.White;
-            this.MonthYear.Location = new System.Drawing.Point(493, 23);
-            this.MonthYear.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.MonthYear.Name = "MonthYear";
-            this.MonthYear.Size = new System.Drawing.Size(268, 122);
-            this.MonthYear.TabIndex = 34;
-            this.MonthYear.Text = "May 2017,\r\nSaturday";
-            this.MonthYear.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // panel4
-            // 
-            this.panel4.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.panel4.Controls.Add(this.Panel9);
-            this.panel4.Controls.Add(this.panel5);
-            this.panel4.Controls.Add(this.Panel6);
-            this.panel4.Controls.Add(this.panel7);
-            this.panel4.Controls.Add(this.panel8);
-            this.panel4.Location = new System.Drawing.Point(16, 376);
-            this.panel4.Margin = new System.Windows.Forms.Padding(4);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(1018, 60);
-            this.panel4.TabIndex = 41;
-            // 
-            // Panel9
-            // 
-            this.Panel9.Controls.Add(this.PictureBox8);
-            this.Panel9.Controls.Add(this.Label12);
-            this.Panel9.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Panel9.Location = new System.Drawing.Point(147, 4);
-            this.Panel9.Margin = new System.Windows.Forms.Padding(4);
-            this.Panel9.Name = "Panel9";
-            this.Panel9.Size = new System.Drawing.Size(187, 44);
-            this.Panel9.TabIndex = 24;
-            // 
-            // PictureBox8
-            // 
-            this.PictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("PictureBox8.Image")));
-            this.PictureBox8.Location = new System.Drawing.Point(1, 0);
-            this.PictureBox8.Margin = new System.Windows.Forms.Padding(4);
-            this.PictureBox8.Name = "PictureBox8";
-            this.PictureBox8.Size = new System.Drawing.Size(48, 44);
-            this.PictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.PictureBox8.TabIndex = 1;
-            this.PictureBox8.TabStop = false;
-            // 
-            // Label12
-            // 
-            this.Label12.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.LblSpec.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.Label12.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.Label12.ForeColor = System.Drawing.Color.White;
-            this.Label12.Location = new System.Drawing.Point(48, 4);
-            this.Label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.Label12.Name = "Label12";
-            this.Label12.Size = new System.Drawing.Size(135, 37);
-            this.Label12.TabIndex = 4;
-            this.Label12.Text = "Special Events";
-            this.Label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.LblSpec.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.LblSpec.ForeColor = System.Drawing.Color.White;
+            this.LblSpec.Location = new System.Drawing.Point(48, 4);
+            this.LblSpec.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.LblSpec.Name = "LblSpec";
+            this.LblSpec.Size = new System.Drawing.Size(135, 37);
+            this.LblSpec.TabIndex = 4;
+            this.LblSpec.Text = "Special Events";
+            this.LblSpec.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // panel5
+            // PnlStatic
             // 
-            this.panel5.Controls.Add(this.PictureBox7);
-            this.panel5.Controls.Add(this.Label8);
-            this.panel5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.panel5.Location = new System.Drawing.Point(341, 4);
-            this.panel5.Margin = new System.Windows.Forms.Padding(4);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(147, 44);
-            this.panel5.TabIndex = 25;
+            this.PnlStatic.Controls.Add(this.StatisIcon);
+            this.PnlStatic.Controls.Add(this.LblStatis);
+            this.PnlStatic.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.PnlStatic.Location = new System.Drawing.Point(358, 363);
+            this.PnlStatic.Margin = new System.Windows.Forms.Padding(4);
+            this.PnlStatic.Name = "PnlStatic";
+            this.PnlStatic.Size = new System.Drawing.Size(147, 44);
+            this.PnlStatic.TabIndex = 49;
             // 
-            // PictureBox7
+            // StatisIcon
             // 
-            this.PictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("PictureBox7.Image")));
-            this.PictureBox7.Location = new System.Drawing.Point(1, 0);
-            this.PictureBox7.Margin = new System.Windows.Forms.Padding(4);
-            this.PictureBox7.Name = "PictureBox7";
-            this.PictureBox7.Size = new System.Drawing.Size(48, 44);
-            this.PictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.PictureBox7.TabIndex = 1;
-            this.PictureBox7.TabStop = false;
+            this.StatisIcon.Image = ((System.Drawing.Image)(resources.GetObject("StatisIcon.Image")));
+            this.StatisIcon.Location = new System.Drawing.Point(1, 0);
+            this.StatisIcon.Margin = new System.Windows.Forms.Padding(4);
+            this.StatisIcon.Name = "StatisIcon";
+            this.StatisIcon.Size = new System.Drawing.Size(48, 44);
+            this.StatisIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.StatisIcon.TabIndex = 1;
+            this.StatisIcon.TabStop = false;
             // 
-            // Label8
+            // LblStatis
             // 
-            this.Label8.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.LblStatis.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.Label8.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.Label8.ForeColor = System.Drawing.Color.White;
-            this.Label8.Location = new System.Drawing.Point(48, 4);
-            this.Label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.Label8.Name = "Label8";
-            this.Label8.Size = new System.Drawing.Size(95, 37);
-            this.Label8.TabIndex = 4;
-            this.Label8.Text = "Statistic";
-            this.Label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.LblStatis.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.LblStatis.ForeColor = System.Drawing.Color.White;
+            this.LblStatis.Location = new System.Drawing.Point(48, 4);
+            this.LblStatis.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.LblStatis.Name = "LblStatis";
+            this.LblStatis.Size = new System.Drawing.Size(95, 37);
+            this.LblStatis.TabIndex = 4;
+            this.LblStatis.Text = "Statistic";
+            this.LblStatis.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // Panel6
+            // PnlHabit
             // 
-            this.Panel6.Controls.Add(this.PictureBox9);
-            this.Panel6.Controls.Add(this.Label7);
-            this.Panel6.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Panel6.Location = new System.Drawing.Point(496, 4);
-            this.Panel6.Margin = new System.Windows.Forms.Padding(4);
-            this.Panel6.Name = "Panel6";
-            this.Panel6.Size = new System.Drawing.Size(147, 44);
-            this.Panel6.TabIndex = 23;
+            this.PnlHabit.Controls.Add(this.HabitIcon);
+            this.PnlHabit.Controls.Add(this.LblHabit);
+            this.PnlHabit.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.PnlHabit.Location = new System.Drawing.Point(513, 363);
+            this.PnlHabit.Margin = new System.Windows.Forms.Padding(4);
+            this.PnlHabit.Name = "PnlHabit";
+            this.PnlHabit.Size = new System.Drawing.Size(147, 44);
+            this.PnlHabit.TabIndex = 47;
             // 
-            // PictureBox9
+            // HabitIcon
             // 
-            this.PictureBox9.Image = ((System.Drawing.Image)(resources.GetObject("PictureBox9.Image")));
-            this.PictureBox9.Location = new System.Drawing.Point(1, 0);
-            this.PictureBox9.Margin = new System.Windows.Forms.Padding(4);
-            this.PictureBox9.Name = "PictureBox9";
-            this.PictureBox9.Size = new System.Drawing.Size(48, 44);
-            this.PictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.PictureBox9.TabIndex = 1;
-            this.PictureBox9.TabStop = false;
+            this.HabitIcon.Image = ((System.Drawing.Image)(resources.GetObject("HabitIcon.Image")));
+            this.HabitIcon.Location = new System.Drawing.Point(1, 0);
+            this.HabitIcon.Margin = new System.Windows.Forms.Padding(4);
+            this.HabitIcon.Name = "HabitIcon";
+            this.HabitIcon.Size = new System.Drawing.Size(48, 44);
+            this.HabitIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.HabitIcon.TabIndex = 1;
+            this.HabitIcon.TabStop = false;
             // 
-            // Label7
+            // LblHabit
             // 
-            this.Label7.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.LblHabit.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.Label7.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.Label7.ForeColor = System.Drawing.Color.White;
-            this.Label7.Location = new System.Drawing.Point(48, 4);
-            this.Label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.Label7.Name = "Label7";
-            this.Label7.Size = new System.Drawing.Size(95, 37);
-            this.Label7.TabIndex = 4;
-            this.Label7.Text = "My Habit";
-            this.Label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.LblHabit.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.LblHabit.ForeColor = System.Drawing.Color.White;
+            this.LblHabit.Location = new System.Drawing.Point(48, 4);
+            this.LblHabit.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.LblHabit.Name = "LblHabit";
+            this.LblHabit.Size = new System.Drawing.Size(95, 37);
+            this.LblHabit.TabIndex = 4;
+            this.LblHabit.Text = "My Habit";
+            this.LblHabit.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // panel7
+            // PnlDay
             // 
-            this.panel7.Controls.Add(this.PictureBox11);
-            this.panel7.Controls.Add(this.Label9);
-            this.panel7.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.panel7.Location = new System.Drawing.Point(649, 4);
-            this.panel7.Margin = new System.Windows.Forms.Padding(4);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(120, 44);
-            this.panel7.TabIndex = 22;
+            this.PnlDay.Controls.Add(this.DayIcon);
+            this.PnlDay.Controls.Add(this.LblDay);
+            this.PnlDay.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.PnlDay.Location = new System.Drawing.Point(666, 363);
+            this.PnlDay.Margin = new System.Windows.Forms.Padding(4);
+            this.PnlDay.Name = "PnlDay";
+            this.PnlDay.Size = new System.Drawing.Size(120, 44);
+            this.PnlDay.TabIndex = 46;
             // 
-            // PictureBox11
+            // DayIcon
             // 
-            this.PictureBox11.Image = ((System.Drawing.Image)(resources.GetObject("PictureBox11.Image")));
-            this.PictureBox11.Location = new System.Drawing.Point(1, 0);
-            this.PictureBox11.Margin = new System.Windows.Forms.Padding(4);
-            this.PictureBox11.Name = "PictureBox11";
-            this.PictureBox11.Size = new System.Drawing.Size(48, 44);
-            this.PictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.PictureBox11.TabIndex = 1;
-            this.PictureBox11.TabStop = false;
+            this.DayIcon.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.DayIcon.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.DayIcon.Image = ((System.Drawing.Image)(resources.GetObject("DayIcon.Image")));
+            this.DayIcon.Location = new System.Drawing.Point(4, 0);
+            this.DayIcon.Margin = new System.Windows.Forms.Padding(4);
+            this.DayIcon.Name = "DayIcon";
+            this.DayIcon.Size = new System.Drawing.Size(48, 44);
+            this.DayIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.DayIcon.TabIndex = 48;
+            this.DayIcon.TabStop = false;
             // 
-            // Label9
+            // LblDay
             // 
-            this.Label9.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.LblDay.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.Label9.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label9.ForeColor = System.Drawing.Color.White;
-            this.Label9.Location = new System.Drawing.Point(48, 4);
-            this.Label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.Label9.Name = "Label9";
-            this.Label9.Size = new System.Drawing.Size(68, 37);
-            this.Label9.TabIndex = 4;
-            this.Label9.Text = "Day";
-            this.Label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.LblDay.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblDay.ForeColor = System.Drawing.Color.White;
+            this.LblDay.Location = new System.Drawing.Point(48, 4);
+            this.LblDay.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.LblDay.Name = "LblDay";
+            this.LblDay.Size = new System.Drawing.Size(68, 37);
+            this.LblDay.TabIndex = 4;
+            this.LblDay.Text = "Day";
+            this.LblDay.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // panel8
+            // PnlMonth
             // 
-            this.panel8.Controls.Add(this.PictureBox12);
-            this.panel8.Controls.Add(this.Label10);
-            this.panel8.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.panel8.Location = new System.Drawing.Point(777, 4);
-            this.panel8.Margin = new System.Windows.Forms.Padding(4);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(120, 44);
-            this.panel8.TabIndex = 21;
+            this.PnlMonth.Controls.Add(this.MonthIcon);
+            this.PnlMonth.Controls.Add(this.LblMonth);
+            this.PnlMonth.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.PnlMonth.Location = new System.Drawing.Point(794, 363);
+            this.PnlMonth.Margin = new System.Windows.Forms.Padding(4);
+            this.PnlMonth.Name = "PnlMonth";
+            this.PnlMonth.Size = new System.Drawing.Size(120, 44);
+            this.PnlMonth.TabIndex = 45;
             // 
-            // PictureBox12
+            // MonthIcon
             // 
-            this.PictureBox12.Image = ((System.Drawing.Image)(resources.GetObject("PictureBox12.Image")));
-            this.PictureBox12.Location = new System.Drawing.Point(1, 0);
-            this.PictureBox12.Margin = new System.Windows.Forms.Padding(4);
-            this.PictureBox12.Name = "PictureBox12";
-            this.PictureBox12.Size = new System.Drawing.Size(48, 44);
-            this.PictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.PictureBox12.TabIndex = 1;
-            this.PictureBox12.TabStop = false;
+            this.MonthIcon.Image = ((System.Drawing.Image)(resources.GetObject("MonthIcon.Image")));
+            this.MonthIcon.Location = new System.Drawing.Point(1, 0);
+            this.MonthIcon.Margin = new System.Windows.Forms.Padding(4);
+            this.MonthIcon.Name = "MonthIcon";
+            this.MonthIcon.Size = new System.Drawing.Size(48, 44);
+            this.MonthIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.MonthIcon.TabIndex = 1;
+            this.MonthIcon.TabStop = false;
             // 
-            // Label10
+            // LblMonth
             // 
-            this.Label10.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.LblMonth.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.Label10.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label10.ForeColor = System.Drawing.Color.White;
-            this.Label10.Location = new System.Drawing.Point(48, 4);
-            this.Label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.Label10.Name = "Label10";
-            this.Label10.Size = new System.Drawing.Size(68, 37);
-            this.Label10.TabIndex = 4;
-            this.Label10.Text = "Month";
-            this.Label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.LblMonth.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblMonth.ForeColor = System.Drawing.Color.White;
+            this.LblMonth.Location = new System.Drawing.Point(48, 4);
+            this.LblMonth.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.LblMonth.Name = "LblMonth";
+            this.LblMonth.Size = new System.Drawing.Size(68, 37);
+            this.LblMonth.TabIndex = 4;
+            this.LblMonth.Text = "Month";
+            this.LblMonth.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // BarSec1
+            // 
+            this.BarSec1.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.BarSec1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(180)))), ((int)(((byte)(43)))));
+            this.BarSec1.Location = new System.Drawing.Point(-7, 318);
+            this.BarSec1.Margin = new System.Windows.Forms.Padding(4);
+            this.BarSec1.Name = "BarSec1";
+            this.BarSec1.Size = new System.Drawing.Size(352, 10);
+            this.BarSec1.TabIndex = 44;
+            this.BarSec1.TabStop = false;
+            // 
+            // BarSec2
+            // 
+            this.BarSec2.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.BarSec2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(180)))), ((int)(((byte)(43)))));
+            this.BarSec2.Location = new System.Drawing.Point(718, 318);
+            this.BarSec2.Margin = new System.Windows.Forms.Padding(4);
+            this.BarSec2.Name = "BarSec2";
+            this.BarSec2.Size = new System.Drawing.Size(345, 10);
+            this.BarSec2.TabIndex = 43;
+            this.BarSec2.TabStop = false;
+            // 
+            // LblHour
+            // 
+            this.LblHour.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.LblHour.Font = new System.Drawing.Font("Century Gothic", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblHour.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(180)))), ((int)(((byte)(43)))));
+            this.LblHour.Location = new System.Drawing.Point(354, 168);
+            this.LblHour.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.LblHour.Name = "LblHour";
+            this.LblHour.Size = new System.Drawing.Size(151, 111);
+            this.LblHour.TabIndex = 35;
+            this.LblHour.Text = "06";
+            this.LblHour.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // DivideBar
+            // 
+            this.DivideBar.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.DivideBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(180)))), ((int)(((byte)(43)))));
+            this.DivideBar.Location = new System.Drawing.Point(513, 184);
+            this.DivideBar.Margin = new System.Windows.Forms.Padding(4);
+            this.DivideBar.Name = "DivideBar";
+            this.DivideBar.Size = new System.Drawing.Size(9, 94);
+            this.DivideBar.TabIndex = 37;
+            this.DivideBar.TabStop = false;
+            // 
+            // LblMinute
+            // 
+            this.LblMinute.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.LblMinute.Font = new System.Drawing.Font("Century Gothic", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblMinute.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(180)))), ((int)(((byte)(43)))));
+            this.LblMinute.Location = new System.Drawing.Point(548, 168);
+            this.LblMinute.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.LblMinute.Name = "LblMinute";
+            this.LblMinute.Size = new System.Drawing.Size(151, 111);
+            this.LblMinute.TabIndex = 36;
+            this.LblMinute.Text = "06";
+            this.LblMinute.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // LblDate
+            // 
+            this.LblDate.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.LblDate.Font = new System.Drawing.Font("Century Gothic", 58F);
+            this.LblDate.ForeColor = System.Drawing.Color.White;
+            this.LblDate.Location = new System.Drawing.Point(312, 26);
+            this.LblDate.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.LblDate.Name = "LblDate";
+            this.LblDate.Size = new System.Drawing.Size(173, 111);
+            this.LblDate.TabIndex = 33;
+            this.LblDate.Text = "06";
+            this.LblDate.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // LblMonthYear
+            // 
+            this.LblMonthYear.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.LblMonthYear.Font = new System.Drawing.Font("Century Gothic", 24.75F);
+            this.LblMonthYear.ForeColor = System.Drawing.Color.White;
+            this.LblMonthYear.Location = new System.Drawing.Point(493, 20);
+            this.LblMonthYear.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.LblMonthYear.Name = "LblMonthYear";
+            this.LblMonthYear.Size = new System.Drawing.Size(253, 122);
+            this.LblMonthYear.TabIndex = 34;
+            this.LblMonthYear.Text = "May 2017,\r\nSaturday";
+            this.LblMonthYear.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // Display
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.ClientSize = new System.Drawing.Size(1060, 600);
-            this.Controls.Add(this.MainF);
-            this.Controls.Add(this.panel11);
-            this.Controls.Add(this.pictureBox10);
-            this.Controls.Add(this.pictureBox13);
-            this.Controls.Add(this.pictureBox22);
-            this.Controls.Add(this.pictureBox23);
+            this.ClientSize = new System.Drawing.Size(1060, 579);
+            this.Controls.Add(this.PnlMain);
+            this.Controls.Add(this.PnlTilteBar);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Display";
-            this.Text = "Form";
-            this.Load += new System.EventHandler(this.Form1_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.LogoSoft)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Minimize)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Exit)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.AddBtn)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.MonthBtn)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.DayBtn)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.HomeBtn)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.HabitBtn)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.SpecialBtn)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.StatisBtn)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox22)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox23)).EndInit();
-            this.panel11.ResumeLayout(false);
-            this.MainF.ResumeLayout(false);
-            this.ToolBar.ResumeLayout(false);
-            this.Panel2.ResumeLayout(false);
-            this.panel3.ResumeLayout(false);
-            this.Funtion.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            this.panel4.ResumeLayout(false);
-            this.Panel9.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.PictureBox8)).EndInit();
-            this.panel5.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.PictureBox7)).EndInit();
-            this.Panel6.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.PictureBox9)).EndInit();
-            this.panel7.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.PictureBox11)).EndInit();
-            this.panel8.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.PictureBox12)).EndInit();
+            this.Text = "FormDisplay";
+            ((System.ComponentModel.ISupportInitialize)(this.LblLogoSoft)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BtnMinimize)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BtnExit)).EndInit();
+            this.PnlTilteBar.ResumeLayout(false);
+            this.PnlMain.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.BtnMonth)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BtnDay)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BtnHome)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BtnHabit)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BtnSpecial)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BtnStatis)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BtnAdd)).EndInit();
+            this.PnlFuntion.ResumeLayout(false);
+            this.PnlSpecial.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.SpecIcon)).EndInit();
+            this.PnlStatic.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.StatisIcon)).EndInit();
+            this.PnlHabit.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.HabitIcon)).EndInit();
+            this.PnlDay.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.DayIcon)).EndInit();
+            this.PnlMonth.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.MonthIcon)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BarSec1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BarSec2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DivideBar)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        internal System.Windows.Forms.PictureBox LogoSoft;
-        internal System.Windows.Forms.PictureBox Minimize;
-        internal System.Windows.Forms.PictureBox Exit;
-        internal System.Windows.Forms.ToolTip ToolTip1;
-        internal System.Windows.Forms.PictureBox pictureBox10;
-        internal System.Windows.Forms.Label NameSoft;
-        internal System.Windows.Forms.PictureBox pictureBox13;
-        internal System.Windows.Forms.PictureBox pictureBox22;
-        internal System.Windows.Forms.PictureBox pictureBox23;
-        private System.Windows.Forms.Panel panel11;
-        private System.Windows.Forms.Panel MainF;
-        private System.Windows.Forms.Panel ToolBar;
-        internal System.Windows.Forms.PictureBox AddBtn;
-        internal System.Windows.Forms.Panel Panel2;
-        internal System.Windows.Forms.PictureBox MonthBtn;
-        internal System.Windows.Forms.PictureBox DayBtn;
-        internal System.Windows.Forms.Panel panel3;
-        internal System.Windows.Forms.PictureBox HomeBtn;
-        internal System.Windows.Forms.PictureBox HabitBtn;
-        internal System.Windows.Forms.PictureBox SpecialBtn;
-        internal System.Windows.Forms.PictureBox StatisBtn;
-        private System.Windows.Forms.Panel Funtion;
-        internal System.Windows.Forms.PictureBox pictureBox2;
-        internal System.Windows.Forms.Label Hour;
-        internal System.Windows.Forms.PictureBox pictureBox6;
-        internal System.Windows.Forms.Label Minute;
-        internal System.Windows.Forms.Label Day;
-        internal System.Windows.Forms.Label MonthYear;
-        internal System.Windows.Forms.Panel panel4;
-        internal System.Windows.Forms.Panel Panel9;
-        internal System.Windows.Forms.PictureBox PictureBox8;
-        internal System.Windows.Forms.Label Label12;
-        internal System.Windows.Forms.Panel panel5;
-        internal System.Windows.Forms.PictureBox PictureBox7;
-        internal System.Windows.Forms.Label Label8;
-        internal System.Windows.Forms.Panel Panel6;
-        internal System.Windows.Forms.PictureBox PictureBox9;
-        internal System.Windows.Forms.Label Label7;
-        internal System.Windows.Forms.Panel panel7;
-        internal System.Windows.Forms.PictureBox PictureBox11;
-        internal System.Windows.Forms.Label Label9;
-        internal System.Windows.Forms.Panel panel8;
-        internal System.Windows.Forms.PictureBox PictureBox12;
-        internal System.Windows.Forms.Label Label10;
-        internal System.Windows.Forms.PictureBox pictureBox1;
+        internal System.Windows.Forms.PictureBox LblLogoSoft;
+        internal System.Windows.Forms.PictureBox BtnMinimize;
+        internal System.Windows.Forms.PictureBox BtnExit;
+        internal System.Windows.Forms.ToolTip ToolTipDisplay;
+        internal System.Windows.Forms.Label LblNameSoft;
+        private System.Windows.Forms.Panel PnlTilteBar;
+        private System.Windows.Forms.Panel PnlMain;
+        private System.Windows.Forms.Panel PnlFuntion;
+        internal System.Windows.Forms.PictureBox BarSec2;
+        internal System.Windows.Forms.Label LblHour;
+        internal System.Windows.Forms.PictureBox DivideBar;
+        internal System.Windows.Forms.Label LblMinute;
+        internal System.Windows.Forms.Label LblDate;
+        internal System.Windows.Forms.Label LblMonthYear;
+        internal System.Windows.Forms.PictureBox BarSec1;
+        internal System.Windows.Forms.PictureBox BtnAdd;
+        internal System.Windows.Forms.Panel PnlSpecial;
+        internal System.Windows.Forms.PictureBox SpecIcon;
+        internal System.Windows.Forms.Label LblSpec;
+        internal System.Windows.Forms.Panel PnlStatic;
+        internal System.Windows.Forms.PictureBox StatisIcon;
+        internal System.Windows.Forms.Label LblStatis;
+        internal System.Windows.Forms.Panel PnlHabit;
+        internal System.Windows.Forms.PictureBox HabitIcon;
+        internal System.Windows.Forms.Label LblHabit;
+        internal System.Windows.Forms.Panel PnlDay;
+        internal System.Windows.Forms.Label LblDay;
+        internal System.Windows.Forms.Panel PnlMonth;
+        internal System.Windows.Forms.PictureBox MonthIcon;
+        internal System.Windows.Forms.Label LblMonth;
+        internal System.Windows.Forms.PictureBox DayIcon;
+        internal System.Windows.Forms.PictureBox BtnMonth;
+        internal System.Windows.Forms.PictureBox BtnDay;
+        internal System.Windows.Forms.PictureBox BtnHome;
+        internal System.Windows.Forms.PictureBox BtnHabit;
+        internal System.Windows.Forms.PictureBox BtnSpecial;
+        internal System.Windows.Forms.PictureBox BtnStatis;
     }
 }
 

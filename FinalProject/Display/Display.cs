@@ -15,94 +15,69 @@ namespace Display
         public Display()
         {
             InitializeComponent();
+            this.BtnExit.Click += BtnExit_Click;
+            this.BtnMinimize.Click += BtnMinimize_Click;
+            this.BtnDay.Click += BtnDay_Click;
+            this.PnlDay.Click += BtnDay_Click;
+            this.BtnMonth.Click += BtnMonth_Click;
+            this.PnlMonth.Click += BtnMonth_Click;
+            this.BtnSpecial.Click += BtnSpecial_Click;
+            this.PnlSpecial.Click += BtnSpecial_Click;
+            this.BtnStatis.Click += BtnStatis_Click;
+            this.PnlStatic.Click += BtnStatis_Click;
+            this.BtnHabit.Click += BtnHabit_Click;
+            this.PnlHabit.Click += BtnHabit_Click;
+            this.BtnHome.Click += BtnHome_Click;
+            this.BtnAdd.Click += BtnAdd_Click;
         }
 
-        private void Label6_Click(object sender, EventArgs e)
+        void BtnAdd_Click(object sender, EventArgs e)
         {
-
+            PnlMain.Controls.Clear();
+            PnlMain.Controls.Add(new Add());
         }
 
-        private void Label12_Click(object sender, EventArgs e)
+        void BtnHome_Click(object sender, EventArgs e)
         {
-
+            PnlMain.Show();
         }
 
-        private void Label7_Click(object sender, EventArgs e)
+        void BtnHabit_Click(object sender, EventArgs e)
         {
-
+            PnlFuntion.Controls.Clear();
+            PnlFuntion.Controls.Add(new Habit());
         }
 
-        private void Label1_Click(object sender, EventArgs e)
+        void BtnStatis_Click(object sender, EventArgs e)
         {
-
+            
         }
 
-        private void Label4_Click(object sender, EventArgs e)
+        void BtnSpecial_Click(object sender, EventArgs e)
         {
-
+            PnlFuntion.Controls.Clear();
+            PnlFuntion.Controls.Add(new Listtask());
         }
 
-        private void Label2_Click(object sender, EventArgs e)
+        void BtnMonth_Click(object sender, EventArgs e)
         {
-
+            
         }
 
-        private void Label3_Click(object sender, EventArgs e)
+        void BtnDay_Click(object sender, EventArgs e)
         {
-
+            PnlFuntion.Controls.Clear();
+            PnlFuntion.Controls.Add(new Day());
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void PictureBox1_Click(object sender, EventArgs e)
-        {
-            Display.ActiveForm.Close();
-        }
-
-        private void Minimize_Click(object sender, EventArgs e)
+        void BtnMinimize_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
         }
 
-        private void panel10_Paint(object sender, PaintEventArgs e)
+        void BtnExit_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void SpecialBtn_Click_1(object sender, EventArgs e)
-        {
-            Funtion.Controls.Clear();
-            Funtion.Controls.Add(new Listtask());
-        }
-
-        private void DayBtn_Click_1(object sender, EventArgs e)
-        {
-            Funtion.Controls.Clear();
-            Funtion.Controls.Add(new Day());
-        }
-
-        private void HabitBtn_Click_1(object sender, EventArgs e)
-        {
-            Funtion.Controls.Clear();
-            Funtion.Controls.Add(new Listtask());
-        }
-
-        private void AddBtn_Click_1(object sender, EventArgs e)
-        {
-            MainF.Controls.Clear();
-            MainF.Controls.Add(new Add());
-        }
-
-        private void Funtion_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void MonthBtn_Click(object sender, EventArgs e)
-        {
+            Display.ActiveForm.Close();
         }
     }
 }

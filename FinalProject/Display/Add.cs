@@ -16,20 +16,5 @@ namespace Display
         {
             InitializeComponent();
         }
-
-        private void Label18_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Label17_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void PictureBox7_Click(object sender, EventArgs e)
-        {
-            Image.Visible = true;
-        }
     }
 }
