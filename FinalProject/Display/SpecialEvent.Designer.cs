@@ -32,14 +32,14 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SpecialEvent));
             this.PnlList = new System.Windows.Forms.Panel();
             this.ToolTipSpecEvent = new System.Windows.Forms.ToolTip(this.components);
+            this.BtnPre = new System.Windows.Forms.PictureBox();
+            this.BtnNext = new System.Windows.Forms.PictureBox();
             this.PnlControl = new System.Windows.Forms.Panel();
             this.LblMonthYear = new System.Windows.Forms.Label();
             this.LblDay = new System.Windows.Forms.Label();
-            this.BtnPre = new System.Windows.Forms.PictureBox();
-            this.BtnNext = new System.Windows.Forms.PictureBox();
-            this.PnlControl.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.BtnPre)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BtnNext)).BeginInit();
+            this.PnlControl.SuspendLayout();
             this.SuspendLayout();
             // 
             // PnlList
@@ -52,6 +52,34 @@
             this.PnlList.Name = "PnlList";
             this.PnlList.Size = new System.Drawing.Size(1059, 403);
             this.PnlList.TabIndex = 11;
+            // 
+            // BtnPre
+            // 
+            this.BtnPre.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.BtnPre.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnPre.Image = ((System.Drawing.Image)(resources.GetObject("BtnPre.Image")));
+            this.BtnPre.Location = new System.Drawing.Point(8, 13);
+            this.BtnPre.Margin = new System.Windows.Forms.Padding(4);
+            this.BtnPre.Name = "BtnPre";
+            this.BtnPre.Size = new System.Drawing.Size(40, 37);
+            this.BtnPre.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.BtnPre.TabIndex = 5;
+            this.BtnPre.TabStop = false;
+            this.ToolTipSpecEvent.SetToolTip(this.BtnPre, "Previous Day");
+            // 
+            // BtnNext
+            // 
+            this.BtnNext.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.BtnNext.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnNext.Image = ((System.Drawing.Image)(resources.GetObject("BtnNext.Image")));
+            this.BtnNext.Location = new System.Drawing.Point(1015, 13);
+            this.BtnNext.Margin = new System.Windows.Forms.Padding(4);
+            this.BtnNext.Name = "BtnNext";
+            this.BtnNext.Size = new System.Drawing.Size(40, 37);
+            this.BtnNext.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.BtnNext.TabIndex = 8;
+            this.BtnNext.TabStop = false;
+            this.ToolTipSpecEvent.SetToolTip(this.BtnNext, "Next Day");
             // 
             // PnlControl
             // 
@@ -93,34 +121,6 @@
             this.LblDay.Text = "06";
             this.LblDay.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // BtnPre
-            // 
-            this.BtnPre.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.BtnPre.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnPre.Image = ((System.Drawing.Image)(resources.GetObject("BtnPre.Image")));
-            this.BtnPre.Location = new System.Drawing.Point(8, 13);
-            this.BtnPre.Margin = new System.Windows.Forms.Padding(4);
-            this.BtnPre.Name = "BtnPre";
-            this.BtnPre.Size = new System.Drawing.Size(40, 37);
-            this.BtnPre.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.BtnPre.TabIndex = 5;
-            this.BtnPre.TabStop = false;
-            this.ToolTipSpecEvent.SetToolTip(this.BtnPre, "Previous Day");
-            // 
-            // BtnNext
-            // 
-            this.BtnNext.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.BtnNext.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnNext.Image = ((System.Drawing.Image)(resources.GetObject("BtnNext.Image")));
-            this.BtnNext.Location = new System.Drawing.Point(1015, 13);
-            this.BtnNext.Margin = new System.Windows.Forms.Padding(4);
-            this.BtnNext.Name = "BtnNext";
-            this.BtnNext.Size = new System.Drawing.Size(40, 37);
-            this.BtnNext.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.BtnNext.TabIndex = 8;
-            this.BtnNext.TabStop = false;
-            this.ToolTipSpecEvent.SetToolTip(this.BtnNext, "Next Day");
-            // 
             // SpecialEvent
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -130,9 +130,9 @@
             this.Controls.Add(this.PnlControl);
             this.Name = "SpecialEvent";
             this.Size = new System.Drawing.Size(1059, 469);
-            this.PnlControl.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.BtnPre)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.BtnNext)).EndInit();
+            this.PnlControl.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
