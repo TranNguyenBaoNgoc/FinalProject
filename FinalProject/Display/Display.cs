@@ -56,7 +56,7 @@ namespace Display
         void BtnSpecial_Click(object sender, EventArgs e)
         {
             PnlFuntion.Controls.Clear();
-            PnlFuntion.Controls.Add(new Listtask());
+            PnlFuntion.Controls.Add(new SpecialEvent());
         }
 
         void BtnMonth_Click(object sender, EventArgs e)

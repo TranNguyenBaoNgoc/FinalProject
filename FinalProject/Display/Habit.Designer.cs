@@ -36,7 +36,7 @@
             this.LblDate = new System.Windows.Forms.Label();
             this.BtnNext = new System.Windows.Forms.PictureBox();
             this.BtnPre = new System.Windows.Forms.PictureBox();
-            this.ToolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.ToolTipHabit = new System.Windows.Forms.ToolTip(this.components);
             this.PnlDateAndScroll.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.BtnNext)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BtnPre)).BeginInit();
@@ -46,7 +46,7 @@
             // 
             this.PnlList.AutoScroll = true;
             this.PnlList.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(95)))), ((int)(((byte)(95)))));
-            this.PnlList.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.PnlList.Dock = System.Windows.Forms.DockStyle.Left;
             this.PnlList.Location = new System.Drawing.Point(0, 66);
             this.PnlList.Margin = new System.Windows.Forms.Padding(4);
             this.PnlList.Name = "PnlList";
@@ -105,7 +105,7 @@
             this.BtnNext.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.BtnNext.TabIndex = 1;
             this.BtnNext.TabStop = false;
-            this.ToolTip1.SetToolTip(this.BtnNext, "Next Day");
+            this.ToolTipHabit.SetToolTip(this.BtnNext, "Next Day");
             // 
             // BtnPre
             // 
@@ -119,7 +119,7 @@
             this.BtnPre.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.BtnPre.TabIndex = 0;
             this.BtnPre.TabStop = false;
-            this.ToolTip1.SetToolTip(this.BtnPre, "Previous Day");
+            this.ToolTipHabit.SetToolTip(this.BtnPre, "Previous Day");
             // 
             // Habit
             // 
@@ -143,7 +143,7 @@
         internal System.Windows.Forms.Label LblMonthYear;
         internal System.Windows.Forms.Label LblDate;
         internal System.Windows.Forms.PictureBox BtnNext;
-        internal System.Windows.Forms.ToolTip ToolTip1;
+        internal System.Windows.Forms.ToolTip ToolTipHabit;
         internal System.Windows.Forms.PictureBox BtnPre;
     }
 }
