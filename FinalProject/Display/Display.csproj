@@ -32,6 +32,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Calendar.NET, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Calendar.NET.dll</HintPath>
+    </Reference>
     <Reference Include="EntityFramework">
       <HintPath>..\packages\EntityFramework.6.0.0\lib\net45\EntityFramework.dll</HintPath>
     </Reference>
@@ -44,6 +48,8 @@
     <Reference Include="System.Design" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Security" />
+    <Reference Include="System.Web.DataVisualization" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -94,6 +100,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Models.edmx</DependentUpon>
     </Compile>
+    <Compile Include="MonthView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MonthView.Designer.cs">
+      <DependentUpon>MonthView.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Routine.cs">
@@ -107,6 +119,18 @@
     </Compile>
     <Compile Include="SpecialEvent.Designer.cs">
       <DependentUpon>SpecialEvent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StatisticHabit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="StatisticHabit.Designer.cs">
+      <DependentUpon>StatisticHabit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StatisticWork.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="StatisticWork.Designer.cs">
+      <DependentUpon>StatisticWork.cs</DependentUpon>
     </Compile>
     <Compile Include="Task.cs">
       <DependentUpon>Models.tt</DependentUpon>
@@ -129,6 +153,9 @@
     <EmbeddedResource Include="Habit.resx">
       <DependentUpon>Habit.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="MonthView.resx">
+      <DependentUpon>MonthView.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -140,6 +167,12 @@
     </Compile>
     <EmbeddedResource Include="SpecialEvent.resx">
       <DependentUpon>SpecialEvent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StatisticHabit.resx">
+      <DependentUpon>StatisticHabit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StatisticWork.resx">
+      <DependentUpon>StatisticWork.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Task_Item.resx">
       <DependentUpon>Task_Item.cs</DependentUpon>

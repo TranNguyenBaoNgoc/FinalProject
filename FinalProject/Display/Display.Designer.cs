@@ -98,10 +98,9 @@
             this.LblLogoSoft.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.LblLogoSoft.Cursor = System.Windows.Forms.Cursors.Default;
             this.LblLogoSoft.Image = ((System.Drawing.Image)(resources.GetObject("LblLogoSoft.Image")));
-            this.LblLogoSoft.Location = new System.Drawing.Point(8, 8);
-            this.LblLogoSoft.Margin = new System.Windows.Forms.Padding(4);
+            this.LblLogoSoft.Location = new System.Drawing.Point(6, 6);
             this.LblLogoSoft.Name = "LblLogoSoft";
-            this.LblLogoSoft.Size = new System.Drawing.Size(40, 37);
+            this.LblLogoSoft.Size = new System.Drawing.Size(30, 30);
             this.LblLogoSoft.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.LblLogoSoft.TabIndex = 11;
             this.LblLogoSoft.TabStop = false;
@@ -111,10 +110,9 @@
             this.BtnMinimize.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.BtnMinimize.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BtnMinimize.Image = ((System.Drawing.Image)(resources.GetObject("BtnMinimize.Image")));
-            this.BtnMinimize.Location = new System.Drawing.Point(951, 8);
-            this.BtnMinimize.Margin = new System.Windows.Forms.Padding(4);
+            this.BtnMinimize.Location = new System.Drawing.Point(713, 6);
             this.BtnMinimize.Name = "BtnMinimize";
-            this.BtnMinimize.Size = new System.Drawing.Size(40, 37);
+            this.BtnMinimize.Size = new System.Drawing.Size(30, 30);
             this.BtnMinimize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.BtnMinimize.TabIndex = 10;
             this.BtnMinimize.TabStop = false;
@@ -124,10 +122,9 @@
             this.BtnExit.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.BtnExit.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BtnExit.Image = ((System.Drawing.Image)(resources.GetObject("BtnExit.Image")));
-            this.BtnExit.Location = new System.Drawing.Point(999, 8);
-            this.BtnExit.Margin = new System.Windows.Forms.Padding(4);
+            this.BtnExit.Location = new System.Drawing.Point(749, 6);
             this.BtnExit.Name = "BtnExit";
-            this.BtnExit.Size = new System.Drawing.Size(40, 37);
+            this.BtnExit.Size = new System.Drawing.Size(30, 30);
             this.BtnExit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.BtnExit.TabIndex = 9;
             this.BtnExit.TabStop = false;
@@ -138,10 +135,9 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.LblNameSoft.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblNameSoft.ForeColor = System.Drawing.Color.White;
-            this.LblNameSoft.Location = new System.Drawing.Point(56, 8);
-            this.LblNameSoft.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.LblNameSoft.Location = new System.Drawing.Point(42, 6);
             this.LblNameSoft.Name = "LblNameSoft";
-            this.LblNameSoft.Size = new System.Drawing.Size(174, 37);
+            this.LblNameSoft.Size = new System.Drawing.Size(130, 30);
             this.LblNameSoft.TabIndex = 32;
             this.LblNameSoft.Text = "Life Tracking";
             this.LblNameSoft.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -152,9 +148,10 @@
             this.PnlTilteBar.Controls.Add(this.LblLogoSoft);
             this.PnlTilteBar.Controls.Add(this.BtnMinimize);
             this.PnlTilteBar.Controls.Add(this.BtnExit);
-            this.PnlTilteBar.Location = new System.Drawing.Point(5, 1);
+            this.PnlTilteBar.Location = new System.Drawing.Point(4, 1);
+            this.PnlTilteBar.Margin = new System.Windows.Forms.Padding(2);
             this.PnlTilteBar.Name = "PnlTilteBar";
-            this.PnlTilteBar.Size = new System.Drawing.Size(1054, 55);
+            this.PnlTilteBar.Size = new System.Drawing.Size(790, 45);
             this.PnlTilteBar.TabIndex = 49;
             // 
             // PnlMain
@@ -167,9 +164,10 @@
             this.PnlMain.Controls.Add(this.BtnStatis);
             this.PnlMain.Controls.Add(this.BtnAdd);
             this.PnlMain.Controls.Add(this.PnlFuntion);
-            this.PnlMain.Location = new System.Drawing.Point(-3, 58);
+            this.PnlMain.Location = new System.Drawing.Point(-2, 47);
+            this.PnlMain.Margin = new System.Windows.Forms.Padding(2);
             this.PnlMain.Name = "PnlMain";
-            this.PnlMain.Size = new System.Drawing.Size(1065, 521);
+            this.PnlMain.Size = new System.Drawing.Size(799, 423);
             this.PnlMain.TabIndex = 50;
             // 
             // BtnMonth
@@ -177,10 +175,9 @@
             this.BtnMonth.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.BtnMonth.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BtnMonth.Image = ((System.Drawing.Image)(resources.GetObject("BtnMonth.Image")));
-            this.BtnMonth.Location = new System.Drawing.Point(772, 2);
-            this.BtnMonth.Margin = new System.Windows.Forms.Padding(4);
+            this.BtnMonth.Location = new System.Drawing.Point(579, 2);
             this.BtnMonth.Name = "BtnMonth";
-            this.BtnMonth.Size = new System.Drawing.Size(48, 44);
+            this.BtnMonth.Size = new System.Drawing.Size(36, 36);
             this.BtnMonth.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.BtnMonth.TabIndex = 56;
             this.BtnMonth.TabStop = false;
@@ -190,10 +187,9 @@
             this.BtnDay.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.BtnDay.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BtnDay.Image = ((System.Drawing.Image)(resources.GetObject("BtnDay.Image")));
-            this.BtnDay.Location = new System.Drawing.Point(716, 2);
-            this.BtnDay.Margin = new System.Windows.Forms.Padding(4);
+            this.BtnDay.Location = new System.Drawing.Point(537, 2);
             this.BtnDay.Name = "BtnDay";
-            this.BtnDay.Size = new System.Drawing.Size(48, 44);
+            this.BtnDay.Size = new System.Drawing.Size(36, 36);
             this.BtnDay.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.BtnDay.TabIndex = 57;
             this.BtnDay.TabStop = false;
@@ -203,10 +199,9 @@
             this.BtnHome.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.BtnHome.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BtnHome.Image = ((System.Drawing.Image)(resources.GetObject("BtnHome.Image")));
-            this.BtnHome.Location = new System.Drawing.Point(999, 0);
-            this.BtnHome.Margin = new System.Windows.Forms.Padding(4);
+            this.BtnHome.Location = new System.Drawing.Point(749, 0);
             this.BtnHome.Name = "BtnHome";
-            this.BtnHome.Size = new System.Drawing.Size(48, 44);
+            this.BtnHome.Size = new System.Drawing.Size(36, 36);
             this.BtnHome.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.BtnHome.TabIndex = 55;
             this.BtnHome.TabStop = false;
@@ -216,10 +211,9 @@
             this.BtnHabit.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.BtnHabit.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BtnHabit.Image = ((System.Drawing.Image)(resources.GetObject("BtnHabit.Image")));
-            this.BtnHabit.Location = new System.Drawing.Point(943, 0);
-            this.BtnHabit.Margin = new System.Windows.Forms.Padding(4);
+            this.BtnHabit.Location = new System.Drawing.Point(707, 0);
             this.BtnHabit.Name = "BtnHabit";
-            this.BtnHabit.Size = new System.Drawing.Size(48, 44);
+            this.BtnHabit.Size = new System.Drawing.Size(36, 36);
             this.BtnHabit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.BtnHabit.TabIndex = 52;
             this.BtnHabit.TabStop = false;
@@ -229,10 +223,9 @@
             this.BtnSpecial.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.BtnSpecial.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BtnSpecial.Image = ((System.Drawing.Image)(resources.GetObject("BtnSpecial.Image")));
-            this.BtnSpecial.Location = new System.Drawing.Point(831, 0);
-            this.BtnSpecial.Margin = new System.Windows.Forms.Padding(4);
+            this.BtnSpecial.Location = new System.Drawing.Point(623, 0);
             this.BtnSpecial.Name = "BtnSpecial";
-            this.BtnSpecial.Size = new System.Drawing.Size(48, 44);
+            this.BtnSpecial.Size = new System.Drawing.Size(36, 36);
             this.BtnSpecial.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.BtnSpecial.TabIndex = 54;
             this.BtnSpecial.TabStop = false;
@@ -242,10 +235,9 @@
             this.BtnStatis.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.BtnStatis.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BtnStatis.Image = ((System.Drawing.Image)(resources.GetObject("BtnStatis.Image")));
-            this.BtnStatis.Location = new System.Drawing.Point(887, 0);
-            this.BtnStatis.Margin = new System.Windows.Forms.Padding(4);
+            this.BtnStatis.Location = new System.Drawing.Point(665, 0);
             this.BtnStatis.Name = "BtnStatis";
-            this.BtnStatis.Size = new System.Drawing.Size(48, 44);
+            this.BtnStatis.Size = new System.Drawing.Size(36, 36);
             this.BtnStatis.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.BtnStatis.TabIndex = 53;
             this.BtnStatis.TabStop = false;
@@ -255,10 +247,9 @@
             this.BtnAdd.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.BtnAdd.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BtnAdd.Image = ((System.Drawing.Image)(resources.GetObject("BtnAdd.Image")));
-            this.BtnAdd.Location = new System.Drawing.Point(12, 2);
-            this.BtnAdd.Margin = new System.Windows.Forms.Padding(4);
+            this.BtnAdd.Location = new System.Drawing.Point(9, 2);
             this.BtnAdd.Name = "BtnAdd";
-            this.BtnAdd.Size = new System.Drawing.Size(48, 44);
+            this.BtnAdd.Size = new System.Drawing.Size(36, 36);
             this.BtnAdd.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.BtnAdd.TabIndex = 51;
             this.BtnAdd.TabStop = false;
@@ -276,9 +267,10 @@
             this.PnlFuntion.Controls.Add(this.LblMinute);
             this.PnlFuntion.Controls.Add(this.LblDate);
             this.PnlFuntion.Controls.Add(this.LblMonthYear);
-            this.PnlFuntion.Location = new System.Drawing.Point(0, 51);
+            this.PnlFuntion.Location = new System.Drawing.Point(0, 41);
+            this.PnlFuntion.Margin = new System.Windows.Forms.Padding(2);
             this.PnlFuntion.Name = "PnlFuntion";
-            this.PnlFuntion.Size = new System.Drawing.Size(1062, 480);
+            this.PnlFuntion.Size = new System.Drawing.Size(796, 390);
             this.PnlFuntion.TabIndex = 49;
             // 
             // PnlSpecial
@@ -286,19 +278,17 @@
             this.PnlSpecial.Controls.Add(this.SpecIcon);
             this.PnlSpecial.Controls.Add(this.LblSpec);
             this.PnlSpecial.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.PnlSpecial.Location = new System.Drawing.Point(164, 363);
-            this.PnlSpecial.Margin = new System.Windows.Forms.Padding(4);
+            this.PnlSpecial.Location = new System.Drawing.Point(123, 295);
             this.PnlSpecial.Name = "PnlSpecial";
-            this.PnlSpecial.Size = new System.Drawing.Size(187, 44);
+            this.PnlSpecial.Size = new System.Drawing.Size(140, 36);
             this.PnlSpecial.TabIndex = 48;
             // 
             // SpecIcon
             // 
             this.SpecIcon.Image = ((System.Drawing.Image)(resources.GetObject("SpecIcon.Image")));
             this.SpecIcon.Location = new System.Drawing.Point(1, 0);
-            this.SpecIcon.Margin = new System.Windows.Forms.Padding(4);
             this.SpecIcon.Name = "SpecIcon";
-            this.SpecIcon.Size = new System.Drawing.Size(48, 44);
+            this.SpecIcon.Size = new System.Drawing.Size(36, 36);
             this.SpecIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.SpecIcon.TabIndex = 1;
             this.SpecIcon.TabStop = false;
@@ -309,10 +299,9 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.LblSpec.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.LblSpec.ForeColor = System.Drawing.Color.White;
-            this.LblSpec.Location = new System.Drawing.Point(48, 4);
-            this.LblSpec.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.LblSpec.Location = new System.Drawing.Point(36, 3);
             this.LblSpec.Name = "LblSpec";
-            this.LblSpec.Size = new System.Drawing.Size(135, 37);
+            this.LblSpec.Size = new System.Drawing.Size(101, 30);
             this.LblSpec.TabIndex = 4;
             this.LblSpec.Text = "Special Events";
             this.LblSpec.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -322,19 +311,17 @@
             this.PnlStatic.Controls.Add(this.StatisIcon);
             this.PnlStatic.Controls.Add(this.LblStatis);
             this.PnlStatic.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.PnlStatic.Location = new System.Drawing.Point(358, 363);
-            this.PnlStatic.Margin = new System.Windows.Forms.Padding(4);
+            this.PnlStatic.Location = new System.Drawing.Point(268, 295);
             this.PnlStatic.Name = "PnlStatic";
-            this.PnlStatic.Size = new System.Drawing.Size(147, 44);
+            this.PnlStatic.Size = new System.Drawing.Size(110, 36);
             this.PnlStatic.TabIndex = 49;
             // 
             // StatisIcon
             // 
             this.StatisIcon.Image = ((System.Drawing.Image)(resources.GetObject("StatisIcon.Image")));
             this.StatisIcon.Location = new System.Drawing.Point(1, 0);
-            this.StatisIcon.Margin = new System.Windows.Forms.Padding(4);
             this.StatisIcon.Name = "StatisIcon";
-            this.StatisIcon.Size = new System.Drawing.Size(48, 44);
+            this.StatisIcon.Size = new System.Drawing.Size(36, 36);
             this.StatisIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.StatisIcon.TabIndex = 1;
             this.StatisIcon.TabStop = false;
@@ -345,10 +332,9 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.LblStatis.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.LblStatis.ForeColor = System.Drawing.Color.White;
-            this.LblStatis.Location = new System.Drawing.Point(48, 4);
-            this.LblStatis.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.LblStatis.Location = new System.Drawing.Point(36, 3);
             this.LblStatis.Name = "LblStatis";
-            this.LblStatis.Size = new System.Drawing.Size(95, 37);
+            this.LblStatis.Size = new System.Drawing.Size(71, 30);
             this.LblStatis.TabIndex = 4;
             this.LblStatis.Text = "Statistic";
             this.LblStatis.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -358,19 +344,17 @@
             this.PnlHabit.Controls.Add(this.HabitIcon);
             this.PnlHabit.Controls.Add(this.LblHabit);
             this.PnlHabit.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.PnlHabit.Location = new System.Drawing.Point(513, 363);
-            this.PnlHabit.Margin = new System.Windows.Forms.Padding(4);
+            this.PnlHabit.Location = new System.Drawing.Point(385, 295);
             this.PnlHabit.Name = "PnlHabit";
-            this.PnlHabit.Size = new System.Drawing.Size(147, 44);
+            this.PnlHabit.Size = new System.Drawing.Size(110, 36);
             this.PnlHabit.TabIndex = 47;
             // 
             // HabitIcon
             // 
             this.HabitIcon.Image = ((System.Drawing.Image)(resources.GetObject("HabitIcon.Image")));
             this.HabitIcon.Location = new System.Drawing.Point(1, 0);
-            this.HabitIcon.Margin = new System.Windows.Forms.Padding(4);
             this.HabitIcon.Name = "HabitIcon";
-            this.HabitIcon.Size = new System.Drawing.Size(48, 44);
+            this.HabitIcon.Size = new System.Drawing.Size(36, 36);
             this.HabitIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.HabitIcon.TabIndex = 1;
             this.HabitIcon.TabStop = false;
@@ -381,10 +365,9 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.LblHabit.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.LblHabit.ForeColor = System.Drawing.Color.White;
-            this.LblHabit.Location = new System.Drawing.Point(48, 4);
-            this.LblHabit.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.LblHabit.Location = new System.Drawing.Point(36, 3);
             this.LblHabit.Name = "LblHabit";
-            this.LblHabit.Size = new System.Drawing.Size(95, 37);
+            this.LblHabit.Size = new System.Drawing.Size(71, 30);
             this.LblHabit.TabIndex = 4;
             this.LblHabit.Text = "My Habit";
             this.LblHabit.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -394,10 +377,9 @@
             this.PnlDay.Controls.Add(this.DayIcon);
             this.PnlDay.Controls.Add(this.LblDay);
             this.PnlDay.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.PnlDay.Location = new System.Drawing.Point(666, 363);
-            this.PnlDay.Margin = new System.Windows.Forms.Padding(4);
+            this.PnlDay.Location = new System.Drawing.Point(500, 295);
             this.PnlDay.Name = "PnlDay";
-            this.PnlDay.Size = new System.Drawing.Size(120, 44);
+            this.PnlDay.Size = new System.Drawing.Size(90, 36);
             this.PnlDay.TabIndex = 46;
             // 
             // DayIcon
@@ -405,10 +387,9 @@
             this.DayIcon.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.DayIcon.Cursor = System.Windows.Forms.Cursors.Hand;
             this.DayIcon.Image = ((System.Drawing.Image)(resources.GetObject("DayIcon.Image")));
-            this.DayIcon.Location = new System.Drawing.Point(4, 0);
-            this.DayIcon.Margin = new System.Windows.Forms.Padding(4);
+            this.DayIcon.Location = new System.Drawing.Point(3, 0);
             this.DayIcon.Name = "DayIcon";
-            this.DayIcon.Size = new System.Drawing.Size(48, 44);
+            this.DayIcon.Size = new System.Drawing.Size(36, 36);
             this.DayIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.DayIcon.TabIndex = 48;
             this.DayIcon.TabStop = false;
@@ -419,10 +400,9 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.LblDay.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblDay.ForeColor = System.Drawing.Color.White;
-            this.LblDay.Location = new System.Drawing.Point(48, 4);
-            this.LblDay.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.LblDay.Location = new System.Drawing.Point(36, 3);
             this.LblDay.Name = "LblDay";
-            this.LblDay.Size = new System.Drawing.Size(68, 37);
+            this.LblDay.Size = new System.Drawing.Size(51, 30);
             this.LblDay.TabIndex = 4;
             this.LblDay.Text = "Day";
             this.LblDay.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -432,19 +412,17 @@
             this.PnlMonth.Controls.Add(this.MonthIcon);
             this.PnlMonth.Controls.Add(this.LblMonth);
             this.PnlMonth.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.PnlMonth.Location = new System.Drawing.Point(794, 363);
-            this.PnlMonth.Margin = new System.Windows.Forms.Padding(4);
+            this.PnlMonth.Location = new System.Drawing.Point(596, 295);
             this.PnlMonth.Name = "PnlMonth";
-            this.PnlMonth.Size = new System.Drawing.Size(120, 44);
+            this.PnlMonth.Size = new System.Drawing.Size(90, 36);
             this.PnlMonth.TabIndex = 45;
             // 
             // MonthIcon
             // 
             this.MonthIcon.Image = ((System.Drawing.Image)(resources.GetObject("MonthIcon.Image")));
             this.MonthIcon.Location = new System.Drawing.Point(1, 0);
-            this.MonthIcon.Margin = new System.Windows.Forms.Padding(4);
             this.MonthIcon.Name = "MonthIcon";
-            this.MonthIcon.Size = new System.Drawing.Size(48, 44);
+            this.MonthIcon.Size = new System.Drawing.Size(36, 36);
             this.MonthIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.MonthIcon.TabIndex = 1;
             this.MonthIcon.TabStop = false;
@@ -455,10 +433,9 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.LblMonth.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblMonth.ForeColor = System.Drawing.Color.White;
-            this.LblMonth.Location = new System.Drawing.Point(48, 4);
-            this.LblMonth.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.LblMonth.Location = new System.Drawing.Point(36, 3);
             this.LblMonth.Name = "LblMonth";
-            this.LblMonth.Size = new System.Drawing.Size(68, 37);
+            this.LblMonth.Size = new System.Drawing.Size(51, 30);
             this.LblMonth.TabIndex = 4;
             this.LblMonth.Text = "Month";
             this.LblMonth.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -467,10 +444,9 @@
             // 
             this.BarSec1.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.BarSec1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(180)))), ((int)(((byte)(43)))));
-            this.BarSec1.Location = new System.Drawing.Point(-7, 318);
-            this.BarSec1.Margin = new System.Windows.Forms.Padding(4);
+            this.BarSec1.Location = new System.Drawing.Point(-5, 258);
             this.BarSec1.Name = "BarSec1";
-            this.BarSec1.Size = new System.Drawing.Size(0, 10);
+            this.BarSec1.Size = new System.Drawing.Size(0, 8);
             this.BarSec1.TabIndex = 44;
             this.BarSec1.TabStop = false;
             // 
@@ -479,22 +455,20 @@
             this.LblHour.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.LblHour.Font = new System.Drawing.Font("Century Gothic", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblHour.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(180)))), ((int)(((byte)(43)))));
-            this.LblHour.Location = new System.Drawing.Point(354, 168);
-            this.LblHour.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.LblHour.Location = new System.Drawing.Point(266, 136);
             this.LblHour.Name = "LblHour";
-            this.LblHour.Size = new System.Drawing.Size(151, 111);
+            this.LblHour.Size = new System.Drawing.Size(113, 90);
             this.LblHour.TabIndex = 35;
-            this.LblHour.Text = "06";
+            this.LblHour.Text = "_";
             this.LblHour.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // DivideBar
             // 
             this.DivideBar.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.DivideBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(180)))), ((int)(((byte)(43)))));
-            this.DivideBar.Location = new System.Drawing.Point(513, 184);
-            this.DivideBar.Margin = new System.Windows.Forms.Padding(4);
+            this.DivideBar.Location = new System.Drawing.Point(385, 150);
             this.DivideBar.Name = "DivideBar";
-            this.DivideBar.Size = new System.Drawing.Size(9, 94);
+            this.DivideBar.Size = new System.Drawing.Size(7, 76);
             this.DivideBar.TabIndex = 37;
             this.DivideBar.TabStop = false;
             // 
@@ -503,12 +477,11 @@
             this.LblMinute.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.LblMinute.Font = new System.Drawing.Font("Century Gothic", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblMinute.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(180)))), ((int)(((byte)(43)))));
-            this.LblMinute.Location = new System.Drawing.Point(548, 168);
-            this.LblMinute.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.LblMinute.Location = new System.Drawing.Point(398, 136);
             this.LblMinute.Name = "LblMinute";
-            this.LblMinute.Size = new System.Drawing.Size(151, 111);
+            this.LblMinute.Size = new System.Drawing.Size(113, 90);
             this.LblMinute.TabIndex = 36;
-            this.LblMinute.Text = "06";
+            this.LblMinute.Text = "_";
             this.LblMinute.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // LblDate
@@ -516,37 +489,36 @@
             this.LblDate.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.LblDate.Font = new System.Drawing.Font("Century Gothic", 58F);
             this.LblDate.ForeColor = System.Drawing.Color.White;
-            this.LblDate.Location = new System.Drawing.Point(312, 26);
-            this.LblDate.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.LblDate.Location = new System.Drawing.Point(230, 37);
             this.LblDate.Name = "LblDate";
-            this.LblDate.Size = new System.Drawing.Size(173, 111);
+            this.LblDate.Size = new System.Drawing.Size(149, 90);
             this.LblDate.TabIndex = 33;
-            this.LblDate.Text = "06";
+            this.LblDate.Text = "_";
             this.LblDate.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // LblMonthYear
             // 
             this.LblMonthYear.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.LblMonthYear.Font = new System.Drawing.Font("Century Gothic", 24.75F);
+            this.LblMonthYear.Font = new System.Drawing.Font("Times New Roman", 24.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.LblMonthYear.ForeColor = System.Drawing.Color.White;
-            this.LblMonthYear.Location = new System.Drawing.Point(493, 20);
-            this.LblMonthYear.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.LblMonthYear.Location = new System.Drawing.Point(414, 51);
             this.LblMonthYear.Name = "LblMonthYear";
-            this.LblMonthYear.Size = new System.Drawing.Size(386, 122);
+            this.LblMonthYear.Size = new System.Drawing.Size(269, 99);
             this.LblMonthYear.TabIndex = 34;
-            this.LblMonthYear.Text = "May 2017,\r\nSaturday";
+            this.LblMonthYear.Text = "_";
             this.LblMonthYear.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // Display
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.ClientSize = new System.Drawing.Size(1060, 579);
+            this.ClientSize = new System.Drawing.Size(795, 470);
             this.Controls.Add(this.PnlMain);
             this.Controls.Add(this.PnlTilteBar);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Display";
             this.Text = "FormDisplay";
             ((System.ComponentModel.ISupportInitialize)(this.LblLogoSoft)).EndInit();

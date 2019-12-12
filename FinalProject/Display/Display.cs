@@ -34,6 +34,34 @@ namespace Display
             this.BtnHome.Click += BtnHome_Click;
             this.BtnAdd.Click += BtnAdd_Click;
             this.Load += Display_Load;
+            this.LblStatis.Click += LblStatis_Click;
+            this.StatisIcon.Click += StatisIcon_Click;
+            this.LblMonth.Click += LblMonth_Click;
+            this.MonthIcon.Click += MonthIcon_Click;
+        }
+
+        void MonthIcon_Click(object sender, EventArgs e)
+        {
+            PnlFuntion.Controls.Clear();
+            PnlFuntion.Controls.Add(new MonthView());
+        }
+
+        void LblMonth_Click(object sender, EventArgs e)
+        {
+            PnlFuntion.Controls.Clear();
+            PnlFuntion.Controls.Add(new MonthView());
+        }
+
+        void StatisIcon_Click(object sender, EventArgs e)
+        {
+            PnlFuntion.Controls.Clear();
+            PnlFuntion.Controls.Add(new StatisticWork());
+        }
+
+        void LblStatis_Click(object sender, EventArgs e)
+        {
+            PnlFuntion.Controls.Clear();
+            PnlFuntion.Controls.Add(new StatisticWork());
         }
 
         void Display_Load(object sender, EventArgs e)
@@ -77,7 +105,8 @@ namespace Display
 
         void BtnStatis_Click(object sender, EventArgs e)
         {
-            
+            PnlFuntion.Controls.Clear();
+            PnlFuntion.Controls.Add(new StatisticWork());
         }
 
         void BtnSpecial_Click(object sender, EventArgs e)
@@ -88,7 +117,8 @@ namespace Display
 
         void BtnMonth_Click(object sender, EventArgs e)
         {
-            
+            PnlFuntion.Controls.Clear();
+            PnlFuntion.Controls.Add(new MonthView());
         }
 
         void BtnDay_Click(object sender, EventArgs e)
