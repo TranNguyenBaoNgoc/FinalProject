@@ -12,9 +12,13 @@ namespace Display
 {
     public partial class Display : Form
     {
+        private LogicLayer Management;
+        Timer t = new Timer();
+        int sec = DateTime.Now.Second;
         public Display()
         {
             InitializeComponent();
+            this.Management = new LogicLayer();
             this.BtnExit.Click += BtnExit_Click;
             this.BtnMinimize.Click += BtnMinimize_Click;
             this.BtnDay.Click += BtnDay_Click;
@@ -29,6 +33,29 @@ namespace Display
             this.PnlHabit.Click += BtnHabit_Click;
             this.BtnHome.Click += BtnHome_Click;
             this.BtnAdd.Click += BtnAdd_Click;
+            this.Load += Display_Load;
+        }
+
+        void Display_Load(object sender, EventArgs e)
+        {
+            t.Interval = 1000;
+            t.Tick += new EventHandler(this.t_Tick);
+            t.Start();
+            this.BarSec1.Width = (this.Width + sec) / 60;
+        }
+
+        private void t_Tick(object sender, EventArgs e)
+        {
+            this.LblMonthYear.Text = Management.GetMonthYear();
+            this.LblDate.Text = Management.GetDay();
+            this.LblHour.Text = Management.GetHour();
+            this.LblMinute.Text = Management.GetMinute();
+            if (sec == 0)
+            {
+                this.BarSec1.Width = 0;
+            }
+            else
+                this.BarSec1.Width += (this.Width+sec)/60;
         }
 
         void BtnAdd_Click(object sender, EventArgs e)

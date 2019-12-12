@@ -61,7 +61,6 @@
             this.MonthIcon = new System.Windows.Forms.PictureBox();
             this.LblMonth = new System.Windows.Forms.Label();
             this.BarSec1 = new System.Windows.Forms.PictureBox();
-            this.BarSec2 = new System.Windows.Forms.PictureBox();
             this.LblHour = new System.Windows.Forms.Label();
             this.DivideBar = new System.Windows.Forms.PictureBox();
             this.LblMinute = new System.Windows.Forms.Label();
@@ -91,7 +90,6 @@
             this.PnlMonth.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.MonthIcon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BarSec1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BarSec2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DivideBar)).BeginInit();
             this.SuspendLayout();
             // 
@@ -273,7 +271,6 @@
             this.PnlFuntion.Controls.Add(this.PnlDay);
             this.PnlFuntion.Controls.Add(this.PnlMonth);
             this.PnlFuntion.Controls.Add(this.BarSec1);
-            this.PnlFuntion.Controls.Add(this.BarSec2);
             this.PnlFuntion.Controls.Add(this.LblHour);
             this.PnlFuntion.Controls.Add(this.DivideBar);
             this.PnlFuntion.Controls.Add(this.LblMinute);
@@ -473,20 +470,9 @@
             this.BarSec1.Location = new System.Drawing.Point(-7, 318);
             this.BarSec1.Margin = new System.Windows.Forms.Padding(4);
             this.BarSec1.Name = "BarSec1";
-            this.BarSec1.Size = new System.Drawing.Size(352, 10);
+            this.BarSec1.Size = new System.Drawing.Size(0, 10);
             this.BarSec1.TabIndex = 44;
             this.BarSec1.TabStop = false;
-            // 
-            // BarSec2
-            // 
-            this.BarSec2.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.BarSec2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(180)))), ((int)(((byte)(43)))));
-            this.BarSec2.Location = new System.Drawing.Point(718, 318);
-            this.BarSec2.Margin = new System.Windows.Forms.Padding(4);
-            this.BarSec2.Name = "BarSec2";
-            this.BarSec2.Size = new System.Drawing.Size(345, 10);
-            this.BarSec2.TabIndex = 43;
-            this.BarSec2.TabStop = false;
             // 
             // LblHour
             // 
@@ -546,7 +532,7 @@
             this.LblMonthYear.Location = new System.Drawing.Point(493, 20);
             this.LblMonthYear.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LblMonthYear.Name = "LblMonthYear";
-            this.LblMonthYear.Size = new System.Drawing.Size(253, 122);
+            this.LblMonthYear.Size = new System.Drawing.Size(386, 122);
             this.LblMonthYear.TabIndex = 34;
             this.LblMonthYear.Text = "May 2017,\r\nSaturday";
             this.LblMonthYear.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -587,7 +573,6 @@
             this.PnlMonth.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.MonthIcon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.BarSec1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BarSec2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DivideBar)).EndInit();
             this.ResumeLayout(false);
 
@@ -603,7 +588,6 @@
         private System.Windows.Forms.Panel PnlTilteBar;
         private System.Windows.Forms.Panel PnlMain;
         private System.Windows.Forms.Panel PnlFuntion;
-        internal System.Windows.Forms.PictureBox BarSec2;
         internal System.Windows.Forms.Label LblHour;
         internal System.Windows.Forms.PictureBox DivideBar;
         internal System.Windows.Forms.Label LblMinute;
