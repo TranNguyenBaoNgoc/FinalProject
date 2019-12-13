@@ -499,7 +499,7 @@
             // LblMonthYear
             // 
             this.LblMonthYear.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.LblMonthYear.Font = new System.Drawing.Font("Times New Roman", 24.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.LblMonthYear.Font = new System.Drawing.Font("Century Gothic", 24.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblMonthYear.ForeColor = System.Drawing.Color.White;
             this.LblMonthYear.Location = new System.Drawing.Point(414, 51);
             this.LblMonthYear.Name = "LblMonthYear";
