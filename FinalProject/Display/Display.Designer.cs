@@ -30,12 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Display));
-            this.LblLogoSoft = new System.Windows.Forms.PictureBox();
-            this.BtnMinimize = new System.Windows.Forms.PictureBox();
-            this.BtnExit = new System.Windows.Forms.PictureBox();
             this.ToolTipDisplay = new System.Windows.Forms.ToolTip(this.components);
-            this.LblNameSoft = new System.Windows.Forms.Label();
-            this.PnlTilteBar = new System.Windows.Forms.Panel();
             this.PnlMain = new System.Windows.Forms.Panel();
             this.BtnMonth = new System.Windows.Forms.PictureBox();
             this.BtnDay = new System.Windows.Forms.PictureBox();
@@ -66,10 +61,11 @@
             this.LblMinute = new System.Windows.Forms.Label();
             this.LblDate = new System.Windows.Forms.Label();
             this.LblMonthYear = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.LblLogoSoft)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BtnMinimize)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BtnExit)).BeginInit();
-            this.PnlTilteBar.SuspendLayout();
+            this.BtnExit = new System.Windows.Forms.PictureBox();
+            this.BtnMinimize = new System.Windows.Forms.PictureBox();
+            this.LblLogoSoft = new System.Windows.Forms.PictureBox();
+            this.LblNameSoft = new System.Windows.Forms.Label();
+            this.PnlTilteBar = new System.Windows.Forms.Panel();
             this.PnlMain.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.BtnMonth)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BtnDay)).BeginInit();
@@ -91,68 +87,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.MonthIcon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BarSec1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DivideBar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BtnExit)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BtnMinimize)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LblLogoSoft)).BeginInit();
+            this.PnlTilteBar.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // LblLogoSoft
-            // 
-            this.LblLogoSoft.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.LblLogoSoft.Cursor = System.Windows.Forms.Cursors.Default;
-            this.LblLogoSoft.Image = ((System.Drawing.Image)(resources.GetObject("LblLogoSoft.Image")));
-            this.LblLogoSoft.Location = new System.Drawing.Point(6, 6);
-            this.LblLogoSoft.Name = "LblLogoSoft";
-            this.LblLogoSoft.Size = new System.Drawing.Size(30, 30);
-            this.LblLogoSoft.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.LblLogoSoft.TabIndex = 11;
-            this.LblLogoSoft.TabStop = false;
-            // 
-            // BtnMinimize
-            // 
-            this.BtnMinimize.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.BtnMinimize.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnMinimize.Image = ((System.Drawing.Image)(resources.GetObject("BtnMinimize.Image")));
-            this.BtnMinimize.Location = new System.Drawing.Point(713, 6);
-            this.BtnMinimize.Name = "BtnMinimize";
-            this.BtnMinimize.Size = new System.Drawing.Size(30, 30);
-            this.BtnMinimize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.BtnMinimize.TabIndex = 10;
-            this.BtnMinimize.TabStop = false;
-            // 
-            // BtnExit
-            // 
-            this.BtnExit.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.BtnExit.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnExit.Image = ((System.Drawing.Image)(resources.GetObject("BtnExit.Image")));
-            this.BtnExit.Location = new System.Drawing.Point(749, 6);
-            this.BtnExit.Name = "BtnExit";
-            this.BtnExit.Size = new System.Drawing.Size(30, 30);
-            this.BtnExit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.BtnExit.TabIndex = 9;
-            this.BtnExit.TabStop = false;
-            // 
-            // LblNameSoft
-            // 
-            this.LblNameSoft.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.LblNameSoft.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblNameSoft.ForeColor = System.Drawing.Color.White;
-            this.LblNameSoft.Location = new System.Drawing.Point(42, 6);
-            this.LblNameSoft.Name = "LblNameSoft";
-            this.LblNameSoft.Size = new System.Drawing.Size(130, 30);
-            this.LblNameSoft.TabIndex = 32;
-            this.LblNameSoft.Text = "Life Tracking";
-            this.LblNameSoft.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // PnlTilteBar
-            // 
-            this.PnlTilteBar.Controls.Add(this.LblNameSoft);
-            this.PnlTilteBar.Controls.Add(this.LblLogoSoft);
-            this.PnlTilteBar.Controls.Add(this.BtnMinimize);
-            this.PnlTilteBar.Controls.Add(this.BtnExit);
-            this.PnlTilteBar.Location = new System.Drawing.Point(4, 1);
-            this.PnlTilteBar.Margin = new System.Windows.Forms.Padding(2);
-            this.PnlTilteBar.Name = "PnlTilteBar";
-            this.PnlTilteBar.Size = new System.Drawing.Size(790, 45);
-            this.PnlTilteBar.TabIndex = 49;
             // 
             // PnlMain
             // 
@@ -508,6 +447,67 @@
             this.LblMonthYear.Text = "_";
             this.LblMonthYear.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
+            // BtnExit
+            // 
+            this.BtnExit.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.BtnExit.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnExit.Image = ((System.Drawing.Image)(resources.GetObject("BtnExit.Image")));
+            this.BtnExit.Location = new System.Drawing.Point(749, 6);
+            this.BtnExit.Name = "BtnExit";
+            this.BtnExit.Size = new System.Drawing.Size(30, 30);
+            this.BtnExit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.BtnExit.TabIndex = 9;
+            this.BtnExit.TabStop = false;
+            // 
+            // BtnMinimize
+            // 
+            this.BtnMinimize.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.BtnMinimize.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnMinimize.Image = ((System.Drawing.Image)(resources.GetObject("BtnMinimize.Image")));
+            this.BtnMinimize.Location = new System.Drawing.Point(713, 6);
+            this.BtnMinimize.Name = "BtnMinimize";
+            this.BtnMinimize.Size = new System.Drawing.Size(30, 30);
+            this.BtnMinimize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.BtnMinimize.TabIndex = 10;
+            this.BtnMinimize.TabStop = false;
+            // 
+            // LblLogoSoft
+            // 
+            this.LblLogoSoft.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.LblLogoSoft.Cursor = System.Windows.Forms.Cursors.Default;
+            this.LblLogoSoft.Image = ((System.Drawing.Image)(resources.GetObject("LblLogoSoft.Image")));
+            this.LblLogoSoft.Location = new System.Drawing.Point(6, 6);
+            this.LblLogoSoft.Name = "LblLogoSoft";
+            this.LblLogoSoft.Size = new System.Drawing.Size(30, 30);
+            this.LblLogoSoft.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.LblLogoSoft.TabIndex = 11;
+            this.LblLogoSoft.TabStop = false;
+            // 
+            // LblNameSoft
+            // 
+            this.LblNameSoft.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.LblNameSoft.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblNameSoft.ForeColor = System.Drawing.Color.White;
+            this.LblNameSoft.Location = new System.Drawing.Point(42, 6);
+            this.LblNameSoft.Name = "LblNameSoft";
+            this.LblNameSoft.Size = new System.Drawing.Size(130, 30);
+            this.LblNameSoft.TabIndex = 32;
+            this.LblNameSoft.Text = "Life Tracking";
+            this.LblNameSoft.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // PnlTilteBar
+            // 
+            this.PnlTilteBar.Controls.Add(this.LblNameSoft);
+            this.PnlTilteBar.Controls.Add(this.LblLogoSoft);
+            this.PnlTilteBar.Controls.Add(this.BtnMinimize);
+            this.PnlTilteBar.Controls.Add(this.BtnExit);
+            this.PnlTilteBar.Location = new System.Drawing.Point(4, 1);
+            this.PnlTilteBar.Margin = new System.Windows.Forms.Padding(2);
+            this.PnlTilteBar.Name = "PnlTilteBar";
+            this.PnlTilteBar.Size = new System.Drawing.Size(790, 45);
+            this.PnlTilteBar.TabIndex = 49;
+            // 
             // Display
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -520,11 +520,8 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Display";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormDisplay";
-            ((System.ComponentModel.ISupportInitialize)(this.LblLogoSoft)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BtnMinimize)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BtnExit)).EndInit();
-            this.PnlTilteBar.ResumeLayout(false);
             this.PnlMain.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.BtnMonth)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.BtnDay)).EndInit();
@@ -546,18 +543,17 @@
             ((System.ComponentModel.ISupportInitialize)(this.MonthIcon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.BarSec1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DivideBar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BtnExit)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BtnMinimize)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LblLogoSoft)).EndInit();
+            this.PnlTilteBar.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        internal System.Windows.Forms.PictureBox LblLogoSoft;
-        internal System.Windows.Forms.PictureBox BtnMinimize;
-        internal System.Windows.Forms.PictureBox BtnExit;
         internal System.Windows.Forms.ToolTip ToolTipDisplay;
-        internal System.Windows.Forms.Label LblNameSoft;
-        private System.Windows.Forms.Panel PnlTilteBar;
         private System.Windows.Forms.Panel PnlMain;
         private System.Windows.Forms.Panel PnlFuntion;
         internal System.Windows.Forms.Label LblHour;
@@ -588,6 +584,11 @@
         internal System.Windows.Forms.PictureBox BtnHabit;
         internal System.Windows.Forms.PictureBox BtnSpecial;
         internal System.Windows.Forms.PictureBox BtnStatis;
+        internal System.Windows.Forms.PictureBox BtnExit;
+        internal System.Windows.Forms.PictureBox BtnMinimize;
+        internal System.Windows.Forms.PictureBox LblLogoSoft;
+        internal System.Windows.Forms.Label LblNameSoft;
+        private System.Windows.Forms.Panel PnlTilteBar;
     }
 }
 

@@ -38,6 +38,81 @@ namespace Display
             this.StatisIcon.Click += StatisIcon_Click;
             this.LblMonth.Click += LblMonth_Click;
             this.MonthIcon.Click += MonthIcon_Click;
+            this.SetStyle(ControlStyles.ResizeRedraw, true);
+            this.DoubleBuffered = true;
+            this.PnlTilteBar.MouseDown += PnlTilteBar_MouseDown;
+            this.PnlTilteBar.MouseMove += PnlTilteBar_MouseMove;
+            this.PnlTilteBar.MouseUp += PnlTilteBar_MouseUp;
+            this.LblSpec.Click += LblSpec_Click;
+            this.SpecIcon.Click += SpecIcon_Click;
+            this.LblDay.Click += LblDay_Click;
+            this.DayIcon.Click += DayIcon_Click;
+        }
+
+        private int posX;
+        private int posY;
+        private bool drag;
+
+        void PnlTilteBar_MouseUp(object sender, MouseEventArgs e)
+        {
+            {
+                if (e.Button == MouseButtons.Left)
+                {
+                    drag = false;
+                    this.Opacity = 1;
+                }
+            }
+        }
+
+        void PnlTilteBar_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+            {
+                if (drag)
+                {
+                    this.Opacity = 0.75;
+                    this.Top = Cursor.Position.Y - posY;
+                    this.Left = Cursor.Position.X - posX;
+                }
+                this.Cursor = Cursors.Default;
+            }
+        }
+
+        void PnlTilteBar_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+            {
+                if (this.WindowState == FormWindowState.Normal)
+                {
+                    drag = true;
+                    posX = Cursor.Position.X - this.Left;
+                    posY = Cursor.Position.Y - this.Top;
+                }
+            }
+        }
+
+        void DayIcon_Click(object sender, EventArgs e)
+        {
+            PnlFuntion.Controls.Clear();
+            PnlFuntion.Controls.Add(new Day());
+        }
+
+        void LblDay_Click(object sender, EventArgs e)
+        {
+            PnlFuntion.Controls.Clear();
+            PnlFuntion.Controls.Add(new Day());
+        }
+
+        void SpecIcon_Click(object sender, EventArgs e)
+        {
+            PnlFuntion.Controls.Clear();
+            PnlFuntion.Controls.Add(new SpecialEvent());
+        }
+
+        void LblSpec_Click(object sender, EventArgs e)
+        {
+            PnlFuntion.Controls.Clear();
+            PnlFuntion.Controls.Add(new SpecialEvent());
         }
 
         void MonthIcon_Click(object sender, EventArgs e)
