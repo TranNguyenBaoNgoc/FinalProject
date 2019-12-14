@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using System.Data.SqlClient;
 using System.Configuration;
 using System.Windows.Forms.DataVisualization.Charting;
+using Display;
 
 namespace Display
 {
@@ -41,6 +42,9 @@ namespace Display
 
         void btnHabit_Click(object sender, EventArgs e)
         {
+            var H = new StatisticHabit();
+            this.Hide();
+            this.Parent.Controls.Add(H);
         }
 
         void btnWork_Click(object sender, EventArgs e)

@@ -48,7 +48,7 @@
             legend1.BackColor = System.Drawing.Color.White;
             legend1.Name = "Legend1";
             this.C1.Legends.Add(legend1);
-            this.C1.Location = new System.Drawing.Point(0, 19);
+            this.C1.Location = new System.Drawing.Point(0, 3);
             this.C1.Name = "C1";
             series1.BorderColor = System.Drawing.Color.Maroon;
             series1.ChartArea = "ChartArea1";
@@ -58,7 +58,7 @@
             series1.Legend = "Legend1";
             series1.Name = "Your Productivity";
             this.C1.Series.Add(series1);
-            this.C1.Size = new System.Drawing.Size(714, 368);
+            this.C1.Size = new System.Drawing.Size(742, 384);
             this.C1.TabIndex = 46;
             this.C1.Text = "C1";
             // 
@@ -66,7 +66,7 @@
             // 
             this.Mc1.BackColor = System.Drawing.Color.DarkRed;
             this.Mc1.ForeColor = System.Drawing.SystemColors.InfoText;
-            this.Mc1.Location = new System.Drawing.Point(571, 192);
+            this.Mc1.Location = new System.Drawing.Point(591, 180);
             this.Mc1.Name = "Mc1";
             this.Mc1.TabIndex = 47;
             // 
@@ -75,7 +75,7 @@
             this.BtnWork.AutoSize = true;
             this.BtnWork.Checked = true;
             this.BtnWork.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.BtnWork.Location = new System.Drawing.Point(571, 110);
+            this.BtnWork.Location = new System.Drawing.Point(591, 87);
             this.BtnWork.Name = "BtnWork";
             this.BtnWork.Size = new System.Drawing.Size(81, 17);
             this.BtnWork.TabIndex = 48;
@@ -88,7 +88,7 @@
             this.BtnHabit.AutoCheck = false;
             this.BtnHabit.AutoSize = true;
             this.BtnHabit.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.BtnHabit.Location = new System.Drawing.Point(662, 110);
+            this.BtnHabit.Location = new System.Drawing.Point(682, 87);
             this.BtnHabit.Name = "BtnHabit";
             this.BtnHabit.Size = new System.Drawing.Size(80, 17);
             this.BtnHabit.TabIndex = 49;
@@ -98,9 +98,9 @@
             // 
             // BtnShow
             // 
-            this.BtnShow.Location = new System.Drawing.Point(591, 133);
+            this.BtnShow.Location = new System.Drawing.Point(591, 120);
             this.BtnShow.Name = "BtnShow";
-            this.BtnShow.Size = new System.Drawing.Size(131, 35);
+            this.BtnShow.Size = new System.Drawing.Size(171, 35);
             this.BtnShow.TabIndex = 50;
             this.BtnShow.Text = "Show";
             this.BtnShow.UseVisualStyleBackColor = true;

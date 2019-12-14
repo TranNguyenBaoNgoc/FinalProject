@@ -501,9 +501,9 @@
             this.LblMonthYear.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.LblMonthYear.Font = new System.Drawing.Font("Century Gothic", 24.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblMonthYear.ForeColor = System.Drawing.Color.White;
-            this.LblMonthYear.Location = new System.Drawing.Point(414, 51);
+            this.LblMonthYear.Location = new System.Drawing.Point(404, 42);
             this.LblMonthYear.Name = "LblMonthYear";
-            this.LblMonthYear.Size = new System.Drawing.Size(269, 99);
+            this.LblMonthYear.Size = new System.Drawing.Size(269, 113);
             this.LblMonthYear.TabIndex = 34;
             this.LblMonthYear.Text = "_";
             this.LblMonthYear.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;

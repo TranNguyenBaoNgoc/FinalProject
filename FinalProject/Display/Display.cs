@@ -94,7 +94,10 @@ namespace Display
 
         void BtnHome_Click(object sender, EventArgs e)
         {
-            PnlMain.Show();
+            this.Hide();
+            var D = new Display();
+            D.Closed += (s, args) => this.Close(); 
+            D.Show();
         }
 
         void BtnHabit_Click(object sender, EventArgs e)

@@ -15,6 +15,15 @@ namespace Display
         public Add()
         {
             InitializeComponent();
+            this.BtnOut.Click += BtnOut_Click;
+        }
+
+        void BtnOut_Click(object sender, EventArgs e)
+        {
+            ((Form)this.TopLevelControl).Hide();
+            var D = new Display();
+            D.Show();
+            D.Closed += (s, args) => ((Form)this.TopLevelControl).Close();
         }
     }
 }

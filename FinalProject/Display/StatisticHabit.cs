@@ -36,7 +36,8 @@ namespace Display
         void btnWork_Click(object sender, EventArgs e)
         {
             var W = new StatisticWork();
-            W.Show();
+            this.Hide();
+            this.Parent.Controls.Add(W);
         }
     }
 }

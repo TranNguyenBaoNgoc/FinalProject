@@ -73,7 +73,7 @@
             this.GrdHabit.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.GrdHabit.Location = new System.Drawing.Point(9, 3);
             this.GrdHabit.Name = "GrdHabit";
-            this.GrdHabit.Size = new System.Drawing.Size(588, 384);
+            this.GrdHabit.Size = new System.Drawing.Size(588, 372);
             this.GrdHabit.TabIndex = 59;
             // 
             // BtnShow
