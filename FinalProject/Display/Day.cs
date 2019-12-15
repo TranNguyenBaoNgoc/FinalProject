@@ -12,44 +12,36 @@ namespace Display
 {
     public partial class Day : UserControl
     {
+        int i = 1;
+        int j = 1;
+        private LogicLayer Management;
         public Day()
         {
             InitializeComponent();
+            this.Management = new LogicLayer();
+            this.BtnNext.Click += BtnNext_Click;
+            this.BtnPre.Click += BtnPre_Click;
+            this.Load += Day_Load;
         }
 
-        private void Panel2_Paint(object sender, PaintEventArgs e)
+        void Day_Load(object sender, EventArgs e)
         {
-            
+            this.LblMonthYear.Text = DateTime.Now.ToString("MMMM yyyy,\ndddd");
+            this.LblDay.Text = DateTime.Now.ToString("dd");
+            var T = new Task_Item();
+            PnlList.Controls.Add(T);
         }
 
-        private void Panel1_Paint(object sender, PaintEventArgs e)
+        void BtnPre_Click(object sender, EventArgs e)
         {
-
+            this.LblDay.Text = DateTime.Now.AddDays(--i).ToString("dd");
+            this.LblMonthYear.Text = DateTime.Now.AddDays(--j).ToString("MMMM yyyy,\ndddd");
         }
 
-        private void Label4_Click(object sender, EventArgs e)
+        void BtnNext_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void Label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void PictureBox2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void PictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void ToolTip1_Popup(object sender, PopupEventArgs e)
-        {
-
+            this.LblDay.Text = DateTime.Now.AddDays(i++).ToString("dd");
+            this.LblMonthYear.Text = DateTime.Now.AddDays(j++).ToString("MMMM yyyy,\ndddd");
         }
     }
 }

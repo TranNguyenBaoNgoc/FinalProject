@@ -31,13 +31,13 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Day));
             this.PnlList = new System.Windows.Forms.Panel();
-            this.Panel1 = new System.Windows.Forms.Panel();
+            this.PnlControl = new System.Windows.Forms.Panel();
             this.LblMonthYear = new System.Windows.Forms.Label();
-            this.LblDate = new System.Windows.Forms.Label();
+            this.LblDay = new System.Windows.Forms.Label();
             this.BtnNext = new System.Windows.Forms.PictureBox();
             this.BtnPre = new System.Windows.Forms.PictureBox();
-            this.ToolTip1 = new System.Windows.Forms.ToolTip(this.components);
-            this.Panel1.SuspendLayout();
+            this.ToolTipDay = new System.Windows.Forms.ToolTip(this.components);
+            this.PnlControl.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.BtnNext)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BtnPre)).BeginInit();
             this.SuspendLayout();
@@ -52,22 +52,20 @@
             this.PnlList.Name = "PnlList";
             this.PnlList.Size = new System.Drawing.Size(1060, 403);
             this.PnlList.TabIndex = 5;
-            this.PnlList.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel2_Paint);
             // 
-            // Panel1
+            // PnlControl
             // 
-            this.Panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.Panel1.Controls.Add(this.LblMonthYear);
-            this.Panel1.Controls.Add(this.LblDate);
-            this.Panel1.Controls.Add(this.BtnNext);
-            this.Panel1.Controls.Add(this.BtnPre);
-            this.Panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.Panel1.Location = new System.Drawing.Point(0, 0);
-            this.Panel1.Margin = new System.Windows.Forms.Padding(4);
-            this.Panel1.Name = "Panel1";
-            this.Panel1.Size = new System.Drawing.Size(1060, 66);
-            this.Panel1.TabIndex = 6;
-            this.Panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel1_Paint);
+            this.PnlControl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.PnlControl.Controls.Add(this.LblMonthYear);
+            this.PnlControl.Controls.Add(this.LblDay);
+            this.PnlControl.Controls.Add(this.BtnNext);
+            this.PnlControl.Controls.Add(this.BtnPre);
+            this.PnlControl.Dock = System.Windows.Forms.DockStyle.Top;
+            this.PnlControl.Location = new System.Drawing.Point(0, 0);
+            this.PnlControl.Margin = new System.Windows.Forms.Padding(4);
+            this.PnlControl.Name = "PnlControl";
+            this.PnlControl.Size = new System.Drawing.Size(1060, 66);
+            this.PnlControl.TabIndex = 6;
             // 
             // LblMonthYear
             // 
@@ -77,25 +75,23 @@
             this.LblMonthYear.Location = new System.Drawing.Point(487, 6);
             this.LblMonthYear.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LblMonthYear.Name = "LblMonthYear";
-            this.LblMonthYear.Size = new System.Drawing.Size(125, 57);
+            this.LblMonthYear.Size = new System.Drawing.Size(231, 57);
             this.LblMonthYear.TabIndex = 4;
             this.LblMonthYear.Text = "May 2017,\r\nSaturday";
             this.LblMonthYear.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.LblMonthYear.Click += new System.EventHandler(this.Label4_Click);
             // 
-            // LblDate
+            // LblDay
             // 
-            this.LblDate.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.LblDate.Font = new System.Drawing.Font("Century Gothic", 25.75F);
-            this.LblDate.ForeColor = System.Drawing.Color.White;
-            this.LblDate.Location = new System.Drawing.Point(405, 6);
-            this.LblDate.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.LblDate.Name = "LblDate";
-            this.LblDate.Size = new System.Drawing.Size(77, 57);
-            this.LblDate.TabIndex = 2;
-            this.LblDate.Text = "06";
-            this.LblDate.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.LblDate.Click += new System.EventHandler(this.Label1_Click);
+            this.LblDay.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.LblDay.Font = new System.Drawing.Font("Century Gothic", 25.75F);
+            this.LblDay.ForeColor = System.Drawing.Color.White;
+            this.LblDay.Location = new System.Drawing.Point(405, 6);
+            this.LblDay.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.LblDay.Name = "LblDay";
+            this.LblDay.Size = new System.Drawing.Size(77, 57);
+            this.LblDay.TabIndex = 2;
+            this.LblDay.Text = "06";
+            this.LblDay.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // BtnNext
             // 
@@ -109,8 +105,7 @@
             this.BtnNext.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.BtnNext.TabIndex = 1;
             this.BtnNext.TabStop = false;
-            this.ToolTip1.SetToolTip(this.BtnNext, "Next Day");
-            this.BtnNext.Click += new System.EventHandler(this.PictureBox2_Click);
+            this.ToolTipDay.SetToolTip(this.BtnNext, "Next Day");
             // 
             // BtnPre
             // 
@@ -124,22 +119,17 @@
             this.BtnPre.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.BtnPre.TabIndex = 0;
             this.BtnPre.TabStop = false;
-            this.ToolTip1.SetToolTip(this.BtnPre, "Previous Day");
-            this.BtnPre.Click += new System.EventHandler(this.PictureBox1_Click);
-            // 
-            // ToolTip1
-            // 
-            this.ToolTip1.Popup += new System.Windows.Forms.PopupEventHandler(this.ToolTip1_Popup);
+            this.ToolTipDay.SetToolTip(this.BtnPre, "Previous Day");
             // 
             // Day
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.PnlList);
-            this.Controls.Add(this.Panel1);
+            this.Controls.Add(this.PnlControl);
             this.Name = "Day";
             this.Size = new System.Drawing.Size(1060, 469);
-            this.Panel1.ResumeLayout(false);
+            this.PnlControl.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.BtnNext)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.BtnPre)).EndInit();
             this.ResumeLayout(false);
@@ -149,11 +139,11 @@
         #endregion
 
         internal System.Windows.Forms.Panel PnlList;
-        internal System.Windows.Forms.Panel Panel1;
+        internal System.Windows.Forms.Panel PnlControl;
         internal System.Windows.Forms.Label LblMonthYear;
-        internal System.Windows.Forms.Label LblDate;
+        internal System.Windows.Forms.Label LblDay;
         internal System.Windows.Forms.PictureBox BtnNext;
-        internal System.Windows.Forms.ToolTip ToolTip1;
+        internal System.Windows.Forms.ToolTip ToolTipDay;
         internal System.Windows.Forms.PictureBox BtnPre;
     }
 }

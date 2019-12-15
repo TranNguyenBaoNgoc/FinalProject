@@ -103,7 +103,7 @@
             this.LblMonthYear.Location = new System.Drawing.Point(489, 5);
             this.LblMonthYear.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LblMonthYear.Name = "LblMonthYear";
-            this.LblMonthYear.Size = new System.Drawing.Size(125, 57);
+            this.LblMonthYear.Size = new System.Drawing.Size(205, 57);
             this.LblMonthYear.TabIndex = 7;
             this.LblMonthYear.Text = "May 2017,\r\nSaturday";
             this.LblMonthYear.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;

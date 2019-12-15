@@ -33,7 +33,7 @@
             this.PnlList = new System.Windows.Forms.Panel();
             this.PnlDateAndScroll = new System.Windows.Forms.Panel();
             this.LblMonthYear = new System.Windows.Forms.Label();
-            this.LblDate = new System.Windows.Forms.Label();
+            this.LblDay = new System.Windows.Forms.Label();
             this.BtnNext = new System.Windows.Forms.PictureBox();
             this.BtnPre = new System.Windows.Forms.PictureBox();
             this.ToolTipHabit = new System.Windows.Forms.ToolTip(this.components);
@@ -57,7 +57,7 @@
             // 
             this.PnlDateAndScroll.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
             this.PnlDateAndScroll.Controls.Add(this.LblMonthYear);
-            this.PnlDateAndScroll.Controls.Add(this.LblDate);
+            this.PnlDateAndScroll.Controls.Add(this.LblDay);
             this.PnlDateAndScroll.Controls.Add(this.BtnNext);
             this.PnlDateAndScroll.Controls.Add(this.BtnPre);
             this.PnlDateAndScroll.Dock = System.Windows.Forms.DockStyle.Top;
@@ -80,18 +80,18 @@
             this.LblMonthYear.Text = "May 2017,\r\nSaturday";
             this.LblMonthYear.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // LblDate
+            // LblDay
             // 
-            this.LblDate.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.LblDate.Font = new System.Drawing.Font("Century Gothic", 25.75F);
-            this.LblDate.ForeColor = System.Drawing.Color.White;
-            this.LblDate.Location = new System.Drawing.Point(405, 6);
-            this.LblDate.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.LblDate.Name = "LblDate";
-            this.LblDate.Size = new System.Drawing.Size(77, 57);
-            this.LblDate.TabIndex = 2;
-            this.LblDate.Text = "06";
-            this.LblDate.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.LblDay.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.LblDay.Font = new System.Drawing.Font("Century Gothic", 25.75F);
+            this.LblDay.ForeColor = System.Drawing.Color.White;
+            this.LblDay.Location = new System.Drawing.Point(405, 6);
+            this.LblDay.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.LblDay.Name = "LblDay";
+            this.LblDay.Size = new System.Drawing.Size(77, 57);
+            this.LblDay.TabIndex = 2;
+            this.LblDay.Text = "06";
+            this.LblDay.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // BtnNext
             // 
@@ -141,7 +141,7 @@
         internal System.Windows.Forms.Panel PnlList;
         internal System.Windows.Forms.Panel PnlDateAndScroll;
         internal System.Windows.Forms.Label LblMonthYear;
-        internal System.Windows.Forms.Label LblDate;
+        internal System.Windows.Forms.Label LblDay;
         internal System.Windows.Forms.PictureBox BtnNext;
         internal System.Windows.Forms.ToolTip ToolTipHabit;
         internal System.Windows.Forms.PictureBox BtnPre;

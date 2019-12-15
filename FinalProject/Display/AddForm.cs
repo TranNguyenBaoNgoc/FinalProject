@@ -282,12 +282,14 @@ namespace Display
                 prio = true;
             }
             var sta = false;
-            if (this.CheckedHabit.Visible == false && this.CheckedSpec.Visible == false
-                && this.CheckedWork.Visible == false && this.TxtTitle.Text == "Title")
+            if ((this.CheckedHabit.Visible == false && this.CheckedSpec.Visible == false
+                && this.CheckedWork.Visible == false && this.TxtTitle.Text == "Title") ||
+                (this.CheckedHabit.Visible == false && this.CheckedSpec.Visible == false
+                && this.CheckedWork.Visible == false && this.TxtTitle.Text == ""))
             {
                 MessageBox.Show("Please enter title and choose category");
             }
-            else if (this.TxtTitle.Text == "Title")
+            else if (this.TxtTitle.Text == "Title" || this.TxtTitle.Text == "")
             {
                 MessageBox.Show("Please enter title");
             }
