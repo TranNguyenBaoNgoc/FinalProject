@@ -14,7 +14,7 @@ namespace Display
             return db.Tasks.ToArray();
         }
 
-        public Task GetTask(int id)
+        public Task GetTask(DateTime datetime, string title)
         {
             var db = new MyDatabaseEntities();
             var task = db.Tasks.Find();
@@ -27,7 +27,7 @@ namespace Display
             return db.SpecEvents.ToArray();
         }
 
-        public SpecEvent GetSpecEvent(int id)
+        public SpecEvent GetSpecEvent(DateTime datetime, string title)
         {
             var db = new MyDatabaseEntities();
             var spevEve = db.SpecEvents.Find();
@@ -40,7 +40,7 @@ namespace Display
             return db.Routines.ToArray();
         }
 
-        public Routine GetHabit(int id)
+        public Routine GetHabit(DateTime datetime, string title)
         {
             var db = new MyDatabaseEntities();
             var habit= db.Routines.Find();
@@ -59,6 +59,7 @@ namespace Display
             var db = new MyDatabaseEntities();
             db.Tasks.Add(task);
             db.SaveChanges();
+            db.Dispose();
         }
 
         public void CreateHabit(DateTime datetime, string title, string detail, bool prio, bool status)
@@ -73,6 +74,7 @@ namespace Display
             var db = new MyDatabaseEntities();
             db.Routines.Add(habit);
             db.SaveChanges();
+            db.Dispose();
         }
 
         public void CreateSpecEvent(DateTime datetime, string title, string location, string start, string end, string detail, bool prio, bool status)
@@ -90,6 +92,7 @@ namespace Display
             var db = new MyDatabaseEntities();
             db.SpecEvents.Add(specEve);
             db.SaveChanges();
+            db.Dispose();
         }
 
         public void EditTask(DateTime datetime, string title, string detail, bool prio, bool status)
