@@ -47,16 +47,23 @@ namespace Display
 
         void BtnSave_Click(object sender, EventArgs e)
         {
-            var title = this.txtTitle.Text;
-            var detail = this.txtDetails.Text;
-            this.Management.EditHabit(Int32.Parse(this.LblId.Text), title, detail);
-            MessageBox.Show("Edit successfuly");
-            this.ChBChecked.Visible = false;
-            this.ChBUnchecked.Visible = true;
-            this.BtnEdit.Visible = true;
-            this.BtnSave.Visible = false;
-            this.txtTitle.ReadOnly = true;
-            this.txtDetails.ReadOnly = true;
+            if (this.txtTitle.Text == "")
+            {
+                MessageBox.Show("Please enter title");
+            }
+            else
+            {
+                var title = this.txtTitle.Text;
+                var detail = this.txtDetails.Text;
+                this.Management.EditHabit(Int32.Parse(this.LblId.Text), title, detail);
+                MessageBox.Show("Edit successfuly");
+                this.ChBChecked.Visible = false;
+                this.ChBUnchecked.Visible = true;
+                this.BtnEdit.Visible = true;
+                this.BtnSave.Visible = false;
+                this.txtTitle.ReadOnly = true;
+                this.txtDetails.ReadOnly = true;
+            }
         }
 
         void BtnEdit_Click(object sender, EventArgs e)
@@ -95,7 +102,7 @@ namespace Display
                 this.ChBChecked.Visible = true;
                 this.ChBUnchecked.Visible = false;
             }
-            if (DateTime.Now.Hour == 0 && DateTime.Now.Minute == 0 && DateTime.Now.Second == 0 && DateTime.Now.Millisecond == 0) 
+            if (DateTime.Now.Hour == 0 && DateTime.Now.Minute == 0 && DateTime.Now.Second == 0 && DateTime.Now.Millisecond == 0)
             {
                 this.ChBChecked.Visible = false;
                 this.ChBUnchecked.Visible = true;

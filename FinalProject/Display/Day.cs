@@ -21,12 +21,19 @@ namespace Display
             this.Management = new LogicLayer();
             this.BtnNext.Click += BtnNext_Click;
             this.BtnPre.Click += BtnPre_Click;
+            this.PnlList.Click += PnlList_Click;
             this.Load += Day_Load;
+        }
+
+        void PnlList_Click(object sender, EventArgs e)
+        {
+            PnlList.Controls.Clear();
+            AddItem();
         }
 
         public void AddItem()
         {
-            Point Point = new Point(0, 0); 
+            Point Point = new Point(0, 0);
             foreach (Task t in this.Management.GetTasks())
             {
                 if (t.DateTime.ToString("MMMM yyyy,\ndddd") == this.LblMonthYear.Text && t.DateTime.ToString("dd") == this.LblDay.Text)
