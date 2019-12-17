@@ -153,12 +153,6 @@
     <Compile Include="SpecialEvent.Designer.cs">
       <DependentUpon>SpecialEvent.cs</DependentUpon>
     </Compile>
-    <Compile Include="StatisticHabit.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="StatisticHabit.Designer.cs">
-      <DependentUpon>StatisticHabit.cs</DependentUpon>
-    </Compile>
     <Compile Include="StatisticWork.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -209,9 +203,6 @@
     </Compile>
     <EmbeddedResource Include="SpecialEvent.resx">
       <DependentUpon>SpecialEvent.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="StatisticHabit.resx">
-      <DependentUpon>StatisticHabit.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="StatisticWork.resx">
       <DependentUpon>StatisticWork.cs</DependentUpon>

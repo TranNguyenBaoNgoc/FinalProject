@@ -16,39 +16,41 @@ namespace Display
 {
     public partial class StatisticWork : UserControl
     {
+        private LogicLayer Management;
+
         public StatisticWork()
         {
             InitializeComponent();
-            this.BtnWork.Click += btnWork_Click;
-            this.BtnHabit.Click += btnHabit_Click;
-            this.BtnShow.Click += btnShow_Click;
             this.Mc1.DateSelected += monthCalendar1_DateSelected;
+            this.Management = new LogicLayer();
         }
+
 
         void monthCalendar1_DateSelected(object sender, DateRangeEventArgs e)
         {
-        }
+            var Date = this.Mc1.SelectionRange.Start.ToString("dd-MM-yyyy");
+            double count1 = 0;
+            foreach (Task t in this.Management.GetTasks())
+            {
+                if (t.DateTime.ToString("dd-MM-yyyy") == Date)
+                {
+                    count1++;
+                }
+            }
 
-        void btnShow_Click(object sender, EventArgs e)
-        {
-            this.C1.Series["Your Productivity"].Points.AddXY("MONDAY", 50);
-            this.C1.Series["Your Productivity"].Points.AddXY("TUESDAY", 60);
-            this.C1.Series["Your Productivity"].Points.AddXY("WEDNESDAY", 20);
-            this.C1.Series["Your Productivity"].Points.AddXY("THURSDAY", 10);
-            this.C1.Series["Your Productivity"].Points.AddXY("FRIDAY", 30);
-            this.C1.Series["Your Productivity"].Points.AddXY("SATURDAY", 80);
-            this.C1.Series["Your Productivity"].Points.AddXY("SUNDAY", 100);
-        }
-
-        void btnHabit_Click(object sender, EventArgs e)
-        {
-            var H = new StatisticHabit();
-            this.Hide();
-            this.Parent.Controls.Add(H);
-        }
-
-        void btnWork_Click(object sender, EventArgs e)
-        {
+            double count2 = 0;
+            foreach (Task t in this.Management.GetTasks())
+            {
+                if (t.DateTime.ToString("dd-MM-yyyy") == Date)
+                {
+                    if (t.Status == true)
+                    {
+                        count2++;
+                    }
+                }
+            }
+            double Productivity = count2 / count1 * 100;
+            C1.Series["Your Productivity"].Points.AddXY(Date, Productivity);
         }
     }
 }

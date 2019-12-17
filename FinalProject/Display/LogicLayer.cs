@@ -257,6 +257,5 @@ namespace Display
         {
             return DateTime.Now.ToString("mm");
         }
-        
     }
 }
