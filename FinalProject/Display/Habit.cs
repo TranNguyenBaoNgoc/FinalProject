@@ -17,22 +17,25 @@ namespace Display
         {
             InitializeComponent();
             this.Management = new LogicLayer();
+            this.PnlList.Click += PnlList_Click;
             this.Load += Habit_Load;
+        }
+
+        void PnlList_Click(object sender, EventArgs e)
+        {
+            PnlList.Controls.Clear();
+            AddItem();
         }
 
         public void AddItem()
         {
             Point Point = new Point(0, 0);
-            foreach (Task t in this.Management.GetTasks())
+            foreach (Routine t in this.Management.GetHabits())
             {
-                if (t.DateTime.ToString("MMMM yyyy,\ndddd") == this.LblMonthYear.Text && t.DateTime.ToString("dd") == this.LblDay.Text)
-                {
-
-                    var item = new Task_Item(t.Id);
-                    item.Location = new Point(0, PnlList.AutoScrollPosition.Y + Point.Y);
-                    Point.Y += item.Size.Height;
-                    PnlList.Controls.Add(item);
-                }
+                var item = new Habit_Item(t.Id);
+                item.Location = new Point(0, PnlList.AutoScrollPosition.Y + Point.Y);
+                Point.Y += item.Size.Height;
+                PnlList.Controls.Add(item);
             }
         }
 

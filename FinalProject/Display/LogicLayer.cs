@@ -21,13 +21,6 @@ namespace Display
             return task;
         }
 
-        public Task GetTaskName(String title)
-        {
-            var db = new MyDatabaseEntities();
-            var task = db.Tasks.Find(title);
-            return task;
-        }
-
         public List<SpecEvent> GetSpecEvents()
         {
             var db = new MyDatabaseEntities();
@@ -41,10 +34,10 @@ namespace Display
             return spevEve;
         }
 
-        public Routine[] GetHabits()
+        public List<Routine> GetHabits()
         {
             var db = new MyDatabaseEntities();
-            return db.Routines.ToArray();
+            return db.Routines.ToList();
         }
 
         public Routine GetHabit(int id)
@@ -69,10 +62,9 @@ namespace Display
             db.Dispose();
         }
 
-        public void CreateHabit(DateTime datetime, string title, string detail, bool prio, bool status)
+        public void CreateHabit(string title, string detail, bool prio, bool status)
         {
             var habit = new Routine();
-            habit.DateTime = datetime;
             habit.Title = title;
             habit.Details = detail;
             habit.Prio = prio;
@@ -127,7 +119,7 @@ namespace Display
             db.Dispose();
         }
 
-        public void EditPrio(int id, bool prio)
+        public void EditPrioTask(int id, bool prio)
         {
             var db = new MyDatabaseEntities();
             var task = db.Tasks.Find(id);
@@ -139,15 +131,24 @@ namespace Display
             db.Dispose();
         }
 
-        public void EditHabit(DateTime datetime, string title, string detail, bool prio, bool status)
+        public void EditHabit(int id, string title, string detail)
         {
             var db = new MyDatabaseEntities();
-            var habit = db.Routines.Find(datetime, title);
+            var habit = db.Routines.Find(id);
 
-            habit.DateTime = datetime;
             habit.Title = title;
             habit.Details = detail;
-            habit.Prio = prio;
+
+            db.Entry(habit).State = System.Data.Entity.EntityState.Modified;
+            db.SaveChanges();
+            db.Dispose();
+        }
+
+        public void EditStaHabit(int id, bool status)
+        {
+            var db = new MyDatabaseEntities();
+            var habit = db.Routines.Find(id);
+
             habit.Status = status;
 
             db.Entry(habit).State = System.Data.Entity.EntityState.Modified;
@@ -155,24 +156,58 @@ namespace Display
             db.Dispose();
         }
 
-        public void EditSpecEvent(DateTime datetime, string title, string location, string start, string end, string detail, bool prio, bool status)
+        public void EditPrioHabit(int id, bool prio)
         {
             var db = new MyDatabaseEntities();
-            var specEve = db.SpecEvents.Find(datetime, title);
+            var habit = db.Routines.Find(id);
 
-            specEve.DateTime = datetime;
+            habit.Prio = prio;
+
+            db.Entry(habit).State = System.Data.Entity.EntityState.Modified;
+            db.SaveChanges();
+            db.Dispose();
+        }
+
+        public void EditSpecEvent(int id, string title, string detail,string location, string start, string end)
+        {
+            var db = new MyDatabaseEntities();
+            var specEve = db.SpecEvents.Find(id);
+
             specEve.Title = title;
             specEve.Location = location;
             specEve.Start = start;
             specEve.EndTime = end;
             specEve.Details = detail;
-            specEve.Prio = prio;
-            specEve.Status = status;
 
             db.Entry(specEve).State = System.Data.Entity.EntityState.Modified;
             db.SaveChanges();
             db.Dispose();
         }
+
+        public void EditStaEvent(int id, bool status)
+        {
+            var db = new MyDatabaseEntities();
+            var speEvent = db.SpecEvents.Find(id);
+
+            speEvent.Status = status;
+
+            db.Entry(speEvent).State = System.Data.Entity.EntityState.Modified;
+            db.SaveChanges();
+            db.Dispose();
+        }
+
+        public void EditPrioEvent(int id, bool prio)
+        {
+            var db = new MyDatabaseEntities();
+            var speEvent = db.SpecEvents.Find(id);
+
+            speEvent.Prio = prio;
+
+            db.Entry(speEvent).State = System.Data.Entity.EntityState.Modified;
+            db.SaveChanges();
+            db.Dispose();
+        }
+
         public void DeleteTask(int id)
         {
             var db = new MyDatabaseEntities();

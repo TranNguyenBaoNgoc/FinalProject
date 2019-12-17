@@ -83,6 +83,7 @@
             // 
             this.DTPDate.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DTPDate.Location = new System.Drawing.Point(82, 214);
+            this.DTPDate.MinDate = new System.DateTime(2019, 12, 17, 0, 0, 0, 0);
             this.DTPDate.Name = "DTPDate";
             this.DTPDate.Size = new System.Drawing.Size(427, 36);
             this.DTPDate.TabIndex = 67;
@@ -325,6 +326,7 @@
             this.LocationIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.LocationIcon.TabIndex = 20;
             this.LocationIcon.TabStop = false;
+            this.ToolTipAdd.SetToolTip(this.LocationIcon, "Location");
             // 
             // LblEnd
             // 
@@ -427,6 +429,7 @@
             this.BtnAdd.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.BtnAdd.TabIndex = 52;
             this.BtnAdd.TabStop = false;
+            this.ToolTipAdd.SetToolTip(this.BtnAdd, "Add");
             // 
             // LblAddForm
             // 
@@ -454,6 +457,7 @@
             this.BtnExit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.BtnExit.TabIndex = 48;
             this.BtnExit.TabStop = false;
+            this.ToolTipAdd.SetToolTip(this.BtnExit, "Exit");
             // 
             // PnlControl
             // 
@@ -495,7 +499,7 @@
             this.BtnClear.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.BtnClear.TabIndex = 13;
             this.BtnClear.TabStop = false;
-            this.ToolTipAdd.SetToolTip(this.BtnClear, "Repeat");
+            this.ToolTipAdd.SetToolTip(this.BtnClear, "Clear");
             // 
             // AddForm
             // 

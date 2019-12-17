@@ -302,7 +302,7 @@ namespace Display
             {
                 if (this.CheckedHabit.Visible == true)
                 {
-                    this.Management.CreateHabit(date, title, detail, prio, sta);
+                    this.Management.CreateHabit(title, detail, prio, sta);
                     MessageBox.Show("Create successfuly");
                     this.Close();
                 }

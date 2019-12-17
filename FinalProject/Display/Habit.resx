@@ -117,24 +117,7 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="BtnNext.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wwAADsMBx2+oZAAAAHhJREFUaEPt0rEJwDAMBVGNkP2nyQiZyIoFLrJA4GTfAzeq/oFD0j/GGE+9zLzW
-        qacVke1jarwxRMZQGUNlDJUxVMZQGUNlDJUxVN+Y6V7nfub4/iFzeP+vZQSFERRGUBhBYQSFERRGUBhB
-        sUVE2SKiVED7COkYES/encujMKaXZwAAAABJRU5ErkJggg==
-</value>
-  </data>
   <metadata name="ToolTipHabit.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
-  <data name="BtnPre.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wwAADsMBx2+oZAAAAHtJREFUaEPt0tEJwCAMAFFHcP9pOkIn0hqIneES7oEI8ScHDkl8e++51nrj5Kie
-        G3Hu8OS4lrP4H5H3zKc6jKAwgsIICiMojKAwgsIICiMoWkSEFhHhLP90CenxtYIxVMZQGUNlDJUxVMZQ
-        GUNlDFXrmBzXdGPKh0hYY3y8mcujB+aDeQAAAABJRU5ErkJggg==
-</value>
-  </data>
 </root>

@@ -29,17 +29,11 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Habit));
             this.PnlList = new System.Windows.Forms.Panel();
             this.PnlDateAndScroll = new System.Windows.Forms.Panel();
             this.LblMonthYear = new System.Windows.Forms.Label();
-            this.LblDay = new System.Windows.Forms.Label();
-            this.BtnNext = new System.Windows.Forms.PictureBox();
-            this.BtnPre = new System.Windows.Forms.PictureBox();
             this.ToolTipHabit = new System.Windows.Forms.ToolTip(this.components);
             this.PnlDateAndScroll.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.BtnNext)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BtnPre)).BeginInit();
             this.SuspendLayout();
             // 
             // PnlList
@@ -57,9 +51,6 @@
             // 
             this.PnlDateAndScroll.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
             this.PnlDateAndScroll.Controls.Add(this.LblMonthYear);
-            this.PnlDateAndScroll.Controls.Add(this.LblDay);
-            this.PnlDateAndScroll.Controls.Add(this.BtnNext);
-            this.PnlDateAndScroll.Controls.Add(this.BtnPre);
             this.PnlDateAndScroll.Dock = System.Windows.Forms.DockStyle.Top;
             this.PnlDateAndScroll.Location = new System.Drawing.Point(0, 0);
             this.PnlDateAndScroll.Margin = new System.Windows.Forms.Padding(4);
@@ -70,56 +61,15 @@
             // LblMonthYear
             // 
             this.LblMonthYear.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.LblMonthYear.Font = new System.Drawing.Font("Century Gothic", 12.75F);
+            this.LblMonthYear.Font = new System.Drawing.Font("Bradley Hand ITC", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblMonthYear.ForeColor = System.Drawing.Color.White;
-            this.LblMonthYear.Location = new System.Drawing.Point(487, 6);
+            this.LblMonthYear.Location = new System.Drawing.Point(43, 6);
             this.LblMonthYear.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LblMonthYear.Name = "LblMonthYear";
-            this.LblMonthYear.Size = new System.Drawing.Size(125, 57);
+            this.LblMonthYear.Size = new System.Drawing.Size(976, 57);
             this.LblMonthYear.TabIndex = 4;
-            this.LblMonthYear.Text = "May 2017,\r\nSaturday";
-            this.LblMonthYear.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // LblDay
-            // 
-            this.LblDay.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.LblDay.Font = new System.Drawing.Font("Century Gothic", 25.75F);
-            this.LblDay.ForeColor = System.Drawing.Color.White;
-            this.LblDay.Location = new System.Drawing.Point(405, 6);
-            this.LblDay.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.LblDay.Name = "LblDay";
-            this.LblDay.Size = new System.Drawing.Size(77, 57);
-            this.LblDay.TabIndex = 2;
-            this.LblDay.Text = "06";
-            this.LblDay.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // BtnNext
-            // 
-            this.BtnNext.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.BtnNext.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnNext.Image = ((System.Drawing.Image)(resources.GetObject("BtnNext.Image")));
-            this.BtnNext.Location = new System.Drawing.Point(1010, 14);
-            this.BtnNext.Margin = new System.Windows.Forms.Padding(4);
-            this.BtnNext.Name = "BtnNext";
-            this.BtnNext.Size = new System.Drawing.Size(40, 37);
-            this.BtnNext.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.BtnNext.TabIndex = 1;
-            this.BtnNext.TabStop = false;
-            this.ToolTipHabit.SetToolTip(this.BtnNext, "Next Day");
-            // 
-            // BtnPre
-            // 
-            this.BtnPre.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.BtnPre.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnPre.Image = ((System.Drawing.Image)(resources.GetObject("BtnPre.Image")));
-            this.BtnPre.Location = new System.Drawing.Point(8, 14);
-            this.BtnPre.Margin = new System.Windows.Forms.Padding(4);
-            this.BtnPre.Name = "BtnPre";
-            this.BtnPre.Size = new System.Drawing.Size(40, 37);
-            this.BtnPre.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.BtnPre.TabIndex = 0;
-            this.BtnPre.TabStop = false;
-            this.ToolTipHabit.SetToolTip(this.BtnPre, "Previous Day");
+            this.LblMonthYear.Text = "Successful people are simply those with successful habits.";
+            this.LblMonthYear.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Habit
             // 
@@ -130,8 +80,6 @@
             this.Name = "Habit";
             this.Size = new System.Drawing.Size(1060, 469);
             this.PnlDateAndScroll.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.BtnNext)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BtnPre)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -141,9 +89,6 @@
         internal System.Windows.Forms.Panel PnlList;
         internal System.Windows.Forms.Panel PnlDateAndScroll;
         internal System.Windows.Forms.Label LblMonthYear;
-        internal System.Windows.Forms.Label LblDay;
-        internal System.Windows.Forms.PictureBox BtnNext;
         internal System.Windows.Forms.ToolTip ToolTipHabit;
-        internal System.Windows.Forms.PictureBox BtnPre;
     }
 }

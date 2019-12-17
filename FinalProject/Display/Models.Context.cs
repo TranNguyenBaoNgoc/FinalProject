@@ -25,8 +25,8 @@ namespace Display
             throw new UnintentionalCodeFirstException();
         }
     
-        public virtual DbSet<Routine> Routines { get; set; }
         public virtual DbSet<SpecEvent> SpecEvents { get; set; }
         public virtual DbSet<Task> Tasks { get; set; }
+        public virtual DbSet<Routine> Routines { get; set; }
     }
 }

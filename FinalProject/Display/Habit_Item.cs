@@ -10,11 +10,11 @@ using System.Windows.Forms;
 
 namespace Display
 {
-    public partial class Task_Item : UserControl
+    public partial class Habit_Item : UserControl
     {
         private LogicLayer Management;
         private int ID;
-        public Task_Item(int id)
+        public Habit_Item(int id)
         {
             InitializeComponent();
             this.Management = new LogicLayer();
@@ -26,7 +26,7 @@ namespace Display
             this.BtnSave.Click += BtnSave_Click;
             this.UncheckedPrioIcon.Click += UncheckedPrioIcon_Click;
             this.CheckedPrioIcon.Click += CheckedPrioIcon_Click;
-            this.Load += Task_Item_Load;
+            this.Load += Habit_Item_Load;
         }
 
         void CheckedPrioIcon_Click(object sender, EventArgs e)
@@ -34,7 +34,7 @@ namespace Display
             this.CheckedPrioIcon.Visible = false;
             this.UncheckedPrioIcon.Visible = true;
             var prio = false;
-            this.Management.EditPrioTask(Int32.Parse(this.LblId.Text), prio);
+            this.Management.EditPrioHabit(Int32.Parse(this.LblId.Text), prio);
         }
 
         void UncheckedPrioIcon_Click(object sender, EventArgs e)
@@ -42,14 +42,14 @@ namespace Display
             this.UncheckedPrioIcon.Visible = false;
             this.CheckedPrioIcon.Visible = true;
             var prio = true;
-            this.Management.EditPrioTask(Int32.Parse(this.LblId.Text), prio);
+            this.Management.EditPrioHabit(Int32.Parse(this.LblId.Text), prio);
         }
 
         void BtnSave_Click(object sender, EventArgs e)
         {
             var title = this.txtTitle.Text;
             var detail = this.txtDetails.Text;
-            this.Management.EditTask(Int32.Parse(this.LblId.Text), title, detail);
+            this.Management.EditHabit(Int32.Parse(this.LblId.Text), title, detail);
             MessageBox.Show("Edit successfuly");
             this.ChBChecked.Visible = false;
             this.ChBUnchecked.Visible = true;
@@ -69,13 +69,13 @@ namespace Display
             this.BtnSave.Visible = true;
         }
 
-        void Task_Item_Load(object sender, EventArgs e)
+        void Habit_Item_Load(object sender, EventArgs e)
         {
-            var work = this.Management.GetTask(ID);
-            this.LblId.Text = work.Id.ToString();
-            this.txtTitle.Text = work.Title;
-            this.txtDetails.Text = work.Details;
-            if (work.Prio == false)
+            var habit = this.Management.GetHabit(ID);
+            this.LblId.Text = habit.Id.ToString();
+            this.txtTitle.Text = habit.Title;
+            this.txtDetails.Text = habit.Details;
+            if (habit.Prio == false)
             {
                 this.UncheckedPrioIcon.Visible = true;
                 this.CheckedPrioIcon.Visible = false;
@@ -85,7 +85,7 @@ namespace Display
                 this.UncheckedPrioIcon.Visible = false;
                 this.CheckedPrioIcon.Visible = true;
             }
-            if (work.Status == false)
+            if (habit.Status == false)
             {
                 this.ChBChecked.Visible = false;
                 this.ChBUnchecked.Visible = true;
@@ -95,6 +95,11 @@ namespace Display
                 this.ChBChecked.Visible = true;
                 this.ChBUnchecked.Visible = false;
             }
+            if (DateTime.Now.Hour == 0 && DateTime.Now.Minute == 0 && DateTime.Now.Second == 0 && DateTime.Now.Millisecond == 0) 
+            {
+                this.ChBChecked.Visible = false;
+                this.ChBUnchecked.Visible = true;
+            }
         }
 
         void BtnDelete_Click(object sender, EventArgs e)
@@ -102,7 +107,7 @@ namespace Display
             if (MessageBox.Show("Do you want to delete this?", "Confirm",
                    MessageBoxButtons.YesNo) == System.Windows.Forms.DialogResult.Yes)
             {
-                this.Management.DeleteTask(Int32.Parse(this.LblId.Text));
+                this.Management.DeleteHabit(Int32.Parse(this.LblId.Text));
                 MessageBox.Show("Delete successfuly");
                 this.Hide();
             }
@@ -113,7 +118,7 @@ namespace Display
             this.ChBChecked.Visible = false;
             this.ChBUnchecked.Visible = true;
             var sta = false;
-            this.Management.EditStaTask(Int32.Parse(this.LblId.Text), sta);
+            this.Management.EditStaHabit(Int32.Parse(this.LblId.Text), sta);
 
         }
 
@@ -122,7 +127,7 @@ namespace Display
             this.ChBUnchecked.Visible = false;
             this.ChBChecked.Visible = true;
             var sta = true;
-            this.Management.EditStaTask(Int32.Parse(this.LblId.Text), sta);
+            this.Management.EditStaHabit(Int32.Parse(this.LblId.Text), sta);
         }
     }
 }

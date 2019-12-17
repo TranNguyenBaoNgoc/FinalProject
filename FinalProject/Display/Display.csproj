@@ -93,11 +93,23 @@
     <Compile Include="Display.Designer.cs">
       <DependentUpon>Display.cs</DependentUpon>
     </Compile>
+    <Compile Include="Event_Item.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Event_Item.Designer.cs">
+      <DependentUpon>Event_Item.cs</DependentUpon>
+    </Compile>
     <Compile Include="Habit.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Habit.Designer.cs">
       <DependentUpon>Habit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Habit_Item.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Habit_Item.Designer.cs">
+      <DependentUpon>Habit_Item.cs</DependentUpon>
     </Compile>
     <Compile Include="Home.cs">
       <SubType>UserControl</SubType>
@@ -171,8 +183,14 @@
     <EmbeddedResource Include="Display.resx">
       <DependentUpon>Display.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Event_Item.resx">
+      <DependentUpon>Event_Item.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Habit.resx">
       <DependentUpon>Habit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Habit_Item.resx">
+      <DependentUpon>Habit_Item.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Home.resx">
       <DependentUpon>Home.cs</DependentUpon>

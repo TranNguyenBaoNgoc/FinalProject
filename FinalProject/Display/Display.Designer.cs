@@ -87,6 +87,7 @@
             this.BtnMonth.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.BtnMonth.TabIndex = 56;
             this.BtnMonth.TabStop = false;
+            this.ToolTipDisplay.SetToolTip(this.BtnMonth, "Month");
             // 
             // BtnDay
             // 
@@ -100,6 +101,7 @@
             this.BtnDay.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.BtnDay.TabIndex = 57;
             this.BtnDay.TabStop = false;
+            this.ToolTipDisplay.SetToolTip(this.BtnDay, "Day");
             // 
             // BtnHome
             // 
@@ -113,6 +115,7 @@
             this.BtnHome.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.BtnHome.TabIndex = 55;
             this.BtnHome.TabStop = false;
+            this.ToolTipDisplay.SetToolTip(this.BtnHome, "Home");
             // 
             // BtnHabit
             // 
@@ -126,6 +129,7 @@
             this.BtnHabit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.BtnHabit.TabIndex = 52;
             this.BtnHabit.TabStop = false;
+            this.ToolTipDisplay.SetToolTip(this.BtnHabit, "Habit");
             // 
             // BtnSpecial
             // 
@@ -139,6 +143,7 @@
             this.BtnSpecial.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.BtnSpecial.TabIndex = 54;
             this.BtnSpecial.TabStop = false;
+            this.ToolTipDisplay.SetToolTip(this.BtnSpecial, "Special Event");
             // 
             // BtnStatis
             // 
@@ -152,6 +157,7 @@
             this.BtnStatis.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.BtnStatis.TabIndex = 53;
             this.BtnStatis.TabStop = false;
+            this.ToolTipDisplay.SetToolTip(this.BtnStatis, "Statistic");
             // 
             // BtnAdd
             // 
@@ -165,6 +171,7 @@
             this.BtnAdd.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.BtnAdd.TabIndex = 51;
             this.BtnAdd.TabStop = false;
+            this.ToolTipDisplay.SetToolTip(this.BtnAdd, "Add");
             // 
             // PnlFuntion
             // 
@@ -186,6 +193,7 @@
             this.BtnExit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.BtnExit.TabIndex = 9;
             this.BtnExit.TabStop = false;
+            this.ToolTipDisplay.SetToolTip(this.BtnExit, "Exit");
             // 
             // BtnMinimize
             // 
@@ -199,6 +207,7 @@
             this.BtnMinimize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.BtnMinimize.TabIndex = 10;
             this.BtnMinimize.TabStop = false;
+            this.ToolTipDisplay.SetToolTip(this.BtnMinimize, "Minimize");
             // 
             // LblLogoSoft
             // 
@@ -212,6 +221,7 @@
             this.LblLogoSoft.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.LblLogoSoft.TabIndex = 11;
             this.LblLogoSoft.TabStop = false;
+            this.ToolTipDisplay.SetToolTip(this.LblLogoSoft, "Logo");
             // 
             // LblNameSoft
             // 

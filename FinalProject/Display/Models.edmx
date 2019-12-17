@@ -10,7 +10,6 @@
             <PropertyRef Name="Id" />
           </Key>
           <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="DateTime" Type="datetime" Nullable="false" />
           <Property Name="Title" Type="nvarchar" MaxLength="50" Nullable="false" />
           <Property Name="Details" Type="nvarchar(max)" />
           <Property Name="Prio" Type="bit" Nullable="false" />
@@ -51,21 +50,10 @@
     <edmx:ConceptualModels>
       <Schema Namespace="MyDatabaseModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
         <EntityContainer Name="MyDatabaseEntities" annotation:LazyLoadingEnabled="true" >
-          <EntitySet Name="Routines" EntityType="MyDatabaseModel.Routine" />
           <EntitySet Name="SpecEvents" EntityType="MyDatabaseModel.SpecEvent" />
           <EntitySet Name="Tasks" EntityType="MyDatabaseModel.Task" />
+          <EntitySet Name="Routines" EntityType="MyDatabaseModel.Routine" />
         </EntityContainer>
-        <EntityType Name="Routine">
-          <Key>
-            <PropertyRef Name="Id" />
-          </Key>
-          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="DateTime" Type="DateTime" Nullable="false" Precision="3" />
-          <Property Name="Title" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="Details" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
-          <Property Name="Prio" Type="Boolean" Nullable="false" />
-          <Property Name="Status" Type="Boolean" Nullable="false" />
-        </EntityType>
         <EntityType Name="SpecEvent">
           <Key>
             <PropertyRef Name="Id" />
@@ -91,24 +79,22 @@
           <Property Name="Prio" Type="Boolean" Nullable="false" />
           <Property Name="Status" Type="Boolean" Nullable="false" />
         </EntityType>
+        <EntityType Name="Routine">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Title" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Details" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Prio" Type="Boolean" Nullable="false" />
+          <Property Name="Status" Type="Boolean" Nullable="false" />
+        </EntityType>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
         <EntityContainerMapping StorageEntityContainer="MyDatabaseModelStoreContainer" CdmEntityContainer="MyDatabaseEntities" >
-          <EntitySetMapping Name="Routines">
-            <EntityTypeMapping TypeName="MyDatabaseModel.Routine">
-              <MappingFragment StoreEntitySet="Routine">
-                <ScalarProperty Name="Status" ColumnName="Status" />
-                <ScalarProperty Name="Prio" ColumnName="Prio" />
-                <ScalarProperty Name="Details" ColumnName="Details" />
-                <ScalarProperty Name="Title" ColumnName="Title" />
-                <ScalarProperty Name="DateTime" ColumnName="DateTime" />
-                <ScalarProperty Name="Id" ColumnName="Id" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
           <EntitySetMapping Name="SpecEvents">
             <EntityTypeMapping TypeName="MyDatabaseModel.SpecEvent">
               <MappingFragment StoreEntitySet="SpecEvent">
@@ -132,6 +118,17 @@
                 <ScalarProperty Name="Details" ColumnName="Details" />
                 <ScalarProperty Name="Title" ColumnName="Title" />
                 <ScalarProperty Name="DateTime" ColumnName="DateTime" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Routines">
+            <EntityTypeMapping TypeName="MyDatabaseModel.Routine">
+              <MappingFragment StoreEntitySet="Routine">
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="Prio" ColumnName="Prio" />
+                <ScalarProperty Name="Details" ColumnName="Details" />
+                <ScalarProperty Name="Title" ColumnName="Title" />
                 <ScalarProperty Name="Id" ColumnName="Id" />
               </MappingFragment>
             </EntityTypeMapping>

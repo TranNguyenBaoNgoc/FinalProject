@@ -15,7 +15,6 @@ namespace Display
     public partial class Routine
     {
         public int Id { get; set; }
-        public System.DateTime DateTime { get; set; }
         public string Title { get; set; }
         public string Details { get; set; }
         public bool Prio { get; set; }

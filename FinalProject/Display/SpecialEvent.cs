@@ -27,12 +27,12 @@ namespace Display
         public void AddItem()
         {
             Point Point = new Point(0, 0);
-            foreach (Task t in this.Management.GetTasks())
+            foreach (SpecEvent s in this.Management.GetSpecEvents())
             {
-                if (t.DateTime.ToString("MMMM yyyy,\ndddd") == this.LblMonthYear.Text && t.DateTime.ToString("dd") == this.LblDay.Text)
+                if (s.DateTime.ToString("MMMM yyyy,\ndddd") == this.LblMonthYear.Text && s.DateTime.ToString("dd") == this.LblDay.Text)
                 {
 
-                    var item = new Task_Item(t.Id);
+                    var item = new Event_Item(s.Id);
                     item.Location = new Point(0, PnlList.AutoScrollPosition.Y + Point.Y);
                     Point.Y += item.Size.Height;
                     PnlList.Controls.Add(item);
@@ -44,19 +44,23 @@ namespace Display
         {
             this.LblMonthYear.Text = DateTime.Now.ToString("MMMM yyyy,\ndddd");
             this.LblDay.Text = DateTime.Now.ToString("dd");
-            
+            AddItem();
         }
 
         void BtnPre_Click(object sender, EventArgs e)
         {
             this.LblDay.Text = DateTime.Now.AddDays(--i).ToString("dd");
             this.LblMonthYear.Text = DateTime.Now.AddDays(--j).ToString("MMMM yyyy,\ndddd");
+            PnlList.Controls.Clear();
+            AddItem();
         }
 
         void BtnNext_Click(object sender, EventArgs e)
         {
             this.LblDay.Text = DateTime.Now.AddDays(i++).ToString("dd");
             this.LblMonthYear.Text = DateTime.Now.AddDays(j++).ToString("MMMM yyyy,\ndddd");
+            PnlList.Controls.Clear();
+            AddItem();
         }
     }
 }

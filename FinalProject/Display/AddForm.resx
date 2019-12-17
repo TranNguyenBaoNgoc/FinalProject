@@ -218,6 +218,9 @@
         KveC+tWl9J9s1AB2XxclVvnvcXHyG+5aiPXx6mb2AAAAAElFTkSuQmCC
 </value>
   </data>
+  <metadata name="ToolTipAdd.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
   <data name="CheckedPrio.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAtNJREFUWEft
@@ -350,9 +353,6 @@
         myQKalgLDr184DoImY/9etSy5nHXQSGEEEII4T9xudwBddH+AQRjupwAAAAASUVORK5CYII=
 </value>
   </data>
-  <metadata name="ToolTipAdd.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
   <data name="IconAdd.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAEYAAABGCAYAAABxLuKEAAAABGdBTUEAALGPC/xhBQAABdJJREFUeF7t
@@ -396,7 +396,4 @@
         I4bhD++r67ZKv3grAAAAAElFTkSuQmCC
 </value>
   </data>
-  <metadata name="ToolTipAdd.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
 </root>

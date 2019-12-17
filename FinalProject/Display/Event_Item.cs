@@ -10,11 +10,11 @@ using System.Windows.Forms;
 
 namespace Display
 {
-    public partial class Task_Item : UserControl
+    public partial class Event_Item : UserControl
     {
         private LogicLayer Management;
         private int ID;
-        public Task_Item(int id)
+        public Event_Item(int id)
         {
             InitializeComponent();
             this.Management = new LogicLayer();
@@ -26,7 +26,7 @@ namespace Display
             this.BtnSave.Click += BtnSave_Click;
             this.UncheckedPrioIcon.Click += UncheckedPrioIcon_Click;
             this.CheckedPrioIcon.Click += CheckedPrioIcon_Click;
-            this.Load += Task_Item_Load;
+            this.Load += Event_Item_Load;
         }
 
         void CheckedPrioIcon_Click(object sender, EventArgs e)
@@ -34,7 +34,7 @@ namespace Display
             this.CheckedPrioIcon.Visible = false;
             this.UncheckedPrioIcon.Visible = true;
             var prio = false;
-            this.Management.EditPrioTask(Int32.Parse(this.LblId.Text), prio);
+            this.Management.EditPrioEvent(Int32.Parse(this.LblId.Text), prio);
         }
 
         void UncheckedPrioIcon_Click(object sender, EventArgs e)
@@ -42,14 +42,17 @@ namespace Display
             this.UncheckedPrioIcon.Visible = false;
             this.CheckedPrioIcon.Visible = true;
             var prio = true;
-            this.Management.EditPrioTask(Int32.Parse(this.LblId.Text), prio);
+            this.Management.EditPrioEvent(Int32.Parse(this.LblId.Text), prio);
         }
 
         void BtnSave_Click(object sender, EventArgs e)
         {
             var title = this.txtTitle.Text;
             var detail = this.txtDetails.Text;
-            this.Management.EditTask(Int32.Parse(this.LblId.Text), title, detail);
+            var location = this.TxtLocation.Text;
+            var start = this.txtStart.Text;
+            var endtime = this.TxtEnd.Text;
+            this.Management.EditSpecEvent(Int32.Parse(this.LblId.Text), title, detail,location,start, endtime);
             MessageBox.Show("Edit successfuly");
             this.ChBChecked.Visible = false;
             this.ChBUnchecked.Visible = true;
@@ -57,25 +60,34 @@ namespace Display
             this.BtnSave.Visible = false;
             this.txtTitle.ReadOnly = true;
             this.txtDetails.ReadOnly = true;
+            this.TxtLocation.ReadOnly = true;
+            this.txtStart.ReadOnly = true;
+            this.TxtEnd.ReadOnly = true;
         }
 
         void BtnEdit_Click(object sender, EventArgs e)
         {
             this.txtTitle.ReadOnly = false;
             this.txtDetails.ReadOnly = false;
+            this.TxtLocation.ReadOnly = false;
+            this.txtStart.ReadOnly = false;
+            this.TxtEnd.ReadOnly = false;
             this.ChBChecked.Visible = false;
             this.ChBUnchecked.Visible = false;
             this.BtnEdit.Visible = false;
             this.BtnSave.Visible = true;
         }
 
-        void Task_Item_Load(object sender, EventArgs e)
+        void Event_Item_Load(object sender, EventArgs e)
         {
-            var work = this.Management.GetTask(ID);
-            this.LblId.Text = work.Id.ToString();
-            this.txtTitle.Text = work.Title;
-            this.txtDetails.Text = work.Details;
-            if (work.Prio == false)
+            var spevent = this.Management.GetSpecEvent(ID);
+            this.LblId.Text = spevent.Id.ToString();
+            this.txtTitle.Text = spevent.Title;
+            this.txtDetails.Text = spevent.Details;
+            this.txtStart.Text += spevent.Start;
+            this.TxtEnd.Text += spevent.EndTime;
+            this.TxtLocation.Text += spevent.Location;
+            if (spevent.Prio == false)
             {
                 this.UncheckedPrioIcon.Visible = true;
                 this.CheckedPrioIcon.Visible = false;
@@ -85,7 +97,7 @@ namespace Display
                 this.UncheckedPrioIcon.Visible = false;
                 this.CheckedPrioIcon.Visible = true;
             }
-            if (work.Status == false)
+            if (spevent.Status == false)
             {
                 this.ChBChecked.Visible = false;
                 this.ChBUnchecked.Visible = true;
@@ -102,7 +114,7 @@ namespace Display
             if (MessageBox.Show("Do you want to delete this?", "Confirm",
                    MessageBoxButtons.YesNo) == System.Windows.Forms.DialogResult.Yes)
             {
-                this.Management.DeleteTask(Int32.Parse(this.LblId.Text));
+                this.Management.DeleteSpecEvent(Int32.Parse(this.LblId.Text));
                 MessageBox.Show("Delete successfuly");
                 this.Hide();
             }
@@ -113,7 +125,7 @@ namespace Display
             this.ChBChecked.Visible = false;
             this.ChBUnchecked.Visible = true;
             var sta = false;
-            this.Management.EditStaTask(Int32.Parse(this.LblId.Text), sta);
+            this.Management.EditStaEvent(Int32.Parse(this.LblId.Text), sta);
 
         }
 
@@ -122,7 +134,7 @@ namespace Display
             this.ChBUnchecked.Visible = false;
             this.ChBChecked.Visible = true;
             var sta = true;
-            this.Management.EditStaTask(Int32.Parse(this.LblId.Text), sta);
+            this.Management.EditStaEvent(Int32.Parse(this.LblId.Text), sta);
         }
     }
 }
