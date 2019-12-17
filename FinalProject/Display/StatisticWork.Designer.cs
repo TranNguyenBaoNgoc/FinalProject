@@ -60,7 +60,7 @@
             series1.Name = "Your Productivity";
             series1.YValuesPerPoint = 4;
             this.C1.Series.Add(series1);
-            this.C1.Size = new System.Drawing.Size(793, 384);
+            this.C1.Size = new System.Drawing.Size(765, 384);
             this.C1.TabIndex = 46;
             this.C1.Text = "C1";
             title1.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
@@ -73,7 +73,7 @@
             // 
             this.Mc1.BackColor = System.Drawing.Color.DarkRed;
             this.Mc1.ForeColor = System.Drawing.SystemColors.InfoText;
-            this.Mc1.Location = new System.Drawing.Point(616, 180);
+            this.Mc1.Location = new System.Drawing.Point(594, 181);
             this.Mc1.MaxSelectionCount = 1;
             this.Mc1.Name = "Mc1";
             this.Mc1.TabIndex = 47;
