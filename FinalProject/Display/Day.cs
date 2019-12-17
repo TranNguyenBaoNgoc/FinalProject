@@ -21,7 +21,14 @@ namespace Display
             this.Management = new LogicLayer();
             this.BtnNext.Click += BtnNext_Click;
             this.BtnPre.Click += BtnPre_Click;
+            this.PnlList.Click += PnlList_Click;
             this.Load += Day_Load;
+        }
+
+        void PnlList_Click(object sender, EventArgs e)
+        {
+            PnlList.Controls.Clear();
+            AddItem();
         }
 
         public void AddItem()
