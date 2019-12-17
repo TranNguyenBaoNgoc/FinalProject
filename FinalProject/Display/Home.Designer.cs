@@ -50,6 +50,8 @@
             this.LblSpec = new System.Windows.Forms.Label();
             this.PnlSpecial = new System.Windows.Forms.Panel();
             this.PnlDay = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.BarSec2 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.BarSec1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DivideBar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.MonthIcon)).BeginInit();
@@ -62,6 +64,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.SpecIcon)).BeginInit();
             this.PnlSpecial.SuspendLayout();
             this.PnlDay.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BarSec2)).BeginInit();
             this.SuspendLayout();
             // 
             // BarSec1
@@ -320,11 +324,35 @@
             this.PnlDay.Size = new System.Drawing.Size(120, 44);
             this.PnlDay.TabIndex = 57;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(180)))), ((int)(((byte)(43)))));
+            this.pictureBox1.Location = new System.Drawing.Point(530, 235);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(0, 10);
+            this.pictureBox1.TabIndex = 61;
+            this.pictureBox1.TabStop = false;
+            // 
+            // BarSec2
+            // 
+            this.BarSec2.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.BarSec2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(180)))), ((int)(((byte)(43)))));
+            this.BarSec2.Location = new System.Drawing.Point(878, 324);
+            this.BarSec2.Margin = new System.Windows.Forms.Padding(4);
+            this.BarSec2.Name = "BarSec2";
+            this.BarSec2.Size = new System.Drawing.Size(0, 10);
+            this.BarSec2.TabIndex = 62;
+            this.BarSec2.TabStop = false;
+            // 
             // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.Controls.Add(this.BarSec2);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.BarSec1);
             this.Controls.Add(this.LblHour);
             this.Controls.Add(this.DivideBar);
@@ -350,6 +378,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.SpecIcon)).EndInit();
             this.PnlSpecial.ResumeLayout(false);
             this.PnlDay.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BarSec2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -377,6 +407,8 @@
         internal System.Windows.Forms.Label LblSpec;
         internal System.Windows.Forms.Panel PnlSpecial;
         internal System.Windows.Forms.Panel PnlDay;
+        internal System.Windows.Forms.PictureBox pictureBox1;
+        internal System.Windows.Forms.PictureBox BarSec2;
 
     }
 }

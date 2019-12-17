@@ -24,24 +24,42 @@ namespace Display
             this.Load += Day_Load;
         }
 
+        public void AddItem()
+        {
+            Point Point = new Point(0, 0); 
+            foreach (Task t in this.Management.GetTasks())
+            {
+                if (t.DateTime.ToString("MMMM yyyy,\ndddd") == this.LblMonthYear.Text && t.DateTime.ToString("dd") == this.LblDay.Text)
+                {
+                    var item = new Task_Item(t.Id);
+                    item.Location = new Point(0, PnlList.AutoScrollPosition.Y + Point.Y);
+                    Point.Y += item.Size.Height;
+                    PnlList.Controls.Add(item);
+                }
+            }
+        }
+
         void Day_Load(object sender, EventArgs e)
         {
             this.LblMonthYear.Text = DateTime.Now.ToString("MMMM yyyy,\ndddd");
             this.LblDay.Text = DateTime.Now.ToString("dd");
-            var T = new Task_Item();
-            PnlList.Controls.Add(T);
+            AddItem();
         }
 
         void BtnPre_Click(object sender, EventArgs e)
         {
             this.LblDay.Text = DateTime.Now.AddDays(--i).ToString("dd");
             this.LblMonthYear.Text = DateTime.Now.AddDays(--j).ToString("MMMM yyyy,\ndddd");
+            PnlList.Controls.Clear();
+            AddItem();
         }
 
         void BtnNext_Click(object sender, EventArgs e)
         {
             this.LblDay.Text = DateTime.Now.AddDays(i++).ToString("dd");
             this.LblMonthYear.Text = DateTime.Now.AddDays(j++).ToString("MMMM yyyy,\ndddd");
+            PnlList.Controls.Clear();
+            AddItem();
         }
     }
 }

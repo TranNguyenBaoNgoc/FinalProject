@@ -38,12 +38,15 @@
             this.txtDetails = new System.Windows.Forms.TextBox();
             this.txtStartEnd = new System.Windows.Forms.TextBox();
             this.txtTitle = new System.Windows.Forms.TextBox();
+            this.LblId = new System.Windows.Forms.Label();
+            this.BtnSave = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.UncheckedPrioIcon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BtnDelete)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BtnEdit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ChBUnchecked)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ChBChecked)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CheckedPrioBtn)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BtnSave)).BeginInit();
             this.SuspendLayout();
             // 
             // UncheckedPrioIcon
@@ -75,7 +78,7 @@
             this.BtnEdit.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.BtnEdit.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BtnEdit.Image = ((System.Drawing.Image)(resources.GetObject("BtnEdit.Image")));
-            this.BtnEdit.Location = new System.Drawing.Point(939, 22);
+            this.BtnEdit.Location = new System.Drawing.Point(937, 23);
             this.BtnEdit.Margin = new System.Windows.Forms.Padding(4);
             this.BtnEdit.Name = "BtnEdit";
             this.BtnEdit.Size = new System.Drawing.Size(48, 44);
@@ -164,11 +167,36 @@
             this.txtTitle.TabIndex = 74;
             this.txtTitle.Text = "Title";
             // 
+            // LblId
+            // 
+            this.LblId.AutoSize = true;
+            this.LblId.Location = new System.Drawing.Point(681, 34);
+            this.LblId.Name = "LblId";
+            this.LblId.Size = new System.Drawing.Size(46, 17);
+            this.LblId.TabIndex = 77;
+            this.LblId.Text = "label1";
+            this.LblId.Visible = false;
+            // 
+            // BtnSave
+            // 
+            this.BtnSave.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.BtnSave.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnSave.Image = ((System.Drawing.Image)(resources.GetObject("BtnSave.Image")));
+            this.BtnSave.Location = new System.Drawing.Point(937, 22);
+            this.BtnSave.Margin = new System.Windows.Forms.Padding(4);
+            this.BtnSave.Name = "BtnSave";
+            this.BtnSave.Size = new System.Drawing.Size(48, 44);
+            this.BtnSave.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.BtnSave.TabIndex = 78;
+            this.BtnSave.TabStop = false;
+            this.BtnSave.Visible = false;
+            // 
             // Task_Item
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(95)))), ((int)(((byte)(95)))));
+            this.Controls.Add(this.LblId);
             this.Controls.Add(this.txtDetails);
             this.Controls.Add(this.txtStartEnd);
             this.Controls.Add(this.txtTitle);
@@ -178,6 +206,7 @@
             this.Controls.Add(this.ChBUnchecked);
             this.Controls.Add(this.ChBChecked);
             this.Controls.Add(this.CheckedPrioBtn);
+            this.Controls.Add(this.BtnSave);
             this.Name = "Task_Item";
             this.Size = new System.Drawing.Size(1055, 91);
             ((System.ComponentModel.ISupportInitialize)(this.UncheckedPrioIcon)).EndInit();
@@ -186,6 +215,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.ChBUnchecked)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ChBChecked)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.CheckedPrioBtn)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BtnSave)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -202,5 +232,7 @@
         private System.Windows.Forms.TextBox txtDetails;
         private System.Windows.Forms.TextBox txtStartEnd;
         private System.Windows.Forms.TextBox txtTitle;
+        private System.Windows.Forms.Label LblId;
+        internal System.Windows.Forms.PictureBox BtnSave;
     }
 }

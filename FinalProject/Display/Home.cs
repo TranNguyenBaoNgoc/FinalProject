@@ -14,7 +14,7 @@ namespace Display
     {
         private LogicLayer Management;
         Timer t = new Timer();
-        int sec = DateTime.Now.Second;
+        //int sec = DateTime.Now.Second;
         public Home()
         {
             InitializeComponent();
@@ -47,21 +47,17 @@ namespace Display
             t.Interval = 1000;
             t.Tick += new EventHandler(this.t_Tick);
             t.Start();
-            this.BarSec1.Width = (this.Width) * sec / 60;
         }
 
         private void t_Tick(object sender, EventArgs e)
         {
-            this.LblMonthYear.Text = Management.GetMonthYear();
-            this.LblDate.Text = Management.GetDay();
+            this.LblMonthYear.Text = DateTime.Now.ToString("MMMM yyyy,\ndddd");
+            this.LblDate.Text = DateTime.Now.ToString("dd");
             this.LblHour.Text = Management.GetHour();
             this.LblMinute.Text = Management.GetMinute();
-            if (sec == 0)
-            {
-                this.BarSec1.Width = 0;
-            }
-            else
-                this.BarSec1.Width += (this.Width) / 60;
+            this.BarSec1.Width = (this.Width/2) * DateTime.Now.Second / 60;
+            this.BarSec2.Width = (this.Width/2) * DateTime.Now.Second / 60;
+            this.BarSec2.Left = this.Width - BarSec2.Width;
         }
 
         void PnlDay_Click(object sender, EventArgs e)

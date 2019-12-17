@@ -121,6 +121,29 @@
     <value>17, 17</value>
   </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="BtnDelete.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABGdBTUEAALGPC/xhBQAAATdJREFUaEPt
+        mtGJwzAQRF1SOrx0kOss6SDpIOlAtys9hEEE22vhE8k80MeOpNkdMP6xJ/HJpJQutu62lvAzP1wbCxvs
+        N4+4jTPXx8GGepbZ0gnpLX6mHE13pHFgsES5CMdXnz8M5hoziPW5lnZDcGWs7djlW/EYghtjxcHo8OeZ
+        tv364qcgUWirIA34fUcQ2/ZXdfOK3KrPsf0M5X7wWwqSoawgr9bncERBGvBTEIeygqwgIfBTEIeygqwg
+        IfBTEIeygqwgIfBTEIeygqwgIfBTEIeygqwgIfBTEIeygqwgIfBTEIeygqwgIfBTEIeygjxkEP+W0nzD
+        2KrPsf0M5X7w62e4EtoqSAN+ChKFtl2DvIrl8s8AvfBepWV6IO3HzM7F81/o+5uHG9p6ZOtj8F7j/asi
+        VjFNfx45hejQp1ryAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="BtnEdit.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABGdBTUEAALGPC/xhBQAAAXVJREFUaEPt
+        mdFNw0AQBV1CSkgpKSEdkJJSAh1ACXQAHZAOQgfmvX17lgHnDEiwa2lHOoXcLdJM4uQjHoriZ4zjeMB6
+        wGo8Y9358TaA8MnUlzn7WH4g+yLnmxx8NDcQ3WH1Yp58NB+Qa5eTvdp47MVc7Z+yAbH5Z+Lo272Yi4/k
+        AVLziJNvT2BvKebRj3MAoW5EA2fzmDesvR/FA5lvRTQw02JWZ/8NymA1umI4P3L50zxQnPbOWkSbzfXh
+        htBvIshmL6eK+DMoIyejIsKgjJyMigiDMnIyKiIMysjJqIgwKCMnoyLCoIycjIoIgzJyMioiDMrIyaiI
+        MCgjJ6MiwqCMnIyKCIMycjIqIgzKyMnYbAR/IG5sM4JAiD8UN27K8UwjRq4IAqmz3Ca+SHJPR0a+CAIx
+        3sP+zCTLv7VlpI3Yy28RBuSPIJST4yp5IwgE7+XZJXcEgeSrXD/Ae3X8AuC32c5Hc+PSFyy+M7zM8twx
+        LTbHMLwDoL2KsfirH/gAAAAASUVORK5CYII=
+</value>
+  </data>
   <data name="BtnMonth.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABGdBTUEAALGPC/xhBQAAAMNJREFUaEPt

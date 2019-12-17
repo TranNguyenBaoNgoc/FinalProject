@@ -8,29 +8,36 @@ namespace Display
 {
     public class LogicLayer
     {
-        public Task[] GetTasks()
+        public List<Task> GetTasks()
         {
             var db = new MyDatabaseEntities();
-            return db.Tasks.ToArray();
+            return db.Tasks.ToList();
         }
 
-        public Task GetTask(DateTime datetime, string title)
+        public Task GetTask(int id)
         {
             var db = new MyDatabaseEntities();
-            var task = db.Tasks.Find();
+            var task = db.Tasks.Find(id);
             return task;
         }
 
-        public SpecEvent[] GetSpecEvents()
+        public Task GetTaskName(String title)
         {
             var db = new MyDatabaseEntities();
-            return db.SpecEvents.ToArray();
+            var task = db.Tasks.Find(title);
+            return task;
         }
 
-        public SpecEvent GetSpecEvent(DateTime datetime, string title)
+        public List<SpecEvent> GetSpecEvents()
         {
             var db = new MyDatabaseEntities();
-            var spevEve = db.SpecEvents.Find();
+            return db.SpecEvents.ToList();
+        }
+
+        public SpecEvent GetSpecEvent(int id)
+        {
+            var db = new MyDatabaseEntities();
+            var spevEve = db.SpecEvents.Find(id);
             return spevEve;
         }
 
@@ -40,10 +47,10 @@ namespace Display
             return db.Routines.ToArray();
         }
 
-        public Routine GetHabit(DateTime datetime, string title)
+        public Routine GetHabit(int id)
         {
             var db = new MyDatabaseEntities();
-            var habit= db.Routines.Find();
+            var habit= db.Routines.Find(id);
             return habit;
         }
 
@@ -95,19 +102,41 @@ namespace Display
             db.Dispose();
         }
 
-        public void EditTask(DateTime datetime, string title, string detail, bool prio, bool status)
+        public void EditTask(int id, string title, string detail)
         {
             var db = new MyDatabaseEntities();
-            var task = db.Tasks.Find(datetime, title);
+            var task = db.Tasks.Find(id);
 
-            task.DateTime = datetime;
             task.Title = title;
             task.Details = detail;
-            task.Prio = prio;
+
+            db.Entry(task).State = System.Data.Entity.EntityState.Modified;
+            db.SaveChanges();
+            db.Dispose();
+        }
+
+        public void EditStaTask(int id, bool status)
+        {
+            var db = new MyDatabaseEntities();
+            var task = db.Tasks.Find(id);
+
             task.Status = status;
 
             db.Entry(task).State = System.Data.Entity.EntityState.Modified;
             db.SaveChanges();
+            db.Dispose();
+        }
+
+        public void EditPrio(int id, bool prio)
+        {
+            var db = new MyDatabaseEntities();
+            var task = db.Tasks.Find(id);
+
+            task.Prio = prio;
+
+            db.Entry(task).State = System.Data.Entity.EntityState.Modified;
+            db.SaveChanges();
+            db.Dispose();
         }
 
         public void EditHabit(DateTime datetime, string title, string detail, bool prio, bool status)
@@ -123,6 +152,7 @@ namespace Display
 
             db.Entry(habit).State = System.Data.Entity.EntityState.Modified;
             db.SaveChanges();
+            db.Dispose();
         }
 
         public void EditSpecEvent(DateTime datetime, string title, string location, string start, string end, string detail, bool prio, bool status)
@@ -141,42 +171,46 @@ namespace Display
 
             db.Entry(specEve).State = System.Data.Entity.EntityState.Modified;
             db.SaveChanges();
+            db.Dispose();
         }
-        public void DeleteTask(DateTime datetime, string title)
+        public void DeleteTask(int id)
         {
             var db = new MyDatabaseEntities();
-            var task = db.Tasks.Find(datetime, title);
+            var task = db.Tasks.Find(id);
 
             db.Tasks.Remove(task);
             db.SaveChanges();
+            db.Dispose();
         }
 
-        public void DeleteHabit(DateTime datetime, string title)
+        public void DeleteHabit(int id)
         {
             var db = new MyDatabaseEntities();
-            var habit = db.Routines.Find(datetime, title);
+            var habit = db.Routines.Find(id);
 
             db.Routines.Remove(habit);
             db.SaveChanges();
+            db.Dispose();
         }
 
-        public void DeleteSpecEvent(DateTime datetime, string title)
+        public void DeleteSpecEvent(int id)
         {
             var db = new MyDatabaseEntities();
-            var specEve = db.SpecEvents.Find(datetime, title);
+            var specEve = db.SpecEvents.Find(id);
 
             db.SpecEvents.Remove(specEve);
             db.SaveChanges();
+            db.Dispose();
         }
 
-        public string GetDay()
+        public string GetDay(DateTime date)
         {
-            return DateTime.Now.ToString("dd");
+            return date.ToString("dd");
         }
 
-        public string GetMonthYear()
+        public string GetMonthYear(DateTime date)
         {
-            return DateTime.Now.ToString("MMMM yyyy,\ndddd");
+            return date.ToString("MMMM yyyy,\ndddd");
         }
 
         public string GetHour()
